@@ -1,0 +1,2026 @@
+body,div,h1,h2,h3,ul,dl,dd,nav,p,em,form,input{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: Arial,"宋体";
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: none; 
+	vertical-align: top;
+}
+.clear{
+	zoom: 1;
+}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+input{
+	border: none;
+}
+
+/*头部前*/
+.wrap{
+	margin: 0 auto;
+}
+.header{
+	background: #fff;
+	border-bottom: 1px solid #b58e4f;
+}
+.header em{
+	display: block;
+	float: left;
+	font-size: 16px;
+	line-height: 36px; 
+	font-family: "黑体";
+	height: 36px;
+	background: url(img/logo.png) no-repeat;
+	padding-top: 5px;
+	color: #b58e4f;
+	padding-left: 55px;
+}
+.headright{
+	display: none;
+}
+/*头部后*/
+/*头部图片*/
+.Img{
+	display: none;
+}
+/*头部图片*/
+/*导航前*/
+.lista{
+	width: 100%;
+	min-width: 316px;
+	text-indent: 10px;
+}
+.lista li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	overflow: hidden;
+}
+.lista li .listleft{
+	float: left;
+}
+.lista li .listright{
+	display: none;
+}
+.lista li .listb{
+	display: none;
+}
+.lista .listleft span{
+	display: none;
+}
+.listc{
+	display: block;
+	width: 100%;
+	min-width: 316px;
+	text-indent: 10px;
+}
+.lista li h2{
+	padding: 15px 0 5px 0;
+}
+.lista h2 a{
+	font-size: 22px;
+	line-height: 38px;
+	color: #000;
+	text-align: center;
+}
+.lista h2 a:hover{
+	color: #b58d4f;
+}
+.listc a{
+	float: left;
+	font-weight: bold;
+	width: 20%;
+	font-size: 22px;
+	line-height: 38px;
+	color: #000;
+	height: 44px;
+}
+.listc a:hover{
+	color: #b58d4f;
+}
+.lista li .listd{
+	display: none;
+}
+/*导航后*/
+/*导航图片*/
+.Img{
+	display: none;
+}
+.Img img{
+	width: 100%;
+	height: 90px;
+}
+.Img1{
+	display: block;
+}
+.Img1 img{
+	width: 100%;
+}
+/*导航后*/
+/*内容1前*/
+/*今日热点前*/
+.one .row1{
+	width: 100%;
+	overflow: hidden;
+}
+.one h2{
+	font-size: 30px;
+	line-height: 44px;
+	padding-top: 23px;
+	border-bottom: 1px solid #2d2d2d;
+	color: #2d2d2d;
+}
+.one .row1 li{
+	padding: 10px 0;
+	margin-top: 10px;
+	border-bottom: 1px dotted #000;
+}
+.one .row1 .row1li{
+	border-bottom: none;
+}
+.one .row1 li .img2{
+	width: 180px;
+	height: 120px;
+	float: left;
+	overflow: hidden;
+}
+.one .row1 li .img2 img{
+	width: 180px;
+	height: 120px;
+}
+.row1 li .row1right strong{
+	display: block;
+	height: 25px;
+	font-size: 12px;
+	line-height: 25px;
+	text-align: center;
+	color: #b58e4f;
+	background: #f0f0f0;
+	margin-right: 10px;
+}
+
+.row1 li .row1right dt{
+	width: 100%;
+	margin-left: 190px;
+	padding-left: 10px;
+	font-size: 18px;
+	line-height: 38px;
+}
+.row1 li .row1right dt a{
+	color: #2d2d2d;
+}
+.row1 li .row1right dt a:hover{
+	color: #b58d4f;
+}
+.row1 li .row1right dd{
+	width: 100%;
+	margin-left: 190px;
+	color: #696969;
+}
+.row1 li .row1right dd:hover{
+	color: #b58d4f;
+}
+.row1 li .row1right dd a{
+	color: #b58d4f;
+}
+.row1 li .row1right dd a:hover{
+	color: red;
+}
+ /*今日热点后*/
+ /*编辑精选前*/
+.cen ter  h2{
+	font-size: 30px;
+	line-height: 44px;
+	padding-top: 23px;
+	border-bottom: 1px solid #2d2d2d;
+	color: #2d2d2d;
+}
+.one .row2 ul{
+	padding-top: 20px;
+	
+	
+}
+.one .row2 ul li{
+	margin: 0 auto;
+	margin-bottom: 10px;
+	overflow: hidden;
+	width: 200px;
+}
+.one .row2 ul li img{
+	width: 100%;
+
+}
+.one .row2 ul .imgb3{
+	overflow: hidden;
+	width: 200px;
+}
+.one .row2 ul .imgb3 img{
+	width: 200px;
+	height: 163px;
+}
+/*编辑精选后*/
+/*视频排行试用前*/
+/*视频前*/
+.one .row3 .img4{
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 37px;
+	width: 300px;
+	overflow: hidden;
+}
+.one .row3 img{
+	width: 300px;
+	height: 200px;
+}
+/*视频后*/
+/*热门排行前*/
+.row3 h3{
+	font-size: 24px;
+	line-height: 54px;
+	padding-top: 15px;
+	text-align: center;
+}
+.row3 .row3lia li{
+	text-align: center;
+}
+.row3 .row3lia li a{
+	line-height: 30px;
+	color: #2d2d2d;
+	padding-left: 16px;
+}
+.row3 .row3lia li a:hover{
+	color: #b58d4f;
+}
+.row3 .row3lia li em{
+	display: inline-block;
+	font-weight: bold;
+	color: #b58e4f;
+	padding-right: 9px;
+}
+.row3 .row3lia li .row3em{ 
+	color:#2d2d2d;
+}
+/*热门排行后*/
+/*我爱试用前*/
+.row3 .row3lib{
+	width: 300px;
+	margin: 0 auto;
+	padding-left: 40px;
+}
+.row3 .row3lib li{
+	margin-bottom: 15px;
+}
+.row3 .row3lib li .img5{
+	float: left;
+	border: 1px solid #e9e9e9;
+	border-right: none;
+	overflow: hidden;
+}
+.row3 .row3lib li img{
+	width: 68px;
+	height: 68px;
+}
+.row3 .row3lib li dl{
+	float: left;
+	width: 134px;
+	padding: 9px 0 5px 8px;
+	border: 1px solid #e9e9e9;
+	border-right: none;
+}
+.row3 .row3lib li dt{
+	line-height: 18px;
+}
+.row3 .row3lib li dt a{
+	color: #000000;
+}
+.row3 .row3lib li dt a:hover{
+	color: #b58d4f;
+}
+.row3 .row3lib li dd{
+	line-height: 18px;
+	color: #000000;
+}
+.row3 .row3lib li p{
+	float: left;
+	width: 34px;
+	height: 54px;
+	background: #e9e9e9;
+	padding-left: 4px;
+	padding-top: 16px;
+}
+.row3 .row3lib li p a{
+	line-height: 20px;
+	color: #b58d4f;
+}
+.row3 .row3lib li p:hover{
+	background: #666;
+}
+.row3 .row3lib li p:hover a{
+	color: #fff;
+}
+/*我爱试用后*/
+
+/*内容1后*/
+/*内容2前*/
+
+/*时装潮流前*/
+.two h2{
+	font-size: 30px;
+	line-height: 44px;
+	padding-top: 26px;
+	border-bottom: 1px solid #2d2d2d;
+	color: #2d2d2d;
+	padding-left: 10px;
+}
+.twoA .img6{
+	display: block;
+	margin-top: 20px;
+	text-align: center;
+	overflow: hidden; 
+}
+.twoA .img6 img{
+	width: 310px;
+	height: 465px;
+}
+
+.twoLeft .twoList .box-twoB{
+	min-width: 100px;
+	width: 100%;
+	float: left;
+}
+.twoLeft .twoList .twoB{
+	margin-right: 130px;
+	width: 170px;
+}
+.twoLeft .twoList .img7{
+	float: left;
+	margin-left: -130px;
+	overflow: hidden;
+}
+.twoLeft .twoList .img7 img{
+	width: 130px;
+	height: 130px;
+}
+.twoLeft .twoList .twoLi{
+	margin: 0 10px;
+	padding: 20px 0;
+	border-bottom: 1px dotted #000;
+}
+.twoLeft .twoList .twoLia{
+	border-bottom: none;
+}
+.twoList .twoB h3{
+	line-height: 24px;
+}
+.twoList .twoB h3 a{
+	color: #996247;
+}
+.twoList .twoB h3 a:hover{
+	color: #c00;
+}
+.twoList .twoB li{
+	background: url(img/dian.png) no-repeat 0 12px;
+	padding-left: 6px;
+}
+.twoList .twoB li a{
+	line-height: 26px;
+	color: #2d2d2d;
+}
+.twoList .twoB li a:hover{
+	color: #b58d4f;
+}
+/*时装潮流后*/
+
+/*产业资讯前*/
+.twoRight .twoRightUl{
+	margin: 0 auto;
+	width: 300px;
+}
+.twoRight .twoRightUl li{
+	padding-top: 20px;
+	padding-bottom: 8px;
+}
+.twoRight .twoRightUl dl{
+	float: left;
+	width: 180px; 
+	line-height: 22px;
+	padding-left: 9px;
+	padding-right: 19px;
+	border: 1px solid #ededed;
+}
+.twoRight .twoRightUl dt{
+	padding-top: 2px;
+	font-weight: bold;
+}
+.twoRight .twoRightUl dt a{
+	color: #000000;
+}
+.twoRight .twoRightUl dt a:hover{
+	color: #b58d4f;
+}
+.twoRight .twoRightUl dd{
+	text-indent: 24px;
+}
+.twoRight .twoRightUl dd a{
+	color: #b58d4f;
+}
+.twoRight .twoRightUl dd a:hover{
+	color: red;
+}
+.twoRight .twoRightUl .Img8{
+	float: left;
+	padding-left: 20px;
+	overflow: hidden;
+}
+.twoRight .twoRightUl .Img8 img{
+	width: 70px;
+	height: 70px;
+}
+.twoRight .twoRightLia{
+	display: none;
+}
+.twoRight .twoRightLib{
+	display: none;
+}
+/*产业资讯后*/
+/*内容2后*/
+ /*内容3前*/
+ /*商讯前*/
+.threeRight .rightimg{
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 5px;
+	overflow: hidden;
+	width: 300px;
+	border: 1px solid red;
+}
+.threeRight .rightimg img{
+	width: 298px;
+	height: 498px;
+}
+.threeRight .sina{
+	background: #ededed;
+	width: 300px;
+	margin: 0 auto;
+}
+.threeRight .sina strong{
+	float: left;
+	display: block;
+	font-size: 16px;
+	line-height: 18px;
+	width: 22px;
+	border-right: 1px solid #ffffff;
+	padding-left: 9px;
+	padding-top: 8px;
+}
+.threeRight .sina .sinaa{
+	float: left;
+	padding: 5px 0;
+}
+.threeRight .sina a{
+	display: block;
+	line-height: 20px;
+	padding-left: 8px;
+	color: #2d2d2d;
+}
+.threeRight .sina a:hover{
+	color: #b58d4f;
+}
+/*商讯后*/
+/*秀场前*/
+.threeLeft .leftA h3{
+	float: left;
+	font-size: 22px;
+	line-height: 38px;
+	padding-top: 31px;
+	color: #2d2d2d;
+}
+.threeLeft .leftAtop{
+	border-bottom: 1px solid #2d2d2d;
+}
+.threeLeft .leftA .season{
+	float: right;
+	margin-top: 37px;
+}
+.threeLeft .leftA select{
+	width: 132px;
+	line-height: 18px;
+	padding-top: 3px;
+}
+.threeLeft .leftA input{
+	line-height: 20px;
+	padding: 5px 12px 0;
+}
+.threeLeft .leftA .leftAimg{
+	padding-top: 20px;
+}
+.threeLeft .leftA li{
+	float: left;
+	width: 25%;
+	text-align: center;
+	overflow: hidden;
+} 
+.threeLeft .leftA li img{
+	width: 76px;
+	height: 220px;
+}
+/*秀场后*/
+/*时尚专栏前*/
+.threeLeft .leftB h3{ 
+	font-size: 22px;
+	line-height: 38px;
+	padding-top: 31px;
+	color: #2d2d2d;
+	border-bottom: 1px solid #2d2d2d;
+}
+.threeLeft .leftB ul{
+	padding-top: 10px;
+}
+.threeLeft .leftB li{
+	padding-top: 10px;
+}
+.threeLeft .leftB .leftBimg{
+	float: left;
+	margin-right: 10px;
+	overflow: hidden;
+}
+.threeLeft .leftB img{
+	width: 150px;
+	height: 113px;
+}
+.threeLeft .leftB dl{
+	min-width: 300px;
+	width: 100%;
+	display: block;
+}
+.threeLeft .leftB dt{
+	font-weight: bold;
+	line-height: 26px;
+	padding-bottom: 6px;
+}
+.threeLeft .leftB dt a{
+	color: #000;
+}
+.threeLeft .leftB dt a:hover{
+	color: #b58d4f;
+}
+.threeLeft .leftB dd{
+	line-height: 24px;
+	color: #000;
+}
+.threeLeft .leftB dd a{
+	color: #b58d4f;
+}
+.threeLeft .leftB dd a:hover{
+	color: red;
+}
+/*时尚专栏后*/
+/*时尚特辑前*/
+.threeLeft .threeFoot h3{
+	font-size: 22px;
+	line-height: 38px;
+	padding-top: 31px;
+	color: #2d2d2d;
+	border-bottom: 1px solid #2d2d2d;
+}
+.threeLeft .threeFoot .footimg{
+	display: block;
+	overflow: hidden;
+}
+.threeLeft .threeFoot .footimg a{
+	display: none;
+}
+.threeLeft .threeFoot .footimg .foota{
+	display: block;
+	overflow: hidden;
+}
+.threeLeft .threeFoot img{
+	width: 100%;
+}
+.threeLeft .threeFoot ul{ 
+	display: none;
+}
+/*时尚特辑后*/
+/*内容3后*/
+/*内容4前*/
+/*美容美体前*/
+.fourLeft .fourTop h2{
+	font-size: 30px;
+	line-height: 44px;
+	padding-top: 26px;
+	border-bottom: 1px solid #2d2d2d;
+	color: #2d2d2d;
+	padding-left: 10px;
+}
+.fourLeft .fourTop .Topimg{
+	text-align: center;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.fourTop .Topimg img{
+	width: 310px;
+	height: 465px;
+}
+.fourLeft .fourTop .fourLi{
+	margin: 0 10px;
+	padding: 20px 0;
+	border-bottom: 1px dotted #000;
+}
+.fourLeft .fourTop .fourLia{
+	border-bottom: none;
+}
+.fourLeft .fourTop .box-fourLitop{
+	min-width: 100px;
+	width: 100%;
+	float: left;
+}
+.fourLeft .fourLitop{
+	margin-right: 130px;
+	width: 170px;
+}
+.fourLeft .fourLiimg{
+	float: left;
+	margin-left: -130px;
+	overflow: hidden;
+}
+.fourLeft .fourLiimg img{
+	width: 130px;
+	height: 130px;
+}
+.fourLeft .fourLitop strong{
+	line-height: 24px;
+	color: #996247;
+}
+.fourLeft .fourLitop strong:hover{
+	color: #b58d4f;
+}
+.fourLeft .fourLitop li{
+	background: url(img/dian.png) no-repeat 0 12px;
+	padding-left: 6px;
+}
+.fourLeft .fourLitop li a{
+	line-height: 26px;
+	color: #2d2d2d;
+}
+.fourLeft .fourLitop li a:hover{
+	color: #b58d4f;
+}
+/*美容美体后*/
+/*美容足迹前*/
+.zuji{
+	background: #f0f0f0;
+}
+.zuji h2{
+	font-size: 28px;
+	line-height: 46px;
+	padding-top: 11px;
+	font-weight: bold;
+	margin-top: 20px;
+	color: #b58d4f;
+	text-align: right;
+}
+.zuji .zujiTop{
+	border-left: 2px solid #b58d4f;
+	border-top: 1px solid #b58d4f;
+}
+.zuji .zujiTop h3{
+	line-height: 25px;
+	width: 60px;
+	background: #000;
+	text-align: center;
+	color: #fff;
+	margin-left: 10px;
+}
+.zuji .zujiTop ul{
+	margin: 0 10px;
+	padding-bottom: 20px;
+}
+.zuji .zujiTop li{
+	padding: 15px 0;
+	border-bottom: 1px dotted #000;
+}
+.zuji .zujiTop .zujiimg{
+	float: left;
+	border: 1px solid red;
+	overflow: hidden;
+
+}
+.zuji .zujiTop .zujiimg img{
+	width: 88px;
+	height: 88px;
+}
+.zuji .zujiTop .zudl{
+	float: left;
+	margin-left: 10px;
+}
+.zuji .zujiTop .zudl dt{
+	line-height: 20px;
+}
+.zuji .zujiTop .zudl dt a{
+	color: #2d2d2d;
+}
+.zuji .zujiTop .zudl dt a:hover{
+	color: #b58d4f;
+}
+.zuji .zujiTop .zudl dt span{
+	color: #6a6a6a;
+	padding-left: 6px;
+}
+.zuji .zujiTop .zudl dd{
+	line-height: 20px;
+	color: #b58e4f;
+}
+.zuji .zujiTop .zudl strong{
+	display: block;
+	line-height: 14px;
+	padding-top: 36px;
+	font-weight: normal;
+}
+.zuji .zujiTop .zudl a{
+	color: #2d2d2d;
+}
+.zuji .zujiTop .zudl a:hover{
+	color: #b58d4f;
+}
+.zuji .shouye{
+	margin: 0 auto;
+	width: 300px;
+}
+.zuji .shouye h3{
+	font-size: 20px;
+	line-height: 30px;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+.zuji .shouye .ye{
+	margin: 0 10px;
+}
+.zuji .shouye .season{
+	float: left;
+}
+.zuji .shouye .season1{
+	float: right;
+}
+.zuji .shouye select{
+	line-height: 20px;
+}
+.zuji .yeimg{
+	margin-top: 39px;
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+.zuji .yeimg img{
+	width: 300px;
+	height: 250px;
+}
+/*美容足迹后*/
+
+/*化妆品库前*/
+.fourFoot .foothua{ 
+	border-bottom: 1px solid #2d2d2d;
+}
+.fourFoot .foothua h3{
+	float: left;
+	font-size: 22px;
+	line-height: 38px;
+	padding-top: 11px;
+	color: #2d2d2d;
+}
+.fourFoot .foothua .put{
+	float: right;
+	line-height: 39px;
+	margin-top: 10px;
+}
+.fourFoot .foothua .text{
+	line-height: 23px;
+	border: 1px solid #e9e9e9;
+	width: 134px;
+}
+.fourFoot .foothua .submit{
+	width: 49px;
+	line-height: 25px;
+	text-align: center;
+	border: none;
+}
+.fourFoot .footcen {
+	padding-top: 20px;
+	
+}
+.fourFoot .footcen .footimga{
+	text-align: center;
+	overflow: hidden;
+}
+.fourFoot .footcen .footimga img{
+	width: 230px;
+	height: 220px;
+}
+.fourFoot .footcen .footimgb{
+	display: none;
+}
+.fourFoot .footRight{
+	margin-top: 11px;
+}
+.fourFoot .footRight h3{
+	font-size: 22px;
+	line-height: 38px;
+	
+	color: #2d2d2d;
+	padding-left: 10px;
+	border-bottom: 1px solid #2d2d2d;
+}
+/*化妆品库后*/
+/*美容专栏前*/
+.footRight .footUl{
+	padding-top: 20px;
+}
+.footRight .footLi{
+	padding-bottom: 15px;
+}
+.footRight .footLi .footLiimg{
+	float: left;
+	margin-right: 10px;
+	overflow: hidden;
+}
+.footRight .footLi .footLiimg img{
+	width: 150px;
+	height: 113px;
+}
+.footRight .footLi dt{
+	padding-left: 10px;
+	font-weight: bold;
+	line-height: 26px;
+	padding-bottom: 6px;
+}
+.footRight .footLi dt a{
+	color: #000;
+}
+.footRight .footLi dt a:hover{
+	color: #b58d4f;
+}
+.footRight .footLi dd{
+	padding-left: 10px;
+	line-height: 24px;
+	color: #696969;
+}
+.footRight .footLi dd a{
+	color: #b58d4f;
+}
+.footRight .footLi dd a:hover{
+	color: red;
+}
+/*美容专栏后*/
+/*美容特辑前*/
+.last h3{
+	font-size: 22px;
+	line-height: 38px;
+	padding-top: 11px;
+	color: #2d2d2d;
+	padding-left: 10px;
+	border-bottom: 1px solid #2d2d2d;
+}
+.last .lastFoot{
+	padding-top: 20px;
+	text-align: center;
+}
+.last .lastimg a{
+	display: none;
+}
+.last .lastimg .lasta{
+	display: block;
+	overflow: hidden;
+}
+.last img{
+	width: 100%;
+}
+.last ul{
+	display: none;
+}
+
+.lastA{
+	display: none;
+}
+.lastA img{
+	width: 100%;
+}
+/*美容特辑后*/
+/*内容4后*/
+/*内容5前*/
+.hezuo h2{
+	font-size: 30px;
+	line-height: 44px;
+	padding-top: 26px;
+	border-bottom: 1px solid #2d2d2d;
+	color: #2d2d2d;
+	padding-left: 10px;
+}
+.hezuo .heul{
+	margin:0 10px;
+	margin-left: -10px;
+}
+.hezuo .heli{
+	float: left;
+	padding-left: 20px;
+	width: 50%;
+	box-sizing: border-box;
+}
+.hezuo .heli h3{
+	font-size: 18px;
+	line-height: 30px;
+	background: #f0f0f0;
+	margin-top: 20px;
+	text-align: center;
+	color: #2d2d2d;
+}
+.hezuo .heli .heimg{
+	margin-top: 10px;
+	overflow: hidden;
+}
+.hezuo .heli .heimg img{
+	width: 100%;
+}
+.hezuo .heli ul{
+	display: none;
+}
+/*内容5后*/
+
+.dibu{
+	margin-top: 40px;
+	padding: 25px 18px;
+	border: 1px solid #e2e2e2;
+}
+.dibu a{
+	line-height: 30px;
+	color: #2d2d2d;
+	white-space: nowrap;
+}
+.dibu a:hover{
+	color: #b58e4f;
+}
+/*底部前*/
+.wan{
+	padding: 20px 0;
+}
+.wan .wana{
+	line-height: 30px;
+	text-align: center;
+}
+.wan .wana a{
+	color: #666666;
+}
+.wan .wana a:hover{
+	color: #c00;
+}
+.wan .wana span{ 
+	line-height: 30px;
+	color: #666666;
+	padding-left: 20px;
+}
+.wan .wanc{
+	line-height: 30px;
+	text-align: center;
+}
+.wan .wanc strong{
+	line-height: 30px;
+	color: #666666; 
+	font-weight: normal;
+}
+.wan .wand{
+	text-align: center;
+}
+.wan .wand a{
+	line-height: 30px;
+	color: #666666;
+}
+.wan .wand a:hover{
+	color: #c00;
+}
+.wan .wand span{
+	line-height: 30px;
+	color: #666666;
+}
+/*底部后*/
+a:hover img{
+	transform: scale(1.05);
+	transition: .5s;
+}
+
+@media all and (min-width: 499px){ 
+	/*头部前*/
+	.header {	
+		background: #000;
+		border-top: 3px solid #b58e4f;
+		border-bottom: none;
+		position: relative;
+	}
+	.header em{
+		float: left;
+		display: block;
+	}
+	.headright{
+		float: right;
+		display: block;
+		margin: 0 auto;
+	}
+	.headright .button{
+		display: none;
+	}
+	.header .headlist{
+		float: left;
+		padding-left: 36px;
+		background: url(img/headlogo.png) no-repeat 0 12px;
+	}
+	.header .headlist li{
+		float: left;
+		padding: 0 6px;
+		font-size: 12px;
+		line-height: 40px;
+		padding-top: 1px;
+	}
+	.cur{
+		margin: 0 6px;
+	}
+	.header .headlist li a{
+		color: #b58e4f;
+	}
+	.header .headlist li a:hover{
+		color: #fff;
+	}
+	.header .headmore{
+		float: left;
+		background: url(img/headlogo2.png) no-repeat 4px 16px;
+		color: #b58e4f;
+		font-size: 12px;
+		line-height: 40px;
+		padding-top: 1px;
+		padding-left: 19px;
+		padding-right: 7px;
+	}
+	.header .headmore:hover{
+		color:#fff;
+	}
+	/*头部后*/
+	.box{
+		width: 100%;
+		overflow: auto;
+		position: absolute;
+		top: 44px;
+		left: 0;
+		bottom: 0;
+	}
+	/*头部图片前*/
+	.Img1{
+		display: block;
+	}
+	.Img1 img{
+		width: 100%;
+	}
+	/*头部图片后*/
+	/*导航前*/
+	.lista{
+		width: 100% ;
+		margin-left: -10px;
+	}
+	.lista li {
+		width: 16.46%;
+		over flow:hidden;
+		border-left: 1px solid #d4d4d4;
+		border-right: 1px solid #d4d4d4;
+		margin-right: -1px;
+	}
+	.lista li .listleft{
+		width: 100%;
+	}
+	.lista li .listleft h2{
+		padding-top: 10px;
+		padding-bottom: none;
+		display: block;
+	}
+	.lista li .listleft h2 a{
+		color: #b58e4f;
+	}
+	.lista li .listleft h2 a:hover{
+		color: #c00;
+	}
+	.lista li .listb{
+		display: block;
+	}
+	.lista li .listd{
+		display: none;
+	}
+	.lista .listleft span{
+		font-weight: bold;
+		display: block;
+		text-align: center;
+		color: #949494;
+	}
+	.listc{
+		display: none;
+	}
+	/*导航后*/
+	/*内容1前*/
+	.one .row2{
+		margin: 0 10px;
+	}
+	.one .row3{
+		margin: 0 10px;
+	}
+	.one .row2 ul{
+		text-align: none;
+	}
+	.one .row2 .imgb1{
+		float: left;
+		width: 200px;
+	}
+	.one .row2 .imgb2{
+		float: right;
+		width: 200px;
+	}
+	.one .row2 .imgb3{
+		display: none;
+	}
+	/*内容1后*/
+	/*内容2前*/
+	/*时装潮流前*/
+	.twoLeft{
+		margin: 0 10px;
+	}
+	.twoA .box-img6{
+		float: left;
+		width: 100%;
+	}
+	.twoA .img6 img{
+		width: 100%;
+	}
+	.twoA .img6{
+		margin-right: 180px;
+	}
+	.twoA  .twoList{
+		width: 180px;
+		float: right;
+		margin-left: -180px;
+	}
+	.twoLeft .twoList .img7{
+		display: none;
+	}
+	.twoLeft .twoList .img7 img{
+		display: none;
+	}
+	/*时装潮流后*/
+	/*产业资讯前*/
+	.twoRight{
+		margin: 0 10px;
+	}
+	.twoRight .twoRightUl .Img8{
+		display: none;
+	}
+	.twoRight .twoRightLia{
+		display: block;
+	}
+	.twoRight .twoRightUl{
+		margin: 0;
+		width: 460px;
+	}
+	.twoRight .twoRightUl li{
+		float: left;
+		padding-right: 20px;
+		width: 210px;
+		padding-bottom: 0;
+	}
+	/*产业资讯后*/
+	/*内容2后*/
+	/*内容3前*/
+	.threeLeft .leftA{
+		margin: 0 10px;
+	}
+	.threeLeft .leftB{
+		margin: 0 10px;
+	}
+	.threeLeft .threeFoot{
+		margin: 0 10px;
+	}
+	.threeLeft .threeFoot .footimg{
+		padding-top: 20px;
+	}
+	.threeLeft .threeFoot .footimg a{
+		display: block;
+	}
+	/*内容3后*/
+	/*美容美体前*/
+	.fourLeft{
+		margin: 0 10px;
+	}
+	.fourLeft .fourTop .box-Topimg{
+		float: left;
+		width: 100%;
+	}
+	.fourLeft .fourTop .Topimg img{
+		width: 100%;
+	}
+	.fourLeft .fourTop .Topimg{
+		margin-right: 180px;
+	}
+
+	.fourLeft .fourTop .fourList{
+		width: 180px;
+		float: right;
+		margin-left: -180px;
+	}
+	.fourTop .fourList .fourLiimg{
+		display: none;
+	}
+	.fourTop .fourList .fourLiimg img{
+		display: none;
+	}
+	/*美容美体后*/
+	.zuji{
+		margin: 0 10px;
+	}
+	.footer{
+		margin: 0 10px;
+	}
+	/*美容特辑前*/
+	.last{
+		margin: 0 10px;
+	}
+	.fourFoot .footcen img{
+		float: left;
+	}
+	.last .lastimg a{
+		display: block;
+	}
+	/*美容特辑后*/
+	/*内容5前*/
+	.hezuo{
+		margin: 0 10px;
+	}
+	.hezuo .heli ul{
+		display: block;
+	}
+	.hezuo .heli ul{
+		padding-top: 15px;
+	}
+	.hezuo .heli li{
+		line-height: 26px;
+		padding-left: 10px;
+		background: url(img/dian.png) no-repeat 0 12px; 
+	}
+	.hezuo .heli li a{
+		color: #2d2d2d;
+	}
+	.hezuo .heli li a:hover{
+		color: #b58e4f;
+	}
+	/*内容5后*/
+}
+
+
+@media all and (min-width: 601px){
+	/*头部前*/
+	.headright input{
+		margin-top: 14px;
+	}
+	.headright .button{
+		float: left;
+		display: block;
+		background: #000;
+		color: #fff;
+		padding: 0 12px;
+		margin-right: 12px;
+	}
+	/*头部后*/
+	/*头部图片前*/
+	.Img{
+		display: block;
+		border-bottom: 3px solid #000;
+	}
+	.Img img{
+		display: block;
+		padding-top: 17px;
+		padding-bottom: 20px;
+	}
+	.Img1{
+		display: block;
+	}
+	.Img1 img{
+		display: block;
+		padding: none;
+	}
+	/*头部图片后*/
+
+	/*内容1前*/
+
+	/*编辑精选前*/
+	.one .row2 .imgb3{
+		display: block;
+	}
+	.one .row2 ul{
+		text-align: none;
+	}
+	.one .row2 li{
+		float: none;
+	}
+	/*编辑精选后*/
+
+	/*今日热点前*/
+	.one .row1 li{
+		padding: 20px 0;
+		margin: 0;
+	}
+	.row1 li .row1right strong{
+		display: inline-block;
+		width: 115px;
+	}
+	.one .box-row1{
+		width: 100%;
+		float: left;
+		overflow: hidden;
+	}
+	.one .row1{
+		margin: 0;}
+	/*今日热点后*/
+
+	/*编辑精选前*/
+	.one .row2{
+		float: left;
+		padding-left: 10px;
+		margin-left: -220px;
+		width: 200px;
+	}
+	.one .row2 h2{
+		font-size: 30px;
+		line-height: 44px;
+		padding-top: 23px;
+		border-bottom: 1px solid #2d2d2d;
+		color: #2d2d2d;
+	}
+	.one .row2 ul li{
+		padding-bottom: 0;
+	}
+	.one .row2 img{
+		width: 200px;
+		height: 300px;
+	}
+	.one .row2 .imgb3 img{
+		width: 200px;
+		height: 163px;
+	}
+	/*编辑精选后*/
+
+	/*我爱试用前*/
+	.row3 .row3lib{
+		width: 300px;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.one .row3 .row3a{
+		float: left;
+	}
+    .one .row3 .row3b{
+    	float: left;
+    }
+    .one .row3 .row3c{
+    	float: left;
+    }
+    .row3 .row3lib{
+    	width: 100%;
+    }
+	.row3 .row3lib li{
+		float: left;
+		width: 250px;
+	}
+	.row3 .row3c h3{
+		font-size: 24px;
+		width: 100%;
+		line-height: 54px;
+		padding-top: 15px;
+		margin: 0 auto;
+	}
+	/*我爱试用后*/
+
+	/*内容1后*/
+	/*内容2前*/
+
+	/*时装潮流前*/
+	.twoA .box-img6{
+		float: left;
+		width: 100%;
+	}
+	.twoA .img6 img{
+		width: 100%;
+	}
+	.twoA .img6{
+		margin-right: 310px;
+	}
+	.twoA  .twoList{
+		width: 310px;
+		float: right;
+		margin-left: -310px;
+	}
+	.twoLeft .twoList .img7{
+		display: block;
+	}
+	.twoLeft .twoList .img7 img{
+		display: block;
+	}
+	/*时装潮流后*/
+
+	/*产业资讯前*/
+	.twoRight{
+		margin: 0 10px;
+	}
+	.twoRight .twoRightUl .Img8{
+		float: left;
+		display: block;
+		padding-left: 0;
+	}
+	.twoRight .twoRightLib{
+		display: block;
+	}
+	.twoRight .twoRightUl{
+		margin: 0;
+		width: 100%;
+	}
+	.twoRight .twoRightUl li{
+		float: left;
+		width: 280px;
+		padding-right: 0;
+		padding-bottom: 8px;
+	}
+	.twoRight .twoRightLib{
+		display: block;
+	}
+	/*产业资讯后*/
+	/*内容2后*/
+	/*内容3前*/
+	.threeLeft .box-threeTop{
+		float: left;
+		width: 100%;
+	}
+	.threeLeft .threeTop{
+		margin-right: 310px;
+	}
+	.threeRight{
+		float: right;
+		width: 310px;
+		margin-left: -310px;
+	}
+	/*秀场前*/
+	.threeLeft .leftA .leftAimg li{
+		background: #999;
+	}
+	.threeLeft .leftA .leftAimgli{
+		display: none;
+	}
+	/*秀场后*/
+	/*时尚专栏前*/
+	.threeLeft .leftB li{
+		float: left;
+		width: 50%;
+	}
+	.threeLeft .leftB .leftBimg{
+		float: none;}
+	.threeLeft .leftB dl{
+		display: block;
+	}
+	.threeLeft .leftB dd{
+		display: none;
+	}
+	/*时尚专栏后*/
+	/*时尚特辑前*/
+	.threeLeft .threeFoot .footimg{
+		overflow: hidden;
+	}
+	.threeLeft .threeFoot .footimg a{
+		display: none;
+	}
+	.threeLeft .threeFoot .footimg .foota{
+		width: 45%;
+		display: block;
+		float: left;
+	}
+	.threeLeft .threeFoot .footimg .footb{
+		width: 45%;
+		display: block;
+		float: right;
+		overflow: hidden;
+		margin-left: 30px;
+	}
+	.threeLeft .threeFoot h3{
+		font-size: 22px;
+		line-height: 59px;
+	}
+	/*时尚特辑后*/
+	/*美容美体前*/
+	.fourLeft .fourTop .box-Topimg{
+		float: left;
+		width: 100%;
+	}
+	.fourLeft .fourTop .Topimg img{
+		width: 100%;
+	}
+	.fourLeft .fourTop .Topimg{
+		margin-right: 310px;
+	}
+	.fourLeft .fourTop .fourList{
+		width: 310px;
+		float: right;
+		margin-left: -310px;
+	}
+	.fourTop .fourList .fourLiimg{
+		display: block;
+	}
+	.fourTop .fourList .fourLiimg img{
+		display: block;
+	}
+	
+	.fourFoot .footcen img{
+		float: none;
+	}
+	.box-fourFoot{
+		float: right;
+		width: 100%;
+	}
+	.fourFoot{
+		margin-left: 320px;
+	}
+	/*美容美体后*/
+	.zuji{
+		float: left;
+		margin: 0 auto;
+		width: 300px;
+		margin-right: -300px;
+	}
+	/*美容特辑前*/
+	.last .lastimg a{
+		display: none;
+	}
+	.last .lastimg .lasta{
+		display: block;
+		width: 45%;
+		float: left;
+	}
+	.last .lastimg .lastb{
+		display: block;
+		width: 45%;
+		float: right;
+		overflow: hidden;
+		margin-left: 30px;
+	}
+	/*美容特辑后*/
+
+	.dibu{
+		margin: 0 10px;
+	}
+}
+
+
+@media all and (min-width: 769px){
+	/*头部前*/
+	.headright .button{
+		margin-right: 67px;
+	}
+	/*头部后*/
+	/*时装潮流前*/
+	.twoA .img6{
+		margin-right: 400px;
+	}
+	.twoA  .twoList{
+		width: 400px;
+		float: right;
+		margin-left: -400px;
+	}
+	/*时装潮流后*/
+	/*内容3前*/
+	.threeLeft .leftA .leftAimgli{
+		display: block;
+	}
+	.threeLeft .leftB dd{
+		display: block;
+		width: 50%;
+	}
+	/*内容3后*/	
+	/*美容专栏前*/
+	.footf4{
+		display: none;
+	}
+	.footLi{
+		float: left;
+		width: 50%;
+	}
+	.footLi .footLiimg img{
+		width: 100%;
+	}
+	.footLi dl{
+		float: left;
+	}
+	.footLi dt{
+		padding-top: 27px;
+	}
+	.footLi dt a{
+		line-height: 40px;
+	}
+	.footLi dd{
+		line-height: 24px;
+	}
+	/*美容专栏后*/
+	.fourLeft .fourTop .Topimg{
+		margin-right: 400px;
+	}
+	.fourLeft .fourTop .fourList{
+		width: 400px;
+		float: right;
+		margin-left: -400px;
+	}
+	/*美容特辑前*/
+	.lastA{
+		display: block;
+	}
+	.last{
+		display: none;
+	}
+	.lastA h3{
+		font-size: 22px;
+		line-height: 38px;
+		padding-top: 11px;
+		color: #2d2d2d;
+		padding-left: 10px;
+		border-bottom: 1px solid #2d2d2d;
+	}
+	.lastA .lastimg{
+		padding-top: 20px;
+	}
+	.lastA .lasta{
+		display: block;
+		width: 45%;
+		float: left;
+		overflow: hidden;
+	}
+	.lastA .lastb{
+		display: block;
+		width: 45%;
+		float: right;
+		overflow: hidden;
+		margin-left: 30px;
+	}
+	/*美容特辑后*/
+}
+
+
+@media all and (min-width: 820px){
+	/*我爱试用前*/
+	.row3 .row3lib li{
+		float: none;
+		width: 300px;
+	}  
+	.row3 .row3lib li dl{
+		width: 184px;
+	}
+	/*我爱试用后*/
+
+	.footimga img{
+		float: left;
+		margin: 0 auto;
+	}
+	.footf4{
+		display: block;
+	}
+}
+
+
+@media all and (min-width: 1037px){
+	/*头部前*/
+	.wrap{
+		width: 1000px;
+		margin: 0 auto;
+	}
+	/*头部后*/
+	/*头部图片前*/
+	.Img {
+		width: 1000px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.Img img{
+		
+	}
+	a:hover img{
+		transform: scale(1.03);
+		transition: .5s;
+	}
+	.Img1{
+		background: #333;
+	}
+	.Img1 img{
+		width: 1000px;
+		margin: 0 auto;
+	}
+	/*头部图片后*/
+	/*导航前*/
+	.lista{
+		width: 1000px;
+		margin: 0 auto;
+	}
+	/*导航后*/
+	/*内容1前*/
+	.one{
+		width: 1000px;
+		margin: 0 auto;
+	}
+	.one .box-row1{
+		width: 440px;
+		float: left;
+		margin: 0 ;
+	}
+	.one .row2{
+		width: 200px;
+		margin-left: 20px;
+		margin-right: 0;
+	}
+	.one .row3{
+		width: 300px;
+		float: right;
+		margin: 0;
+	}
+	.row3 .row3lib li dl{
+		width: 184px;
+	}
+	/*内容1后*/
+	/*内容2前*/
+	.two{
+		width: 1000px;
+		margin: 0 auto;
+	}
+	.twoLeft{
+		float: left;
+		width: 670px;
+		margin: 0;
+	}
+	.twoRight{
+		float: left;
+		width: 300px;
+		padding-left: 30px;
+		margin: 0;
+	}
+	.twoA .img6{
+		width: 310px;
+		float: left;
+	}
+	.twoA  .twoList{
+		width: 330px;
+		float: right;
+	}
+	/*内容2后*/
+	/*内容3前*/
+	.three{
+		width: 1000px;
+		margin: 0 auto;
+	}
+
+	.threeLeft{
+		float: left;
+		width: 670px;
+	}
+	.threeRight{
+		float: right;
+		width: 300px;
+	}
+	.threeLeft .threeTop{
+		width: 670px;
+	}
+	.threeLeft .threeTop .leftA{
+		width: 310px;
+		float: left;
+		margin: 0;
+	}
+	.threeLeft .threeTop .leftB{
+		width: 330px;
+		float: right;
+		margin: 0; 
+	}
+	/*时尚特辑前*/
+	.threeLeft .threeFoot{
+		margin: 0 ;
+		width: 670px;
+	}
+	.threeLeft .threeFoot .footimg{
+		float: left;
+		width: 490px;
+	}
+	.threeLeft .threeFoot .footimg .foota{
+		width: 490px;
+		margin-top: -20px;
+	}
+	.threeLeft .threeFoot ul{
+		display: block;
+		float: left;
+		width: 180px;
+	}
+	.threeLeft .threeFoot ul .cura{
+		background: #171717;
+	}
+	.threeLeft .threeFoot ul .cura a{
+		color: #b58e4f;
+	}
+	.threeLeft .threeFoot li{
+		font-size: 18px;
+		line-height: 42px; 
+		padding-left: 25px;
+		border-bottom: 1px solid #999;
+	}
+	.threeLeft .threeFoot li a{
+		font-weight: bold;
+		color: #000;
+	}
+	.threeLeft .threeFoot li a:hover{
+		color: #b58d4f;
+	}
+	.threeLeft .threeFoot .footimg .footb{
+		display: none;
+	}
+	/*时尚特辑后*/
+	/*内容3后*/
+	/*内容4前*/
+
+	.four{
+		width: 1000px;
+		margin: 0 auto;
+		overflow: hidden;
+		height: 1140px;
+	}
+	.fourLeft{
+		width: 670px;
+		float: left;
+		margin: 0;
+	}
+	/*美容美体前*/
+	.Topimg{
+		width: 310px;
+		float: left;
+	}
+	.fourList{
+		width: 330px;
+		float: left;
+	}
+	.fourLeft .fourTop .fourList{
+		width: 330px;
+		float: right;
+	}
+	/*美容美体后*/
+	.fourTop{
+		margin: 0;
+	}
+	.fourFoot{
+		margin: 0;
+		float: left;
+	}
+	/*足迹前*/
+	.zuji{
+		width: 300px;
+		float: left;
+		margin-top: 20px;
+		margin-left: 30px;
+	}
+	/*足迹后*/
+	/*美容专栏前*/
+	.footer{
+		width: 670px;
+		margin: 0;
+		float: left;
+		position: relative;
+		top: -570px;
+	}
+	.footLeft{
+		margin: 0;
+		width: 310px;
+		float: left;
+	}
+	.footRight{
+		margin: 0;
+		width: 330px;
+		float: left;
+		padding-left: 30px;
+	}
+	/*美容专栏后*/
+	/*美容特辑前*/
+	.lastA{
+		display: none;
+	}
+	.last{
+		display: block;
+		width: 670px;
+		position: relative;
+		top: -610px;
+		margin: 0;
+	}
+
+	.last .lastimg a{
+		display: none;
+	}
+	.last .lastimg .lasta{
+		display: block;
+		float: left;
+		margin-top: -20px;
+	}
+	.last .lastimg .lasta{
+		width: 490px;
+		height: 216px;
+	}
+	.last .lastimg .lastb{
+		display: none;
+	}
+	.last ul{
+		display: block;
+		float: left;
+		width: 180px;
+		margin-top: -20px;
+	}
+	.last ul .cura{
+		background: #171717;
+	}
+	.last ul .cura a{
+		color: #b58e4f;
+	}
+	.last li{
+		font-size: 18px;
+		line-height: 42px;
+		padding-left: 30px;
+		border-bottom: 1px solid #999;
+		text-align: left;
+	}
+	.last li a{
+		font-weight: bold;
+		color: #000;
+	}
+	.last li a:hover{
+		color: #b58e4f;
+	}
+	/*美容特辑后*/
+	/*化妆品前*/
+	.box-fourFoot{
+		width: 670px;
+		float: left;
+	}
+	.footimga img{
+		display: none;
+	}
+	.footimga .footf4{
+		display: block;
+	}
+
+	.fourFoot .footcen .footimga{
+		float: left;
+		width: 230px;
+		height: 220px;
+		margin: 0;
+	}
+	.fourFoot .footcen .footimgb{
+		display: block;
+		float: left;
+		width: 69px;
+		margin-left: 10px;
+		overflow: hidden;
+	}
+	.fourFoot .footcen .footimgb img{
+		width: 69px;
+		height: 69px;
+		margin-bottom: 6px;
+	} 
+	.footimgb img{
+		width: 69px;
+		height: 69px;
+	}
+	/*化妆品后*/
+	/*内容4后*/
+	/*内容5前*/
+	.hezuo{
+		width: 1000px;
+		margin: 0 auto;
+	}
+	.hezuo .heul{
+		margin-left: -20px;
+		margin-right: -10px;
+	}
+	.hezuo .heli{
+		float: left;
+		width: 255px;
+	}
+	/*内容5后*/
+	.dibu{
+		width: 962px;
+		margin: 0 auto;
+		margin-top: 40px;
+	}
+
+}
