@@ -1,0 +1,1627 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+var i=0;
+i=window.devicePixelRatio>1?1/window.devicePixelRatio:1;
+document.write('<meta name="viewport" content="width=device-width,initial-scale='+i+',minimum-scale='+i+',maximum-scale='+i+',user-scalable=no" />');
+</script>
+<title>天猫首页（移动端）</title>
+<script>
+var oHtml=document.getElementsByTagName("html")[0];
+var iWidth=oHtml.getBoundingClientRect().width;
+oHtml.style.fontSize=iWidth/27+"px";
+</script>
+<style type="text/css">
+	
+* {
+	-webkit-text-size-adjust: none;
+}
+a {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-appearance: none;
+}
+a {
+	text-decoration: none;
+}
+h1 {
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+p ,h3,h2,section,input{
+	padding: 0;
+	margin: 0;}
+input{
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+html {
+	height: 100%;
+}
+body {
+	margin: 0; 
+	font-size: .6rem; 
+	font-family: Arial, "宋体"; 
+	height: 100%; 
+	overflow: auto;
+	position: relative; 
+	background: #fff;
+}
+img {padding: 0;
+	margin: 0;
+	border: none; 
+	vertical-align: top;
+}
+.clear { 
+	zoom: 1;
+}
+.clear:after { 
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.header{
+	background: url(img/headbg1.png) repeat-x;
+	background-size: 100% 3.1rem;
+	opacity: .8;
+	height: 3.1rem;
+	border-top: 3px solid #4d4f50;
+	position: relative;
+	z-index: 3;
+}
+img{
+	width: 100%;
+	height: 12.975rem;
+}
+.headci{
+	width: 1.525rem;
+	height: 1.275rem;
+	background: url(img/gif.gif) no-repeat 0 0;
+	background-size: 15rem 3.75rem;
+	position: absolute;
+	left: 1.525rem;
+	top: .825rem;
+}
+input{
+	width: 17.125rem;
+	height: 2.475rem;
+	border-radius: .15rem;
+	background: #f2f1ef;
+	background-size: 17.925rem 2.475rem;
+	position: absolute;
+	left: 4.575rem;
+	top: .3rem;}
+.inputtext{
+	font: .95rem/2.25rem "宋体";
+	color: #a5a4a2;
+	padding-left: .8rem;
+}
+.headco{
+	width: 1.225rem;
+	height: 1.225rem;
+	background: url(img/gif.gif) no-repeat -1.75rem 0;
+	background-size: 15rem 3.75rem;
+	position: absolute;
+	right: 5.425rem;
+	top: .85rem;
+}
+.text{
+	font-size: .8rem;
+	color: #fff; 
+	position: absolute;
+	right: 1.4rem;
+	top: 1.075rem;
+}
+.click{width: 4.75rem;
+	height: 1.425rem;
+	background: #ecbb76;
+	color: #130000;
+	font: bold .9rem/1.35rem "宋体";
+	text-align: center;
+	border: 1px solid #d5a864;
+	background-size: 4.75rem 1.425rem;
+	position: absolute;
+	right: 5.525rem;
+	bottom: 1.575rem;}
+section{
+	width: 100%;
+	overflow: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+.list{
+	overflow: hidden;
+	border-bottom: .075rem solid #f0f0f0;
+}	
+.list li{
+	width: 5.4rem;
+	float: left;
+}
+.list img{
+	width: 2.7rem;
+	height: 2.7rem;
+	border-radius: .75rem; 
+	margin: .3rem 1.35rem .325rem;
+}
+.list strong{
+	width: 5.4rem;
+	text-align: center;
+	display: block;
+	font: .8rem/1.1rem "宋体";
+}
+.redian img{
+	width: 4.4rem;
+	height: 3rem;
+	float: left;
+	border-right: .075rem solid #e7e7e7;
+	margin: .75rem .55rem; 
+}
+.redian .right{
+	float: left;
+}
+.redian .str{
+	position: relative;
+	padding: .5rem  0 1rem 2.525rem;
+}
+.redian .str span{
+	width: 1.3rem;
+	height: 1.2rem;
+	background: url(img/gif.gif) no-repeat -3.175rem -0.025rem;
+	background-size: 15rem 3.75rem;
+	position: absolute;
+	top: 1.725rem;
+	left: .4rem;
+}
+.redian strong{
+	display: block;
+	font: bold .8rem/1.5rem Arial,"宋体";
+	color: #000;
+}
+.redian .stronga{
+	color: #ff2f2f;
+}
+
+.listtwo{
+	border-top: .35rem solid #f0f0f0;
+}
+.listtwo li{
+	float: left;
+	width: 12.95rem;
+	border-left: .275rem solid #f0f0f0;
+	border-right: .275rem solid #f0f0f0;
+	overflow: hidden;
+}
+.listtwolia{
+	border-bottom: 2px solid #39abdd;
+}
+.listtwolib{
+	border-bottom: 2px solid #ff280e;
+}
+.listtwo li img{
+	float: right;
+	;
+}
+.listtwo li .imga{
+	width: 7.15rem;
+	height: 7.75rem;
+}
+.listtwo li .imgb{
+	width: 5.925rem;
+	height: 7.75rem;
+}
+.listtwo .left{
+	float: left;
+}
+.listtwo .jin{
+	width: 2.225rem;
+	background: #efefef;
+	font: bold .7rem/1.55rem "宋体";
+	text-align: center;
+	margin-left: .525rem;
+	margin-bottom: 1.15rem;
+	color: #343434;
+	padding-bottom: .075rem;
+	border-top: .35rem solid #ff3b00;
+}
+.listtwo .left strong{
+	display: block;
+	font-weight: normal;
+	font: .85rem/1.1rem "宋体";
+	padding-left: .6rem;
+}
+.listtwo .left .strongb{
+	font-weight: bold;
+	color: #fe4205;
+}
+.listtwo .leftlast{
+	width: 3.875rem;
+	margin-top: 1.5rem;
+	padding-bottom: .05rem;
+	border-left-top-radius: .1rem;
+	border-right-top-radius: .1rem;
+	font: .7rem/.9rem "宋体";
+	margin-left: .525rem;
+	background: #05b7ff;
+}
+.listtwo .leftlasta{
+	background: #f92f09;
+}
+.biqiang .bi{
+	height: 2.275rem;
+	background: url(img/e.png) #f0f0f0 no-repeat 11.8rem .55rem;
+	background-size: 1.075rem 1.125rem;
+	font: bold .95rem/2.275rem"宋体";
+	color: #ff2e2e;
+	padding-left: 13.2rem;
+	position: relative;
+}
+
+.biqiang .bia{width: 2.55rem;
+	height: .075rem;
+	background: url(img/e1.png) no-repeat;
+	background-size: 2.55rem .075rem;
+	position: absolute;
+	left: 8.475rem;
+	top: 1.075rem;}
+.biqiang .bib{width: 2.55rem;
+	height: .075rem;
+	background: url(img/e1.png) no-repeat;
+	background-size: 2.55rem .075rem;
+	position: absolute;
+	left: 15.975rem;
+	top: 1.075rem;
+}
+.listfan{ }
+.listfan li{
+	float: left;
+	width: 6.75rem;
+	overflow: hidden;
+}
+.listfan h2{
+	height: 2.125rem;
+	font: bold .85rem/1.7rem"宋体";
+	color: #2f2f2f;
+	text-align: center;
+}
+.listfan img{
+	width: 5.6rem;
+	height: 5.6rem;
+	margin-left: .55rem;
+	margin-right: .6rem; 
+}
+.listfan strong{
+	display: block;
+	height: 2.15rem;
+	margin-left: 1.6rem;
+	font: .55rem/2.15rem"宋体";
+}
+.listfan span{
+	display: inline-block;
+	padding-left: .5rem;
+	padding-right: .1rem;
+	font-size: .7rem;
+	line-height: 1rem;
+	height: 1.05rem;
+	width: 1.8rem;
+	background: url(img/ebg.png) no-repeat;
+	background-size: 2.3rem 1.05rem;
+}
+.pinpai li{
+	width: 13.5rem;
+	float: left; 
+	background: #fff;
+	position: relative;
+}
+.pinpai li img{
+	width: 6.75rem;
+	height: 7.975rem;
+}
+.pinpai li .pinpaileft{
+ width: 6.75rem; 
+ float: left;
+}
+.pinpaileft h2{
+	font: bold .9rem/1.25rem "宋体";
+	color: #2d2d2d;
+	padding-top: 1.375rem;
+	text-align: center;
+}
+.pinpaileft strong{
+	display: block;
+	font: .8rem/1.15rem "宋体";
+	color: #d89e36;
+	text-align: center;
+}
+.pinpaileft .pinpaia{
+	width: 3.9rem;
+	height: .95rem;
+	background: url(img/f4.png) no-repeat;
+	background-size: 3.9rem .95rem;
+	position: absolute;
+	left: 1.35rem;
+	top: 4.625rem;
+}
+.pinpaileft .pinpaib{
+	width: 2.4rem;
+	height: 2.25rem;
+	background: url(img/f5.png) no-repeat;
+	background-size: 2.4rem 2.25rem;
+	position: absolute;
+	left: 2.175rem;
+	top: 3.9rem;
+}
+.zixun li{
+	width: 9rem;
+	float: left;
+}
+.zixun li img{
+	width: 6.125rem;
+	height: 8.6rem;
+	margin: .2rem 1.475rem 1rem 1.4rem;
+}
+.zixun li h2{
+	font: bold .9rem/1.15rem "宋体";
+	color: #2d2d2d;
+	padding-top: .55rem;
+	text-align: center;
+}
+.zixun li strong{
+	display: block;
+	font: .85rem/1.1rem "宋体";
+	color: #2a9a86;
+	text-align: center;
+}
+.zixun .shuigan{
+	position: relative;
+}
+.zixun .shuigan img{
+	width: 100%;
+	height: 6.75rem;
+}
+.zixun .shuigan span{
+	width: 6.85rem;
+	height: 1.275rem;
+	background: #5ec8d9;
+	display: block;
+	color: #dfffff;
+	text-align: center;
+	font: .75rem/1.275rem"宋体";
+	position: absolute;
+	right: 4.625rem;
+	bottom: .775rem;
+}
+.hu{
+	background: #f0f0f0;
+	padding-top: 1.125rem;
+}
+.xin{
+	width: 12.15rem;
+	height: 1.125rem;
+	border-top: 3px solid #ffcc99;
+	margin-left: 7.425rem;
+	position: relative;
+}
+.xin span{
+	width: 1.1rem;
+	height: 1.1rem;
+	background: url(img/gif.gif) no-repeat -6rem 0;
+	background-size: 15rem 3.75rem;
+	position: absolute;
+	left: .75rem;
+	top: .625rem;
+}
+.guang{
+	width: 4.85rem;
+	height: 2.25rem;
+	background: #f0f0f0;
+	font: bold .95rem/2.325rem"宋体";
+	position: absolute;
+	top: -1.2rem;
+	color: #ff8000;
+	margin-left: 2.55rem;
+	padding-left: 2.2rem;
+}
+
+.xin3{
+	border-top: 3px solid #b4e1dc;
+}
+.xin .span3{
+	width: 1.125rem;
+	height: 1.125rem;
+	background: url(img/gif.gif) no-repeat -7.3rem 0;
+	background-size: 15rem 3.75rem;
+	position: absolute;
+	left: .75rem;
+	top: .6rem;	
+}
+.guang3{
+	background: #f0f0f0;
+	font: bold .95rem/2.325rem"宋体";
+	color: #1aa895;
+}
+.hu4{
+	padding-top: .9rem;
+}
+.xin4{
+	border-top: 3px solid #bbd79f;
+}
+.xin4 .span4{
+	width: 1.125rem;
+	height: 1.125rem;
+	background: url(img/gif.gif) no-repeat -8.65rem 0;
+	background-size: 15rem 3.75rem;
+	position: absolute;
+	left: .75rem;
+	top: .425rem;
+}
+.guang4{
+	height: 2.025rem;
+	background: #f0f0f0;
+	position: absolute;
+	top: -.975rem;
+	font: bold .95rem/2.1rem"宋体";
+	color: #43af00;
+}
+.xin5{
+	border-top: 3px solid #cab9d9;
+}
+.xin5 .span5{
+	width: 1.1rem;
+	height: 1.15rem;
+	background: url(img/gif.gif) no-repeat -10rem 0;
+	background-size: 15rem 3.75rem;
+	position: absolute;
+	left: .75rem;
+	top: .625rem;
+}
+.guang5{
+	background: #f0f0f0;
+	font: bold .95rem/2.325rem"宋体";
+	color: #892add;
+}
+
+.xin6{
+	width: 11.1rem;
+	border-top: 4px solid #e8bad5;
+	 margin-left: 7.95rem;
+}
+.xin6 .span6{
+	width: 1.1rem;
+	height: 1.05rem;
+	background: url(img/gif.gif) no-repeat -11.3rem 0;
+	background-size: 15rem 3.75rem;
+	position: absolute;
+	left: .75rem;
+	top: .625rem;
+}
+.guang6{
+	width: 3.8rem;
+	background: #f0f0f0;
+	font: bold .95rem/2.35rem"宋体";
+	color: #e24aa5;
+	padding-left: 2.2rem;
+}
+
+.xin7{
+	width: 11.1rem;
+	border-top: 3px solid #bedbec; 
+	margin-left: 7.95rem;
+}
+.xin7 .span7{
+	width: 1.125rem;
+	height: 1.125rem;
+	background: url(img/gif.gif) no-repeat -12.625rem 0;
+	background-size: 15rem 3.75rem;
+	position: absolute;
+	left: .75rem;
+	top: .625rem;
+}
+.guang7{
+	width: 3.8rem;
+	background: #f0f0f0;
+	font: bold .95rem/2.325rem"宋体";
+	color: #17b7ff;
+	padding-left: 2.2rem;
+}
+
+.xin8{
+	border-top: 3px solid #becfec; 
+}
+.xin8 .span8{
+	width: 1.125rem;
+	height: 1.125rem;
+	background: url(img/gif.gif) no-repeat -13.875rem 0;
+	background-size: 15rem 3.75rem;
+	position: absolute;
+	left: .75rem;
+	top: .625rem;
+}
+.guang8{
+	background: #f0f0f0;
+	font: bold .95rem/2.325rem"宋体";
+	color: #4a84e2;
+}
+
+.xin9{
+	border-top: 3px solid #c9d0f7; 
+}
+.xin9 .span9{
+	width: 1.1rem;
+	height: 1.125rem;
+	background: url(img/gif.gif) no-repeat -.65rem -1.5rem;
+	background-size: 15rem 3.75rem;
+	position: absolute;
+	left: .75rem;
+	top: .6rem;
+}
+.guang9{
+	background: #f0f0f0;
+	font: bold .95rem/2.325rem"宋体";
+	color: #5e4ae2;
+}
+
+.xin10{
+	border-top: 3px solid #051b28; 
+}
+.xin10 .span10{
+	width: 1.1rem;
+	height: 1.1rem;
+	background: url(img/gif.gif) no-repeat -1.875rem -1.5rem;
+	background-size: 15rem 3.75rem;
+	position: absolute;
+	left: .75rem;
+	top: .625rem;
+}
+.guang10{
+	background: #f0f0f0;
+	font: bold .95rem/2.325rem"宋体";
+	color: #444444;}
+
+.xin11{
+	border-top:3px solid #091e2b; 
+}
+.xin11 .span11{
+	width: 1.125rem;
+	height: 1.125rem;
+	background: url(img/gif.gif) no-repeat -3.175rem -1.5rem;
+	background-size: 15rem 3.75rem;
+	position: absolute;
+	left: .75rem;
+	top: .6rem;
+}
+.guang11{
+	background: #f0f0f0;
+	font: bold .95rem/2.325rem"宋体";
+	color: #2f2f2f;
+}
+
+.hu12{
+	padding-top: 1.425rem; 
+}
+.xin12{
+	width: 11.8rem;
+	height: 1.675rem;
+	border-top: 5px solid #999999;
+	margin-left: 7.6rem; 
+}
+.guang12{ 
+	width: 10.05rem;
+	font: bold 1rem/3.225rem"宋体";
+	position: absolute;
+	top: -1.55rem;
+	color: #999;
+	margin-left: .675rem;
+	padding-left: .4rem;}
+
+.shengleft{
+	float: left;
+	width: 13.5rem;
+}	
+.shengleft h2{
+	font: bold .85rem/1.1rem"宋体";
+	padding-top: .625rem;
+	color: #2e2e2e;
+	text-indent: 4.15rem; 
+}
+.shengleft strong{
+	font: .85rem/1.1rem"宋体";
+	color: #47a80d;
+	padding-left: 3.9rem;
+}
+.shengleft img{
+	width: 9.3rem;
+	height: 7.1rem;
+	padding-top: .425rem;
+	padding-left: 2rem;
+}
+.shengright .imgleft{
+	float: left;
+	padding-bottom: 2.675rem;
+}
+.shengright li h3{
+	font: .9rem/1.075rem"宋体";
+	padding-top: .625rem;
+	color: #2d2d2d;
+	text-indent: .375rem;
+}
+.shengright li strong{
+	display: block;
+	font: .8rem/.95rem"宋体";
+	color: #78bd48;
+	padding-left: .3rem;
+}
+.shengright li img{
+	float: right;
+	width: 6.2;
+	height: 5.325rem;}
+
+.guoji li{
+	width: 9rem;
+	float: left;
+}
+.guoji li h2{
+	font: bold .9rem/1.15rem"宋体";
+	color: #2d2d2d;
+	text-align: center;
+	padding-top: .575rem; 
+}
+.guoji li strong{
+	display: block;
+	font: .8rem/1.05rem Arial "宋体";
+	color: #855eb5;
+	text-align: center;
+}
+.guoji li img{
+	width: 9rem;
+	height: 7.5rem;
+	padding-top: .425rem;
+	float: left;
+}
+.guoji li .stronga{
+	color: #dc539e;
+}
+.guoji li .strongb{
+	color: #5482cc;
+}
+.guoji .imgda{
+	width: 100%;
+	height: 6.75rem;
+}
+
+.aisheng li{
+	width: 6.75rem;
+	float: left;
+}
+.aisheng li h2{
+	font: bold .9rem/1.15rem"宋体";
+	color: #313131;
+	text-align: center;
+	padding-top: .525rem;
+}
+.aisheng li strong{
+	display: block;
+	font: bold .8rem/1.05rem"宋体";
+	color: #15b3fb;
+	text-align: center;
+}
+.aisheng li img{
+	width: 6.75rem;
+	height: 6.175rem;
+	padding-top: .425rem;
+}
+.remen li{
+	float: left;
+	width: 13.5rem;
+}
+.remenleft{
+	width: 6rem;
+	float: left;
+}
+.remenleft h2{
+	font: bold .9rem/1.45rem"宋体";
+	color: #313131;
+	text-align: center;
+	padding-top: .25rem;
+}
+.remenleft strong{
+	display: block;
+	font: bold .8rem/1.35rem"宋体";
+	color: #9d9d9d;
+	text-align: center;
+}
+.remen .remenleft img{
+	float: left;
+	width: 2.7rem;
+	height: 2.7rem;
+	padding: .4rem 0 .45rem 1.65rem;
+	border-radius: 1.35rem;
+}
+.remenright{
+	float: right;
+	width: 7.5rem;
+	height: 6.6rem;
+}
+.remenlist{}
+.remenlist li{
+	width: 6.75rem;
+	float: left;
+}
+.remenlist li h2{
+	font: bold .9rem/1.45rem"宋体";
+	color: #313131;
+	text-align: center;
+	padding-top: .25rem;
+}
+.remenlist li strong{
+	display: block;
+	font: bold .8rem/1.35rem"宋体";
+	color: #9d9d9d;
+	text-align: center;
+}
+.remenlist li img{
+	width: 6.75rem;
+	height: 6.575rem;
+}
+
+.qijian ul{
+	background: #f0f0f0;
+}
+.qijian li{
+	float: left; 
+	width: 12.975rem;
+	margin-left: .225rem;
+	margin-bottom: .225rem;
+	padding: .15rem;
+}
+.qijian li .qijiantopa{
+	float: left;
+	width: 8.625rem;
+	height: 8.625rem;
+}
+.qijian li .qijiantopb{
+	float: left;
+	width: 4.275rem;
+	margin-left: .075rem;
+}
+.qijian li .qijiantopb img{
+	width: 4.275rem;
+	height: 4.275rem;
+	margin-bottom: .075rem;
+}
+.qijian li .qijianrighta{
+	width: 2.1rem;
+	height: 2.1rem;
+	float: left;
+	margin-top: .225rem; 
+}
+.qijian li .qijianrightb{
+	float:left;
+}
+.qijian li .qijianrightb strong{
+	display: block;
+	font: bold .8rem/1.3rem Arial,"宋体";
+	color: #2f2f2f;
+	padding-left: 0.275rem;
+}
+.qijian li .qijianrightb span{
+	display: block;
+	font: bold .8rem/.95rem"宋体";
+	color: #9b9b9b;
+	padding-left: .25rem; 
+}
+.gengxin-box{
+	overflow: hidden;
+}
+.gengxin{
+	background: #f0f0f0;
+	margin-right: -.2rem;
+}
+.gengxin li{
+	float: left;
+	width: 13.4rem;
+	margin: 0 .2rem .2rem 0;
+}
+.gengxin li .last{
+	margin: .4rem 1.05rem .475rem .65rem;
+}
+.gengxin li img{
+	width: 13.4rem;
+	height: 13.4rem;
+}
+.gengxin li strong{
+	display: block;
+	font: bold .95rem/1.2rem Arial,"宋体"
+	;color: #2f2f2f;
+}
+.gengxin li .lastsp{
+	display: block;
+	font: bold .85rem/1.85rem Arial,"宋体"
+	;color: #dd2727;
+}
+.gengxin li em{
+	font-size: .65rem
+	;font-style: normal;
+}
+.lastspan{
+	display: block;
+	width: 27rem;
+	height: 3.05rem;
+	background: url(img/q.png) #f0f0f0 no-repeat 12.4rem .775rem;
+	background-size: 2.25rem 1.575rem;
+}
+#imgtop{ 
+    height: 12.975rem; 
+    position: relative;
+    overflow: hidden;  
+}
+#imgtop ul{
+	width: 135rem;
+    height: 12.975rem;
+    position: absolute;
+    padding: 0;
+    left: 0;
+    top: 0;
+    
+}
+#imgtop ul li{
+	width: 27rem;
+    float: left;
+}
+
+#imgtop #hihe{
+    width: 5rem;
+    height: 1rem;
+    line-height: 1rem;
+    position: absolute;
+    bottom: .5rem;
+    left: 11rem;
+}
+#imgtop #hihe .active{
+    background:red;
+}
+#imgtop #hihe span{
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    margin-left: 0.1rem;
+    display: inline-block;
+    background: #333;
+}
+</style>
+</head>
+<body>
+<script type="text/javascript" charset="utf-8">
+window.onload = function (){
+	var imgtop = document.getElementById("imgtop");
+	var hihe = document.getElementById("hihe");
+	var spans = hihe.getElementsByTagName("span");
+	var list = imgtop.getElementsByTagName("ul")[0];
+	var lis = list.getElementsByTagName("li");
+	var liW = css(lis[0], "width");
+	var now = 0;
+	var timer = 0;
+
+	for(var i = 0; i < spans.length; i++){
+		spans[i].index = i;	
+		spans[i].onmouseover = function (){
+			clearInterval(timer);
+			now = this.index;
+			for(var i = 0; i < spans.length; i++) {
+				spans[i].className = "";
+				
+			};
+
+			spans[this.index].className = "active";			
+			startMove(list,"left",400,-this.index*liW,"easeOut");
+			
+			this.onmouseout = function (){
+				timer = setInterval(function(){
+					huauto();
+				},2000)
+			}
+			
+		};
+
+		clearInterval(timer);
+		timer = setInterval(function(){
+			huauto();
+		},2000);
+
+		function huauto(){
+			
+			if(now>=spans.length){
+				now =0;
+				list.style.left = 0;
+			}
+				now++;
+			for(var i = 0; i < spans.length; i++) {
+				spans[i].className = "";
+			}
+			spans[now%spans.length].className = "active";
+			startMove(list,"left",400,-(now)*liW,"easeOut");
+		}
+	}
+};
+</script>
+<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/startMove.js"></script>
+<header class="header">
+    <input type="text"  class="inputtext"value="收索商品/店铺" />
+    <a href="#" class="text">登入</a>
+    <a href="#" class="headci"></a>
+    <a href="#" class="headco"></a>
+</header>
+<section>
+	<div id="imgtop">
+	    <ul>
+	    	<li>
+	        	<a href="#"><img src="img/web5.png" /></a>
+	        </li>
+	        <li>
+	        	<a href="#"><img src="img/web2.png" /></a>
+	        </li>
+	        <li>
+	        	<a href="#"><img src="img/web3.png" /></a>
+	        </li>
+	        <li>
+	        	<a href="#"><img src="img/web4.png" /></a>
+	        </li>
+	        <li>
+	        	<a href="#"><img src="img/web5.png" /></a>
+	        </li>
+	    </ul>
+		<div id="hihe">
+			<span class="active"></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>				
+	</div>
+    <ul class="list clear">
+    	<li>
+            <img src="img/b1.png" />
+            <strong>积分刮券</strong>
+        </li>
+        <li>
+            <img src="img/b2.png" />
+            <strong>充值</strong>
+        </li>
+        <li>
+            <img src="img/b3.png" />
+            <strong>天猫国际</strong>
+        </li>
+        <li>
+            <img src="img/b4.png" />
+            <strong>聚划算</strong>
+        </li>
+        <li>
+            <img src="img/b5.png" />
+            <strong>领钱了</strong>
+        </li>
+        <li>
+            <img src="img/b6.png" />
+            <strong>免费试用</strong>
+        </li>
+        <li>
+            <img src="img/b7.png" />
+            <strong>天猫影院</strong>
+        </li>
+        <li>
+            <img src="img/b8.png" />
+            <strong>手机爆潮</strong>
+        </li>
+        <li>
+            <img src="img/b9.png" />
+            <strong>粉丝趴</strong>
+        </li>
+        <li>
+            <img src="img/b10.png" />
+            <strong>分类</strong>
+        </li>
+    </ul>
+    <div class="redian clear">
+    	<img src="img/c.png" />
+        <div class="right">
+            <span class="laba"></span>
+            <div class="str">
+                <strong>百丽骆驼KISSCAT奥康春鞋199元起</strong>
+                <strong class="stronga">199元起+限量送券</strong>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <ul class="listtwo clear">
+        <li class="listtwolia">
+        	<a href="#" >
+	        	<img class="imga"src="img/d1.png" />
+	        	<div class="left">
+	                <div class="jin">今日</div>
+	                <strong>今日开幕</strong>
+	                <strong class="strongb">来抢1元秒杀</strong>
+	                <p class="leftlast ">天猫开学季</p>
+	            </div>
+            </a>
+        </li>
+        <li class="listtwolib">
+        	<a href="#" >
+	        	<img class="imgb"src="img/d2.png" />
+	        	<div class="left">
+	                <div class="jin">今日</div>
+	                <strong>0首付0利息</strong>
+	                <strong class="strongb">12期免息嗨翻天</strong>
+	                <p class="leftlast leftlasta">天猫开学季</p>
+	            </div>
+            </a>
+        </li>
+    </ul>
+    <div class="biqiang">
+    	<div class="bi"><span class="bia"></span>必抢<span class="bib"></span></div>
+    	<ul class="listfan clear">
+    		<li> 
+				<h2>翻倍减</h2>
+				<img src="img/e2.png" />
+				<strong>&yen;34<span>1.8折</span></strong>
+    		</li>
+    		<li> 
+				<h2>巨超值</h2>
+				<img src="img/e3.png" />
+				<strong>&yen;67<span>2.0折</span></strong>
+    		</li>
+    		<li> 
+				<h2>女神范</h2>
+				<img src="img/e4.png" />
+				<strong>&yen;35<span>3.0折</span></strong>
+    		</li>
+    		<li> 
+				<h2>型男咖</h2>
+				<img src="img/e5.png" />
+				<strong>&yen;39<span>2.4折</span></strong>
+    		</li>
+    	</ul>
+    </div>
+    <div class="pinpai">
+    	<div class="hu">
+			<div class="xin">
+				<div class="guang"><span></span>品牌特卖</div>	
+			</div>
+		<ul class="clear">
+			<li>
+				<a href="">
+					<img src="img/f2.png" alt="" />
+					<div class="pinpaileft">
+						<h2>品牌特卖</h2>
+						<strong>3折起+满减</strong>	
+						<span class="pinpaia"></span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/f3.png" alt="" />
+					<div class="pinpaileft">
+						<h2>店庆</h2>
+						<strong>美国晋阶3周年</strong>	
+						<span class="pinpaib"></span>
+					</div>
+				</a>
+			</li>
+		</ul>
+    </div>
+	<div class="zixun">
+		<div class="hu hu3">
+			<div class="xin xin3">
+				<div class="guang guang3"><span class="span3"></span>品牌资讯</div>	
+			</div>
+		</div>
+		<ul class="clear">
+			<li>
+				<a href="">
+					<h2>品牌街</h2>
+					<strong>春夏时髦上新</strong>
+					<img src="img/g2.png" alt="" />	
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>大牌入驻</h2>
+					<strong>关注送好礼</strong>
+					<img src="img/g3.png" alt="" />	
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>什么牌子好</h2>
+					<strong>日本本土最佳</strong>
+					<img src="img/g4.png" alt="" />	
+				</a>
+			</li>
+		</ul>
+		<div class="shuigan">
+			<img src="img/gt.png" alt="" />
+			<span>0.01元赢免费新品></span>
+		</div>
+	</div>
+	<div class="shenghuo">
+		<div class="hu hu4">
+			<div class="xin xin4">
+				<div class="guang guang4"><span class="span4"></span>便捷生活</div>	
+			</div>
+		</div>
+		<div class="clear">
+			<div class="shengleft">
+				<h2>天猫超市</h2>
+				<strong>开年买2付1</strong>
+				<img src="img/h2.png" alt="" />
+			</div>
+			<ul class="shengright clear">
+				<li>
+					<a href="">
+						<div class="imgleft">
+							<h3>今日疯抢</h3>
+							<strong>爆款1元起</strong>
+						</div>
+						<img src="img/h3.png" alt="" />	
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="imgleft">
+							<h3>每日鲜</h3>
+							<strong>买二付一</strong>
+						</div>
+						<img src="img/h4.png" alt="" />	
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="guoji">
+		<div class="hu hu5">
+			<div class="xin xin5">
+				<div class="guang guang5"><span class="span5"></span>国际海购</div>	
+			</div>
+		</div>
+		<ul class="clear">
+			<li>
+				<a href="">
+					<h2>订购全球</h2>
+					<strong>官网春装上新</strong>
+					<img src="img/i1.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>西诱</h2>
+					<strong>桃色UGG</strong>
+					<img src="img/i2.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>魅力惠</h2>
+					<strong>奢品官方授权</strong>
+					<img src="img/i3.png" alt="" />
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="guoji">
+		<div class="hu hu6">
+			<div class="xin xin6">
+				<div class="guang guang6"><span class="span6"></span>时尚范</div>	
+			</div>
+		</div>
+		<ul class="clear">
+			<li>
+				<a href="">
+					<h2>换新</h2>
+					<strong class="stronga">品牌精选新品</strong>
+					<img src="img/j1.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>物色</h2>
+					<strong class="stronga">时髦不撞衫</strong>
+					<img src="img/j2.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>全球快时尚</h2>
+					<strong class="stronga">平价买大牌</strong>
+					<img src="img/j3.png" alt="" />
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="aisheng clear">
+		<div class="hu hu7">
+			<div class="xin xin7">
+				<div class="guang guang7"><span class="span7"></span>爱生活</div>	
+			</div>
+		</div>
+		<ul class="clear">
+			<li>
+				<a href="">
+					<h2>生活家</h2>
+					<strong>好生活并不贵</strong>
+					<img src="img/k1.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>囤啦</h2>
+					<strong>咔哇熊纯脂奶</strong>
+					<img src="img/k2.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>喵鲜生</h2>
+					<strong>进口品质生鲜</strong>
+					<img src="img/k3.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>狂享家</h2>
+					<strong>打造我的家</strong>
+					<img src="img/k4.png" alt="" />
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="guoji">
+		<div class="hu hu8">
+			<div class="xin xin8">
+				<div class="guang guang8"><span class="span8"></span>潮流酷玩</div>	
+			</div>
+		</div>
+		<ul class="clear">
+			<li>
+				<a href="">
+					<h2>苏宁易购</h2>
+					<strong class="strongb">联想拯救者</strong>
+					<img src="img/l1.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>天天搞机</h2>
+					<strong class="strongb">小米5预约买</strong>
+					<img src="img/l2.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>智娱智乐</h2>
+					<strong class="strongb">智能VR眼镜</strong>
+					<img src="img/l3.png" alt="" />
+				</a>
+			</li>
+		</ul>
+		<img class="imgda" src="img/l4.png" alt="" />
+	</div>
+	<div class="remen">
+		<div class="hu hu9">
+			<div class="xin xin9">
+				<div class="guang guang9"><span class="span9"></span>热门行业</div>	
+			</div>
+		</div>
+		<ul class="clear">
+			<li class="clear">
+				<a href="">
+					<div class="remenleft">
+						<h2>电器城</h2>
+						<strong>正品省心快</strong>
+						<img src="img/m1.png" alt="" />
+					</div>
+					<img class="remenright" src="img/m3.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div class="remenleft">
+						<h2>天猫女装</h2>
+						<strong>春上新5折起</strong>
+						<img src="img/m2.png" alt="" />
+					</div>
+					<img class="remenright" src="img/m4.png" alt="" />
+				</a>
+			</li>
+		</ul>
+		<ul class="remenlist clear">
+			<li>
+				<a href="">
+					<h2>天猫家装</h2>
+					<strong>开年装新家</strong>
+					<img src="img/m5.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>母婴玩具</h2>
+					<strong>春季换新</strong>
+					<img src="img/m6.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>没装</h2>
+					<strong>新品首发</strong>
+					<img src="img/m7.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>运动户外</h2>
+					<strong>全明星系列</strong>
+					<img src="img/m8.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>全球家居</h2>
+					<strong>每日特卖</strong>
+					<img src="img/m9.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>家电馆</h2>
+					<strong>减100</strong>
+					<img src="img/m10.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>美食美酒</h2>
+					<strong>春游享美味</strong>
+					<img src="img/m11.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>更多</h2>
+					<strong>躺平等你来！</strong>
+					<img src="img/m12.png" alt="" />
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="qijian">
+		<div class="hu hu10">
+			<div class="xin xin10">
+				<div class="guang guang10"><span class="span10"></span>品牌旗舰</div>	
+			</div>
+		</div>
+		<ul class="clear">
+			<li>
+			<a href="">
+				<img class="qijiantopa" src="img/n1.png" alt="" />
+				<div class="qijiantopb">
+					<img src="img/n2.png" alt="" />
+					<img src="img/n3.png" alt="" />
+				</div>
+				<img class="qijianrighta" src="img/n4.png" alt="" />
+				<div class="qijianrightb">
+					<strong>爱悦姿旗舰店</strong>
+					<span>4.3万粉丝</span>
+				</div>
+			</a>
+			</li>
+			<li>
+			<a href="">
+				<img class="qijiantopa" src="img/n5.png" alt="" />
+				<div class="qijiantopb">
+					<img src="img/n6.png" alt="" />
+					<img src="img/n7.png" alt="" />
+				</div>
+				<img class="qijianrighta" src="img/n8.png" alt="" />
+				<div class="qijianrightb">
+					<strong>微晴旗舰店</strong>
+					<span>16.5万粉丝</span>
+				</div>
+			</a>
+			</li>
+			<li>
+			<a href="">
+				<img class="qijiantopa" src="img/n9.png" alt="" />
+				<div class="qijiantopb">
+					<img src="img/n10.png" alt="" />
+					<img src="img/n11.png" alt="" />
+				</div>
+				<img class="qijianrighta" src="img/n12.png" alt="" />
+				<div class="qijianrightb">
+					<strong>罗兰妮旗舰店</strong>
+					<span>19.5万粉丝</span>
+				</div>
+			</a>
+			</li>
+			<li>
+			<a href="">
+				<img class="qijiantopa" src="img/n13.png" alt="" />
+				<div class="qijiantopb">
+					<img src="img/n14.png" alt="" />
+					<img src="img/n15.png" alt="" />
+				</div>
+				<img class="qijianrighta" src="img/n16.png" alt="" />
+				<div class="qijianrightb">
+					<strong>BYWOKY舰店</strong>
+					<span>4.7万粉丝</span>
+				</div>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div class="shichang">
+		<div class="hu hu11">
+			<div class="xin xin11">
+				<div class="guang guang11"><span class="span11"></span>主题市场</div>	
+			</div>
+		</div>	
+		<ul class="remenlist clear">
+			<li>
+				<a href="">
+					<h2>布置小家</h2>
+					<strong>格调摆件低价</strong>
+					<img src="img/o1.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>疯狂吃货</h2>
+					<strong>零食9元起</strong>
+					<img src="img/o2.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>妈咪萌宝</h2>
+					<strong>为宝贝超计划</strong>
+					<img src="img/o3.png" alt="" />
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>有车一族</h2>
+					<strong>爱车装备优惠</strong>
+					<img src="img/o4.png" alt="" />
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<div class="hu hu12">
+			<div class="xin xin12">
+				<div class="guang guang12">猜你喜欢(08:00更新)</div>	
+			</div>
+		</div>
+		<div class="gengxin-box">
+			<ul class="gengxin clear">
+				<li>
+					<a href="">
+						<img src="img/p1.png" alt="" />
+						<div class="last">
+							<strong>[热销]蓝舞真皮女包2016春款小包包迷你包手机包</strong>
+							<span class="lastsp">&yen;98.<em>0</em></span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/p2.png" alt="" />
+						<div class="last">
+							<strong>[热销]泳衣女三件套&nbsp;比基尼&nbsp;小胸聚拢温泉韩国性感</strong>
+							<span class="lastsp">&yen;128.<em>0</em></span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/p3.png" alt="" />
+						<div class="last">
+							<strong>[热销]罗汉松盆景树桩花卉黄杨盆栽庭院绿植清香木</strong>
+							<span class="lastsp">&yen;12.<em>6</em></span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/p4.png" alt="" />
+						<div class="last">
+							<strong>[热销]泳衣女三件套&nbsp;比基尼&nbsp;小胸聚拢温泉韩国性感</strong>
+							<span class="lastsp">&yen;128.<em>0</em></span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/p5.png" alt="" />
+						<div class="last">
+							<strong>[热销]祥汉&nbsp;智能暴风魔镜3代头盔式虚拟现实手机影</strong>
+							<span class="lastsp">&yen;166.<em>0</em></span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/p6.png" alt="" />
+						<div class="last">
+							<strong>[热销]2015早秋高端气质连衣裙纯色V领小清新蓬</strong>
+							<span class="lastsp">&yen;98.<em>0</em></span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/p1.png" alt="" />
+						<div class="last">
+							<strong>[热销]蓝舞真皮女包2016春款小包包迷你包手机包</strong>
+							<span class="lastsp">&yen;98.<em>0</em></span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/p2.png" alt="" />
+						<div class="last">
+							<strong>[热销]泳衣女三件套&nbsp;比基尼&nbsp;小胸聚拢温泉韩国性感</strong>
+							<span class="lastsp">&yen;128.<em>0</em></span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/p3.png" alt="" />
+						<div class="last">
+							<strong>[热销]罗汉松盆景树桩花卉黄杨盆栽庭院绿植清香木</strong>
+							<span class="lastsp">&yen;12.<em>6</em></span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/p4.png" alt="" />
+						<div class="last">
+							<strong>[热销]泳衣女三件套&nbsp;比基尼&nbsp;小胸聚拢温泉韩国性感</strong>
+							<span class="lastsp">&yen;128.<em>0</em></span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/p5.png" alt="" />
+						<div class="last">
+							<strong>[热销]祥汉&nbsp;智能暴风魔镜3代头盔式虚拟现实手机影</strong>
+							<span class="lastsp">&yen;166.<em>0</em></span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/p6.png" alt="" />
+						<div class="last">
+							<strong>[热销]2015早秋高端气质连衣裙纯色V领小清新蓬</strong>
+							<span class="lastsp">&yen;98.<em>0</em></span>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<span class="lastspan"></span>
+		</div>
+	</div>
+
+</section>
+</body>
+</html>
