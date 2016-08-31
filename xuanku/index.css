@@ -273,13 +273,13 @@ img{border: none;
 /*内容一开始*/
 
 .conleft{float: left;
-	width: 674px;
+	width: 50%;
 	height: 800px;
     position: relative;
     z-index: 2;
 }
 .conleft-box{height:0;
-    width:  674px;
+    width: 100%;
     position: absolute;
     left: 0;
     top: 0;
@@ -438,7 +438,9 @@ img{border: none;
     width: 810px;
     margin: 0 auto;
     height: 322px;
-    left: 270px;
+    /*left: 270px;*/
+    left:50%;
+    margin-left: -405px;
     bottom: 80px;
     opacity: 0;
     transition: 0.5s ease-out;
@@ -897,7 +899,9 @@ img{border: none;
     width: 332px;
     height: 380px;
     position: absolute;
-    left: 450px;
+    /*left: 450px;*/
+    left:50%;
+    margin-left: -196px;
     top: -440px;
     /*transform: translateY(-100%);*/
     transition: 1s;
