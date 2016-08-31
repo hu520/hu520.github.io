@@ -39,11 +39,12 @@ img{border: none;
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    line-height: 27px;
     padding-right: 4px;
 }
 .ione{
     padding-right: 5px;
+    line-height: 30px;
+    padding-top: 10px;
 }
 .head{
     width:1226px;
@@ -90,9 +91,8 @@ header{
     color:#fff;
 }
 #hright #curr{
-    margin-left: 12px;
-    padding-left: 26px;
-    padding-right: 20px;
+    margin-left: 12px;   
+    padding: 0 13px;
     line-height: 40px;
     position: relative;
     display: inline-block;
