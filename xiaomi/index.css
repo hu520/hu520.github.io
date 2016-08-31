@@ -1032,7 +1032,7 @@ header{
     position: absolute;
     width:20px;
     height:50px;
-    background: rgba(66,66,66,0.2);
+    background: #ccc;
     top:100px;
     z-in dex: 2;
     text-align: center;
@@ -1043,7 +1043,7 @@ header{
 }
 .bookbtn:hover{
     color: #fff;
-    background: rgba(66,66,66,0.6);
+    background: #aaa;
 }
 .bookleft{
     left: 2px;
