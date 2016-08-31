@@ -1,0 +1,387 @@
+html.fssopen,html.fssopen body {
+width:100%;
+height:100%;
+top:0;
+left:0;
+margin:0;
+}
+
+body,div,p,h1,h2,h3,h4 {
+font-family:"Microsoft YaHei",Microsoft JhengHei, Helvetica, STHeiti STXihei, Arial;
+font-weight:400;
+margin:0;
+padding:0;
+}
+
+p {
+line-height:30px;
+}
+
+h1,h2 {
+line-height:40px;
+}
+
+ul {
+list-style:none;
+}
+
+section.dd_fullscreenslider {
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+z-index:2000;
+font-size:1em;
+visibility:visible;
+overflow:hidden;
+}
+
+div.slidewrapper {
+width:100%;
+height:100%;
+position:absolute;
+top:0;
+left:0;
+-webkit-transform:translate3d(0,0,0);
+-moz-transition:0 .5s;
+-webkit-transition:0 .5s;
+transition:transform .5s;
+}
+
+ul.fssnav {
+list-style:none;
+position:fixed;
+top:50%;
+right:20px;
+transform:translateY(-50%);
+margin:0;
+padding:0;
+}
+
+ul.fssnav li {
+margin-bottom:15px;
+}
+
+ul.fssnav li a {
+text-decoration:none;
+border:5px solid #FFF;
+border-radius:50%;
+width:10px;
+height:10px;
+display:block;
+position:relative;
+text-indent:-500px;
+outline:none;
+overflow:hidden;
+}
+
+ul.fssnav li a::after {
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+top:100%;
+left:0;
+background:#FFF;
+transition:top .5s;
+}
+
+ul.fssnav li.selected a::after {
+top:0;
+}
+
+section.dd_fullscreenslider article.slide {
+width:100%;
+height:100%;
+display:block;
+font-family:Lato, sans-serif;
+line-height:2em;
+color:#FFF;
+overflow:hidden;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+z-index:1000;
+background:#ff7a8a;
+-webkit-transform:translate3d(0,0,0);
+}
+
+section.dd_fullscreenslider article.slide h2 {
+font-size:2em;
+line-height:1.1em;
+letter-spacing:3px;
+margin:0;
+}
+
+section.dd_fullscreenslider article.slide .scrollable {
+overflow:auto;
+}
+
+section.dd_fullscreenslider article.slide a {
+color:#FFF;
+text-decoration:none;
+}
+
+section.dd_fullscreenslider article.slide:nth-of-type(2) {
+background:#336699;
+}
+
+section.dd_fullscreenslider article.slide:nth-of-type(3) {
+background:#5f666e;
+}
+
+section.dd_fullscreenslider article.slide:nth-of-type(4) {
+background:green;
+}
+
+section.dd_fullscreenslider article.slide:nth-of-type(5) {
+background:#993366;
+}
+section.dd_fullscreenslider article.slide:nth-of-type(6) {
+background:#ea6153;
+}
+section.dd_fullscreenslider article.slide:nth-of-type(7) {
+background:#46c8af;
+}
+section.dd_fullscreenslider div.closex {
+width:50px;
+height:50px;
+overflow:hidden;
+display:block;
+position:fixed;
+cursor:pointer;
+text-indent:-1000px;
+opacity:0.8;
+z-index:1001;
+top:5px;
+right:3px;
+}
+
+section.dd_fullscreenslider div.closex::before,section.dd_fullscreenslider div.closex::after {
+content:"";
+display:block;
+position:absolute;
+width:100%;
+height:6px;
+background:#FFF;
+top:50%;
+margin-top:-3px;
+-ms-transform:rotate(-45deg);
+-webkit-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+
+section.dd_fullscreenslider div.closex::after {
+-ms-transform:rotate(-135deg);
+-webkit-transform:rotate(-135deg);
+transform:rotate(-135deg);
+}
+.slide{
+  position: relative;
+}
+/*第一屏*/
+.about{
+    width:50%;
+    height:55%;
+    position: absolute;
+    top:30%;
+    left: 30%;
+    color: #fff;
+    display: none;
+}
+.about .about-one{
+    width:120px;
+    height:120px;
+    border: 2px solid #fff;
+    border-radius: 60px;
+    overflow: hidden;
+    margin-top: 10%;
+    float: left;
+}
+.about .about-two{
+    float: left;
+    margin-left: 10%;
+}
+/*第二屏*/
+.skill{
+    display: none;
+}
+.skill h2{
+    text-align: center;
+    padding-top: 5%;
+}
+.skill .skill-from{
+    padding-top: 50px;
+}
+
+.skill-from li{
+    height: 40px;
+    line-height: 40px;
+    width:100%;
+    margin-top: 25px;
+    padding-left: 10px;
+    position: relative;
+}
+#list1,#list2{
+    width:10px;
+    background: #eaf6d0;
+    border-left: 3px solid #3498db; 
+    color:#3498db;
+}
+#list3,#list4{
+    width: 160px;
+    border-left: 3px solid #9ed728;
+    background-color: #eaf6d0;
+    color: #9ed728;
+}
+#list5{   
+    width: 100px;
+    border-left: 3px solid #ffbb06;
+    background-color: #fff6dd;
+    color: #ffbb06;
+}
+
+.skill-from li .lista{
+    display: none;
+    position: absolute;
+    left:200px;
+    top:0;
+    background: #fff;
+    position: absolute;
+    z-index: 2;
+    margin-right: -200px;
+    border-radius: 10px;
+}
+.skill-from .lista li{
+    height: 25px;
+    line-height: 25px;
+    margin-top: 0;
+    padding-left: 10px;
+    list-style: disc;
+    color: #000;
+}
+.skill-from li:hover .lista{
+    display: block;
+    cursor: pointer;
+}
+/*第三屏*/
+.work-header{
+    text-align: center;
+    padding-top: 20px;
+    display: none;
+}
+.work{
+    width:100%;
+    height:75%;
+    border-left: 3px solid #757575;
+    position: absolute;
+    top:16%;
+    left:5%;
+    bottom: 30px; 
+    display: none; 
+}
+.work h4{
+    padding-left: 30px;
+    background: url(../img/di.png)no-repeat 0 8px;
+    margin-left: -11px;
+}
+.work .work-one{
+    padding-left: 150px;
+
+}
+.work .work-one strong{
+    padding-left: 20px;
+}
+.work .work-one ul{
+    list-style: disc;
+}
+/*第四屏*/
+.Education{
+    display: none;
+}
+.Education h2{
+    text-align: center;
+    padding-top: 20px;
+}
+#dream{
+    width: 70%;
+    height: 90%;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+.Education .title{
+    padding-top: 6%;
+}
+#dream .dream-top{
+    padding-top: 5%;
+    height: 50%;
+    width: 100%;
+}
+#dream .dream-one{
+    
+}
+#dream .dream-two{
+  
+    display: none;
+}
+
+.dream-tab{
+    text-align: center;
+    width: 35%;
+    height: 50px;
+    margin: 0 auto;
+}
+.dream-tab li{
+    float: left;
+    width: 49%;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #fff;
+    margin-left: -1px;
+}
+#dream-bar1{
+    border-radius: 25px 0 0 25px;
+    background: #fff;
+    color:green;
+}
+#dream-bar2{
+    border-radius: 0 25px 25px 0;
+}
+
+/*第五屏*/
+.thank{
+    display: none;
+}
+.head{
+    text-align: center;
+    padding-top: 80px;
+}
+.nav{
+    width:1000px;
+    margin:0 auto;
+    height:30%;
+    margin-top: 8%;
+    left: 15%;
+}
+.nav a{
+    float: left;
+    padding: 0 35px;
+}
+.nav a .navImg{
+    height:120px;
+    width:120px;
+    border-radius: 60px;
+    overflow: hidden;
+}
+.nav a p{
+    text-align: center;
+    padding-top: 10px;
+}
+/*第六屏*/
+.last{padding-top: 15%;}
+.last p{
+    line-height: 80px;
+    font-size: 20px;
+    text-align: center;
+}
