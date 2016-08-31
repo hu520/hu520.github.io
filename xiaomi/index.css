@@ -39,7 +39,7 @@ img{border: none;
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    line-height: 25px;
+    line-height: 27px;
     padding-right: 4px;
 }
 .ione{
@@ -93,7 +93,7 @@ header{
     margin-left: 12px;
     padding-left: 26px;
     padding-right: 20px;
-    line-height: 37px;
+    line-height: 40px;
     position: relative;
     display: inline-block;
     background: #424242 ;
@@ -1147,6 +1147,7 @@ header{
     width:1226px;
     margin:0 auto; 
     height: 25px;
+    line-height: 25px;
     padding:27px 0;
     font-weight: 400;
     border-bottom: 1px solid #e0e0e0;
@@ -1155,6 +1156,7 @@ header{
     color: #616161;
     font-size: 16px ;
     line-height: 25px;
+    height:25px;
     display: inline-block;
     width: 212px;
     position: relative;
