@@ -135,7 +135,6 @@ window.onload = function (){
 		$('#ul').stop().animate({
 			left:-iwa+14
 		},10);
-		console.log(iw)
 	});
 
 	$('#Left').click(function(){
