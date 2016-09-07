@@ -31,7 +31,6 @@
 				 down = ev.detail < 0 ? true : false;
 			}
 			
-			//同鞋写的
 //			if(down){
 //				typeof fnDown === 'function' && fnDown();
 //			}else{
