@@ -58,6 +58,17 @@ window.onload = function (){
 		li[now].style.zIndex = zIndex;
 	}
 
+	$('#curr').hover(function(){
+		$(this).find('p').stop().animate({
+			height:'100px',
+    		display: 'block',
+    		opacity: 1},400)
+	},function(){
+		$(this).find('p').stop().animate({
+			height:'0',
+    		display: 'none',
+    		opacity: 0},300)
+	})
 	 // 收索栏效果
 	 // var tx = $('input')[0];
 	 $('.text').focus(function(){
@@ -103,24 +114,27 @@ window.onload = function (){
 		$(".navs").find('a').mouseover(function(){
 			$(this).find('a').show().siblings().hide();								
 			$('#navlist').find('ul').eq($(this).index()).show().siblings().hide();
-			 $('#navlist').css({height: 230,"border-top":"1px solid #e0e0e0"});			
+			$('#navlist').css({borderTop:'1px solid #e0e0e0'});
+			$('#navlist').stop().animate({height: 230},200);			
 		});
 		
 		$(".navs").find('a').eq(7).mouseover(function(){
-			$('#navlist').css({height: 0});
+			$('#navlist').stop().animate({height: 0});
 		})
 		$(".navs").find('a').eq(8).mouseover(function(){
-			$('#navlist').css({height: 0});
+			$('#navlist').stop().animate({height: 0});
 		})
 
 		$(".low1").mouseout(function(){
-			$('#navlist').css({height: 0,"border-top":"0px solid #e0e0e0"})
-			$('#navlist').find('ul').hide();
+			$('#navlist').stop().animate({height: 0},200);
+			$('#navlist').css({borderTop:"0px solid #e0e0e0"})
+			// $('#navlist').find('ul').hide();
 		});
 
 		$("#navlist").find('ul').mouseover(function(){
-			$('#navlist').find('ul').eq($(this).index()).show();
-			$('#navlist').css({height: 230,"border-top":"1px solid #e0e0e0"});
+			// $('#navlist').find('ul').eq($(this).index()).show();
+			$('#navlist').css({borderTop:"1px solid #e0e0e0"});
+			$('#navlist').stop().animate({height: 230},200);
 		});
 		
 		// 移动整块轮播图片
@@ -134,14 +148,14 @@ window.onload = function (){
 		$(this).removeClass('Bactive').siblings('a').addClass('Bactive');
 		$('#ul').stop().animate({
 			left:-iwa+14
-		},10);
+		},500);
 	});
 
 	$('#Left').click(function(){
 		$(this).removeClass('Bactive').siblings('a').addClass('Bactive');	
 		$('#ul').stop().animate({
 			left:0
-		},10);
+		},500);
 	});
 		
 		var h2s = document.getElementsByTagName('h2');
@@ -157,10 +171,10 @@ window.onload = function (){
 
 		// 搭配购物图片弹出文字效果
 		$('.uls').find('li').mouseover(function(){
-			$(this).find('.skill').css({bottom:0})
+			$(this).find('.skill').stop().animate({bottom:0,opacity:1},200);
 		})
 		$('.uls').find('li').mouseout(function(){
-			$(this).find('.skill').css({bottom:-80})
+			$(this).find('.skill').stop().animate({bottom:-80,opacity:0},200);
 		});
 		// 热评产品切换效果
 		var datas = data.lista;
@@ -177,164 +191,172 @@ window.onload = function (){
 		// $('.plis')[0].innerHTML = html;
 
 		// 搭配图片小轮播
-	var iw1 = $('#bookli1').eq(0).width();
-	var num = 0;
-	
-	// $('.bookright').click(function(){
+	function fn(id){
+		var iw = $(id).find('.bookli').eq(0).width();
+		var num = 0;
+		$(id).hover(function(){
+			$(this).find('.bookbtn').stop().animate({opacity:1});
+		},function(){
+			$(this).find('.bookbtn').stop().animate({opacity:0});
+		})
+		$(id).find('.bookright').click(function(){
+			num++;
+			if(num == $(id).find('.bookli').size()){
+				num = 0;
+			}
+			$(id).find('.booknav').find('a').eq(num).addClass('booktive').siblings('a').removeClass('booktive');
+			$(id).find('.book').stop().animate({
+				left:-iw*num
+			});
+		});
+
+		$(id).find('.bookleft').click(function(){
+			num--;
+			if(num < 0){
+				num = $(id).find('.bookli').size()-1;
+			}
+			$(id).find('.booknav').find('a').eq(num).addClass('booktive').siblings('a').removeClass('booktive');
+			$(id).find('.book').stop().animate({
+				left:-iw*num
+			});
+		});
+		
+		$(id).find('.booknav').find('a').click(function(){
+			$(this).addClass('booktive').siblings('a').removeClass('booktive');
+			num = $(this).index();
+			$(id).find('.book').stop().animate({
+				left:-iw*num
+			});
+		});
+	}
+	fn('#bookbox1');
+	fn('#bookbox2');
+	fn('#bookbox3');
+	fn('#bookbox4');
+		// 1111111111111
+	// $('#right1').click(function(){
 	// 	num++;
-	// 	if(num == $('.bookli').size()){
+	// 	if(num ==4){
 	// 		num = 0;
 	// 	}
-	// 	$('.booknav').find('a').eq(num).addClass('booktive').siblings('a').removeClass('booktive');
-	// 	$('.book').stop().animate({
-	// 		left:-iw*num
+	// 	$('#nav1').find('a').eq(num).addClass('booktive').siblings('a').removeClass('booktive');
+	// 	$('#book1').stop().animate({
+	// 		left:-iw1*num
 	// 	});
-	// 	console.log(iw)
 	// });
 
-	// $('.bookleft').click(function(){
+	// $('#left1').click(function(){
 	// 	num--;
 	// 	if(num < 0){
-	// 		num = $('.bookli').size()-1;
+	// 		num = 3;
 	// 	}
-	// 	$('.booknav').find('a').eq(num).addClass('booktive').siblings('a').removeClass('booktive');
-	// 	$('.book').stop().animate({
-	// 		left:-iw*num
+	// 	$('#nav1').find('a').eq(num).addClass('booktive').siblings('a').removeClass('booktive');
+	// 	$('#book1').stop().animate({
+	// 		left:-iw1*num
 	// 	});
 	// });
 	
-	// $('.booknav').find('a').click(function(){
+	// $('#nav1').find('a').click(function(){
 	// 	$(this).addClass('booktive').siblings('a').removeClass('booktive');
 	// 	num = $(this).index();
-	// 	$('.book').stop().animate({
-	// 		left:-iw*num
+	// 	$('#book1').stop().animate({
+	// 		left:-iw1*num
+	// 	});
+	// });
+	// 	// 2222222222222222222
+	// 	var iw2 = $('#bookli2').eq(0).width();
+	// var num2 = 0;
+	// $('#right2').click(function(){
+	// 	num2++;
+	// 	if(num2 ==4){
+	// 		num2 = 0;
+	// 	}
+	// 	$('#nav2').find('a').eq(num2).addClass('booktive').siblings('a').removeClass('booktive');
+	// 	$('#book2').stop().animate({
+	// 		left:-iw2*num2
+	// 	});
+	// });
+
+	// $('#left2').click(function(){
+	// 	num2--;
+	// 	if(num2 < 0){
+	// 		num2 = 3;
+	// 	}
+	// 	$('#nav2').find('a').eq(num2).addClass('booktive').siblings('a').removeClass('booktive');
+	// 	$('#book2').stop().animate({
+	// 		left:-iw2*num2
 	// 	});
 	// });
 	
-		// 1111111111111
-	$('#right1').click(function(){
-		num++;
-		if(num ==4){
-			num = 0;
-		}
-		$('#nav1').find('a').eq(num).addClass('booktive').siblings('a').removeClass('booktive');
-		$('#book1').stop().animate({
-			left:-iw1*num
-		});
-	});
+	// $('#nav2').find('a').click(function(){
+	// 	$(this).addClass('booktive').siblings('a').removeClass('booktive');
+	// 	num2 = $(this).index();
+	// 	$('#book2').stop().animate({
+	// 		left:-iw2*num2
+	// 	});
+	// });
+	// // 33333333333333333333
+	// var iw3 = $('#bookli3').eq(0).width();
+	// var num3 = 0;
+	// $('#right3').click(function(){
+	// 	num3++;
+	// 	if(num3 ==4){
+	// 		num3 = 0;
+	// 	}
+	// 	$('#nav3').find('a').eq(num3).addClass('booktive').siblings('a').removeClass('booktive');
+	// 	$('#book3').stop().animate({
+	// 		left:-iw3*num3
+	// 	});
+	// });
 
-	$('#left1').click(function(){
-		num--;
-		if(num < 0){
-			num = 3;
-		}
-		$('#nav1').find('a').eq(num).addClass('booktive').siblings('a').removeClass('booktive');
-		$('#book1').stop().animate({
-			left:-iw1*num
-		});
-	});
+	// $('#left3').click(function(){
+	// 	num3--;
+	// 	if(num3< 0){
+	// 		num3 = 3;
+	// 	}
+	// 	$('#nav3').find('a').eq(num3).addClass('booktive').siblings('a').removeClass('booktive');
+	// 	$('#book3').stop().animate({
+	// 		left:-iw3*num3
+	// 	});
+	// });
 	
-	$('#nav1').find('a').click(function(){
-		$(this).addClass('booktive').siblings('a').removeClass('booktive');
-		num = $(this).index();
-		$('#book1').stop().animate({
-			left:-iw1*num
-		});
-	});
-		// 2222222222222222222
-		var iw2 = $('#bookli2').eq(0).width();
-	var num2 = 0;
-	$('#right2').click(function(){
-		num2++;
-		if(num2 ==4){
-			num2 = 0;
-		}
-		$('#nav2').find('a').eq(num2).addClass('booktive').siblings('a').removeClass('booktive');
-		$('#book2').stop().animate({
-			left:-iw2*num2
-		});
-	});
+	// $('#nav3').find('a').click(function(){
+	// 	$(this).addClass('booktive').siblings('a').removeClass('booktive');
+	// 	num3 = $(this).index();
+	// 	$('#book3').stop().animate({
+	// 		left:-iw3*num3
+	// 	});
+	// });
+	// // 4444444444444444444444444444
+	// var iw4 = $('#bookli4').eq(0).width();
+	// var num4 = 0;
+	// $('#right4').click(function(){
+	// 	num4++;
+	// 	if(num4 ==4){
+	// 		num4 = 0;
+	// 	}
+	// 	$('#nav4').find('a').eq(num4).addClass('booktive').siblings('a').removeClass('booktive');
+	// 	$('#book4').stop().animate({
+	// 		left:-iw4*num4
+	// 	});
+	// });
 
-	$('#left2').click(function(){
-		num2--;
-		if(num2 < 0){
-			num2 = 3;
-		}
-		$('#nav2').find('a').eq(num2).addClass('booktive').siblings('a').removeClass('booktive');
-		$('#book2').stop().animate({
-			left:-iw2*num2
-		});
-	});
+	// $('#left4').click(function(){
+	// 	num4--;
+	// 	if(num4 < 0){
+	// 		num4 = 3;
+	// 	}
+	// 	$('#nav4').find('a').eq(num4).addClass('booktive').siblings('a').removeClass('booktive');
+	// 	$('#book4').stop().animate({
+	// 		left:-iw4*num4
+	// 	});
+	// });
 	
-	$('#nav2').find('a').click(function(){
-		$(this).addClass('booktive').siblings('a').removeClass('booktive');
-		num2 = $(this).index();
-		$('#book2').stop().animate({
-			left:-iw2*num2
-		});
-	});
-	// 33333333333333333333
-	var iw3 = $('#bookli3').eq(0).width();
-	var num3 = 0;
-	$('#right3').click(function(){
-		num3++;
-		if(num3 ==4){
-			num3 = 0;
-		}
-		$('#nav3').find('a').eq(num3).addClass('booktive').siblings('a').removeClass('booktive');
-		$('#book3').stop().animate({
-			left:-iw3*num3
-		});
-	});
-
-	$('#left3').click(function(){
-		num3--;
-		if(num3< 0){
-			num3 = 3;
-		}
-		$('#nav3').find('a').eq(num3).addClass('booktive').siblings('a').removeClass('booktive');
-		$('#book3').stop().animate({
-			left:-iw3*num3
-		});
-	});
-	
-	$('#nav3').find('a').click(function(){
-		$(this).addClass('booktive').siblings('a').removeClass('booktive');
-		num3 = $(this).index();
-		$('#book3').stop().animate({
-			left:-iw3*num3
-		});
-	});
-	// 4444444444444444444444444444
-	var iw4 = $('#bookli4').eq(0).width();
-	var num4 = 0;
-	$('#right4').click(function(){
-		num4++;
-		if(num4 ==4){
-			num4 = 0;
-		}
-		$('#nav4').find('a').eq(num4).addClass('booktive').siblings('a').removeClass('booktive');
-		$('#book4').stop().animate({
-			left:-iw4*num4
-		});
-	});
-
-	$('#left4').click(function(){
-		num4--;
-		if(num4 < 0){
-			num4 = 3;
-		}
-		$('#nav4').find('a').eq(num4).addClass('booktive').siblings('a').removeClass('booktive');
-		$('#book4').stop().animate({
-			left:-iw4*num4
-		});
-	});
-	
-	$('#nav4').find('a').click(function(){
-		$(this).addClass('booktive').siblings('a').removeClass('booktive');
-		num4 = $(this).index();
-		$('#book4').stop().animate({
-			left:-iw4*num4
-		});
-	});
+	// $('#nav4').find('a').click(function(){
+	// 	$(this).addClass('booktive').siblings('a').removeClass('booktive');
+	// 	num4 = $(this).index();
+	// 	$('#book4').stop().animate({
+	// 		left:-iw4*num4
+	// 	});
+	// });
 };
