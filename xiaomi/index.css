@@ -44,11 +44,11 @@ img{border: none;
 }
 .ione{
     padding-right: 5px;
-    line-height: 30px;
-    padding-top: 10px;
+    line-height: 40px;
 }
 .head{
     width:1226px;
+    height:40px;
     margin:0 auto;
 }
 header{
@@ -97,7 +97,7 @@ header{
 #hright #curr span{
     margin-left: 12px;   
     padding: 0 18px;
-    line-height: 40px;
+    line-height: 30px;
     display: inline-block;
     background: #424242 ;
 }
@@ -107,7 +107,7 @@ header{
     background: #fff;
     position: absolute;
     z-index: 1;
-    top:27px;
+    top:23px;
     right:0;
     filter: alpha(opacity=0);
     opacity: 0;
@@ -122,11 +122,8 @@ header{
     color: #ff6700;
     background:  #fff ;
 }
-
 .low1{
-    height:100px;
-   
-     
+    height:100px;     
 }
 .navbox{
     position: relative;
@@ -155,13 +152,11 @@ header{
 .low1 nav a:hover{
     color: #ff6700; 
 }
-
 .low1 #navlist{
     width: 100%;
     height:0;
     position: absolute;
-    z-index: 7;
-    
+    z-index: 7;  
     background: #fff;
     top:140px;
     overflow: hidden;
@@ -176,16 +171,14 @@ header{
     height: 230px;
     transition: 2s;
     display: none;
-    padding-left: 100px;
-    
+    padding-left: 100px;  
 }
 #navlist ul li{
     margin-top: 30px;
     width:200px;
     float: left; 
 }
-#navlist ul li img{
-   
+#navlist ul li img{ 
     height:110px;
     width:160px;
     padding:20px 20px 0;
@@ -212,7 +205,6 @@ header{
     border: none;
     position: relative;
 }
-
 .low1 .low1deng .text{
     padding-left: 5px;
     width:240px;
@@ -238,8 +230,7 @@ header{
     transition: 0.5s;
     border: 1px solid #ff6700;
 }
-.shouding{
-    
+.shouding{   
     height:18px;
     position: absolute;
     top:14px;
@@ -268,9 +259,6 @@ header{
     z-index: 3;
     display: none;
 }
-.deng ul{
-
-}
 .deng ul li{
     text-align: left;
     background: #fff;
@@ -292,17 +280,12 @@ header{
     background: #e0e0e0;
 }
 .low2{position: relative;}
-#lista-box{
-
-}
-#lista{
-    
+#lista{   
     position: absolute;
     left: 232px;
     top:0;
     z-index: 3;
     background: #fff;
-
     border: 1px solid #e0e0e0;
     -webkit-box-shadow: 0 8px 16px rgba(0,0,0,0.18);
     box-shadow: 0 8px 16px rgba(0,0,0,0.18);
@@ -317,21 +300,18 @@ header{
     height:72px;
     width:265px;
     overflow: hidden;
-    line-height: 72px;
+    line-height: 40px;
     position: relative;
 }
-
 #lista .ulul ul li .link{
     width: 170px;
     padding-right: 0;
     padding: 18px 20px;
     line-height: 40px;
 }
-
 #lista .ulul ul li .link img{
     margin-right: 12px;
     vertical-align: middle;
-
 }
 
 #lista .ulul ul li strong{ 
@@ -351,7 +331,6 @@ header{
     color: #ff6700;
     font-size: 12px;
 }
-
 #lista .ulul ul li strong:hover{
     color:#ff6700;
 }
@@ -359,49 +338,6 @@ header{
     color:#fff;
     background: #ff6700;
 }
-
-/*#lista{
-    
-    position: absolute;
-    left: 234px;
-    top:0;
-    z-index: 3;
-    background: #fff;
-}
-#lista ul{
-    height:460px;
-    display: none;
-    margin-top: 10px;
-}
-#lista ul li{
-    height:60px;
-    width:234px;
-    line-height: 60px;
-    text-align: left;
-}
-#lista ul li strong{ 
-    margin-left: 20px;
-    color: #000;
-}
-#lista ul li span{
-    line-height: 25px;
-    margin-left: 60px;
-    width: 50px;
-    height: 25px;
-    text-align: center;
-    display: inline-block;
-    border: 1px solid red;
-    color: red;
-}
-#lista ul li strong:hover{
-    color:red;
-}
-#lista ul li span:hover{
-    color:#000;
-    background: red;
-}
-*/
-
 .low2 #list1{
     position: absolute;
     z-index: 3;
@@ -410,7 +346,6 @@ header{
     background: #39585c;
     padding:20px 0;
 }
-
 .low2 #list1 li{
     background: url(img/h4.png) no-repeat 202px 13px;
 }
@@ -422,7 +357,6 @@ header{
     padding-left: 29px;
     display: block;
     padding-right: 24px;
-
 }
 .low2 #list1 li a:hover{
     background: url(img/h4.png) no-repeat #ff6700 202px 13px ;
@@ -578,7 +512,6 @@ header{
     overflow: hidden;
     margin-right: -14px;
 }
-
 #ul li{
     width:234px;
     float: left;
@@ -608,7 +541,6 @@ header{
     font-size: 14px;
     color: #212121;
 }
-
 #ul li img{
     width:160px;
     margin:0 37px 22px;
@@ -716,7 +648,6 @@ header{
     float: left;
     width:992px;
 }
-
 .low4list ul li{
     width:234px;
     height:260px;
@@ -766,7 +697,6 @@ header{
     text-align: center;
     color:#ff6709;
 }
-
 .low4-two{
     width:1226px;
     margin:0 auto;
@@ -864,11 +794,9 @@ header{
     display: block;
     color:#fff;
 }
-
 .low5{
     padding-top: 14px;
-    background: #f5f5f5;
-    
+    background: #f5f5f5;  
 }
 .low5 .low5-one{
     width:1226px;
@@ -1016,8 +944,7 @@ header{
     height: 6px;
     border: 2px solid #f5f5f5;
     border-radius: 6px;
-    text-align: left;
-   
+    text-align: left; 
     background:  #b0b0b0;
     float: left;
     margin-left: 10px;
@@ -1156,8 +1083,6 @@ header{
     color:#ff6700;
     /*background: url(./img/jinga.png)no-repeat 53px;*/
 }
-
-
 .service .zui{
     border-right:none;
 }
