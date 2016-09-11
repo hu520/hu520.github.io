@@ -121,7 +121,7 @@ $(document).ready(function(){
 			}
 			$('.main-min').stop().animate({
 				left:-iw*num
-			},2500);
+			},2000);
 		})
 		$('.l').click(function(){
 			num--;
@@ -130,7 +130,7 @@ $(document).ready(function(){
 			}
 			$('.main-min').stop().animate({
 				left:-iw*num
-			},2500);
+			},2000);
 		})
 
 		// 点击搜索栏
