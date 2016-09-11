@@ -12,7 +12,7 @@ window.onload =  function(){
 	function loading(){
 		var loading = $('#loading');
 		var load = loading.find('.load');
-		var lo = load.find('div')[0];
+		var loads = load.find('div')[0];
 		var span = load.find('span')[0];
 		var num = 0;
 		var timer = null;
@@ -21,7 +21,7 @@ window.onload =  function(){
 		timer = setInterval(function (){
 			num+=10;
 			var scale = Math.ceil((num/iW).toFixed(2)*100);
-			lo.style.width = num + 'px';
+			loads.style.width = num + 'px';
 			span.innerHTML = scale + '%';
 			if (num == iW){
 				clearInterval(timer);
@@ -101,7 +101,6 @@ window.onload =  function(){
 	next.onclick = function(){
 		startMove(header, "top", 1000, -window.innerHeight, "backOut");
 	}
-
 	// 图片同时移入遮罩效果
 	$('.confoot-a').on('mouseover',function(){
 		$('.conleft').find('.conleft-box').css({
