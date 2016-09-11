@@ -286,7 +286,7 @@ header{
 .low2{position: relative;}
 #lista{   
     position: absolute;
-    left: 232px;
+    left: 233px;
     top:0;
     z-index: 3;
     background: #fff;
@@ -342,13 +342,18 @@ header{
     color:#fff;
     background: #ff6700;
 }
-
+.low2 #list1-box{
+    width:234px;
+    height:460px;
+    position: absolute;
+    z-index: 2;
+    opacity: .5;
+    background: #000;
+    filter: alpha(opacity=50);
+}
 .low2 #list1{
     position: absolute;
-    z-index: 3;
-    opacity: .8;
-    filter: alpha(opacity=80);
-    background: #39585c;
+    z-index: 3; 
     padding:20px 0;
 }
 .low2 #list1 li{
