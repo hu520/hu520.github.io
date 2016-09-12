@@ -1,11 +1,11 @@
 body,div,h1,h2,h3,h4,ul,dl,dd,nav,p,form,section,form{
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 input{
     margin:0;
     padding: 0;
-    border:none;
+    border: none;
     vertical-align: middle;
 }
 body,html{
@@ -34,8 +34,8 @@ img{border: none;
     url('font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
 .iconfont{
-    font-family:"iconfont" !important;
-    font-size:22px;font-style:normal;
+    font-family: "iconfont" !important;
+    font-size: 22px;font-style: normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
@@ -48,46 +48,43 @@ img{border: none;
     padding-top: 10px;
 }
 .head{
-    width:1226px;
-    margin:0 auto;
+    width: 1226px;
+    margin: 0 auto;
 }
 header{
-    background:#333333 ;
-    height:40px;     
+    background: #333;
+    height: 40px;     
 }
 #hleft{
     float: left;
-    height:40px;
-}
-#hleft nav{
-    height:;
+    height: 40px;
 }
 #hleft nav a{
     font-size: 12px;
     line-height: 40px;
-    color:#b0b0b0;
+    color: #b0b0b0;
     padding-left: 9px;
     padding-right: 9px;
     background: url(img/nav.png) no-repeat;
 }
 #hleft nav a:hover{
-    color:#fff;
+    color: #fff;
 }
 #hleft nav #cur{
-    padding-left:0;
+    padding-left: 0;
     background: none;
 }
 #hright{
     float: right;
-    color:#666;
+    color: #666;
 }
 #hright a{
-    font-size:12px;
+    font-size: 12px;
     line-height: 40px;
-    color:#b0b0b0;
+    color: #b0b0b0;
 }
 #hright a:hover{
-    color:#fff;
+    color: #fff;
 }
 #hright #curr{
     position: relative;
@@ -101,42 +98,42 @@ header{
     background: #424242 ;
 }
 #hright #curr p{
-    height:0;
-    width:300px;
+    height: 0;
+    width: 300px;
     background: #fff;
     position: absolute;
     z-index: 1;
-    top:27px;
-    right:0;
+    top: 27px;
+    right: 0;
     filter: alpha(opacity=0);
     opacity: 0;
-    color:#b0b0b0;
+    color: #b0b0b0;
     text-align: center;
     /*transition: .5s;*/
     border: 1px solid #e0e0e0;
     border-top: none;
-    box-shadow:0 1px 1px blue;
+    box-shadow: 0 1px 1px blue;
 }
 #hright #curr span:hover{
     color: #ff6700;
-    background:  #fff ;
+    background: #fff;
 }
 .low1{
-    height:100px;     
+    height: 100px;     
 }
 .navbox{
     position: relative;
     height: 100px;
     background: url(img/h1.png) no-repeat 0 22px;
-    width:1226px;
-    margin:0 auto;
+    width: 1226px;
+    margin: 0 auto;
 }
 .low1 nav{
     float: left;
     height: 100px;
     font-size: 16px;
-    font-weight:400; 
-    line-height:100px;
+    font-weight: 400; 
+    line-height: 100px;
     /*font: 400 16px/100px "宋体";*/
     padding-left: 236px;
     background: url(img/haidaoquannew.gif) no-repeat 72px 17px;
@@ -153,15 +150,14 @@ header{
 }
 .low1 #navlist{
     width: 100%;
-    height:0;
+    height: 0;
     position: absolute;
     z-index: 7;
-    
     background: #fff;
     top:140px;
     overflow: hidden;
     transition: .5s border;
-    left:0px;
+    left: 0px;
     border-top: 0px solid #e0e0e0;
     -webkit-box-shadow: 0 3px 4px rgba(0,0,0,0.18);
     box-shadow: 0 3px 4px rgba(0,0,0,0.18);
@@ -176,23 +172,23 @@ header{
 }
 #navlist ul li{
     margin-top: 30px;
-    width:200px;
+    width: 200px;
     float: left; 
 }
 #navlist ul li img{ 
-    height:110px;
-    width:160px;
-    padding:20px 20px 0;
-    border-right:1px solid #e0e0e0;
+    height: 110px;
+    width: 160px;
+    padding: 20px 20px 0;
+    border-right: 1px solid #e0e0e0;
 }
 #navlist ul .navcur img{
-    border-right:none;
+    border-right: none;
 }
 #navlist ul li p{
     text-align: center;
-    padding-top:10px;
+    padding-top: 10px;
     padding-bottom: 5px;
-    color:#666;
+    color: #666;
 }
 #navlist ul li span{
     text-align: center;
@@ -201,17 +197,17 @@ header{
 }
 .low1 .low1deng{
     float: right;
-    width:300px;
+    width: 300px;
     margin-top: 25px;
     border: none;
     position: relative;
 }
 .low1 .low1deng .text{
     padding-left: 5px;
-    width:240px;
-    height:48px;
+    width: 240px;
+    height: 48px;
     float: left;
-    line-height:48px;
+    line-height: 48px;
     vertical-align: middle;
     border: 1px solid #e0e0e0;
 }
@@ -219,11 +215,11 @@ header{
     border: 1px solid #ff6700;
 }*/
 .low1 .low1deng .btn{
-    width:50px;
-    height:50px;
+    width: 50px;
+    height: 50px;
     float: left;
     border: 1px solid #e0e0e0;
-    margin-left:-1px; 
+    margin-left: -1px; 
     background: url(img/h2.png) no-repeat 16px 14px;
 }
 .low1 .low1deng .btn:hover{
@@ -232,14 +228,14 @@ header{
     border: 1px solid #ff6700;
 }
 .shouding{  
-    height:18px;
+    height: 18px;
     position: absolute;
-    top:14px;
-    right:62px;
+    top: 14px;
+    right: 62px;
 }
 .shouding a{
     display: inline-block;
-    height:18px;
+    height: 18px;
     margin-left: 5px;
     padding: 0 5px;
     font-size: 12px;
@@ -248,37 +244,36 @@ header{
     transition: .3s;
 }
 .shouding a:hover{
-    color:#fff;
+    color: #fff;
     background: #ff6700;
 }
 .deng{
-    width:245px;
-    top:49px;
-    border:1px solid #ff6700;
+    width: 245px;
+    top: 49px;
+    border: 1px solid #ff6700;
     position: absolute;
-    right:53px;
+    right: 53px;
     z-index: 3;
     display: none;
-}
-.deng ul{
-
 }
 .deng ul li{
     text-align: left;
     background: #fff;
 }
 .deng ul li a{
-    height:30px;
-    width:226px;
-    padding:0 10px;
+    height: 30px;
+    width: 226px;
+    padding: 0 10px;
     line-height: 30px;
     display: block;
-    color:#757575; 
+    color: #757575; 
 }
 .deng ul li a span{
     padding-left: 90px;
     text-align: right;
-    color:rgba(0,0,0,0.35);
+    color: #000;
+    opacity: 0.35;
+    filter: alpha(opacity=35);
 }
 .deng ul li a:hover{
     background: #e0e0e0;
@@ -287,7 +282,7 @@ header{
 #lista{   
     position: absolute;
     left: 233px;
-    top:0;
+    top: 0;
     z-index: 3;
     background: #fff;
     border: 1px solid #e0e0e0;
@@ -295,14 +290,14 @@ header{
     box-shadow: 0 8px 16px rgba(0,0,0,0.18);
 }
 #lista .ulul{
-    height:449px;
+    height: 449px;
     display: none;
     margin-top: 10px;
 }
 #lista .ulul ul{ float: left; }
 #lista .ulul ul li{
-    height:72px;
-    width:265px;
+    height: 72px;
+    width: 265px;
     overflow: hidden;
     line-height: 40px;
     position: relative;
@@ -336,15 +331,15 @@ header{
     font-size: 12px;
 }
 #lista .ulul ul li strong:hover{
-    color:#ff6700;
+    color: #ff6700;
 }
 #lista .ulul ul li span:hover{
-    color:#fff;
+    color: #fff;
     background: #ff6700;
 }
 .low2 #list1-box{
-    width:234px;
-    height:460px;
+    width: 234px;
+    height: 460px;
     position: absolute;
     z-index: 2;
     opacity: .5;
@@ -360,10 +355,10 @@ header{
     background: url(img/h4.png) no-repeat 202px 13px;
 }
 .low2 #list1 li a{
-    height:42px;
-    width:180px;
+    height: 42px;
+    width: 180px;
     line-height: 42px;
-    color:#fff;
+    color: #fff;
     padding-left: 29px;
     display: block;
     padding-right: 24px;
@@ -437,7 +432,7 @@ header{
     transition: .3s opacity;
 }
 .btns:hover {
-    color:#fff;
+    color: #fff;
     opacity: 0.5;
     background: #666;
     filter: alpha(opacity=50);
@@ -452,29 +447,29 @@ header{
     margin-top: 14px;
 }
 .lowT .list3{
-    height:164px;
-    width:228px;
+    height: 164px;
+    width: 228px;
     float: left;
-    padding:3px;
+    padding: 3px;
     background: #5f5750;
 }
 .lowT .list3 li{
-    width:70px;
-    height:82px;
+    width: 70px;
+    height: 82px;
     float: left;
     padding: 0 3px;
 }
 .lowT .list3 li a{
-    width:70px;
+    width: 70px;
     display: inline-block;
     padding-top: 48px;
-    font:12px/18px "宋体";
+    font: 12px/18px "宋体";
     color: #ccc;
     text-align: center;
     background: url(img/small.png) no-repeat center;
 }
 .lowT .list3 li a:hover{
-    color:#fff;
+    color: #fff;
 }
 .lowT .list4{
     float: left;
@@ -484,33 +479,38 @@ header{
     margin-left: 14px;
 }
 .lowT .list4 li img{
-    width:316px;
-    height:170px;
+    width: 316px;
+    height: 170px;
     transition: .3s;
 }
 .lowT .list4 li img:hover{
     box-shadow: 0 15px 40px rgba(0,0,0,0.2);
     /*transform: translate3d(0, -2px, 0);*/
 }
+.low3bg{
+    width:1226px;
+    margin:0 auto;
+}
 .low3{
     margin-top: 26px;
-    padding-bottom:40px;
+    padding-bottom: 40px;
+    overflow: hidden;
     position: relative;
 }
 .low3 h2{
-    height:58px;
+    height: 58px;
     font-size: 22px;
     font-weight: 200;
     line-height: 58px;
 }
 #low3-box{
-    width:1240px;
+    width: 1240px;
     overflow: hidden;
-    width:100%;
+    width: 100%;
 }
 #ul{
-    width:2452px;
-    height:340px;
+    width: 2452px;
+    height: 340px;
     overflow: hidden;
     /*transition: .5s;*/
     position: relative;
@@ -522,9 +522,9 @@ header{
     margin-right: -14px;
 }
 #ul li{
-    width:234px;
+    width: 234px;
     float: left;
-    height:300px;
+    height: 300px;
     background: #fafafa;
     padding-top: 39px;
     margin-right: 14px;
@@ -551,11 +551,11 @@ header{
     color: #212121;
 }
 #ul li img{
-    width:160px;
-    margin:0 37px 22px;
+    width: 160px;
+    margin: 0 37px 22px;
 }
 #ul li p{ 
-    padding-top:2px;
+    padding-top: 2px;
     line-height: 18px;
     padding-bottom: 12px;
     text-align: center;
@@ -565,7 +565,7 @@ header{
 #ul li span{
     text-align: center;
     display: block;
-    color:#ff6709;
+    color: #ff6709;
 }
 .btan{
     width: 24px;
@@ -593,7 +593,7 @@ header{
     color: #000;
 }
 .btanL{
-    right:40px;
+    right: 40px;
 }
 .btanR{
     right: 0;
@@ -602,12 +602,12 @@ header{
     background: #f5f5f5;
 }
 .low4-one{
-    width:1226px;
-    margin:0 auto;
+    width: 1226px;
+    margin: 0 auto;
     padding-top: 60px;
 }
 .low4h2{
-    height:58px;
+    height: 58px;
 }
 .low4h2 h2{
     float: left;
@@ -619,9 +619,9 @@ header{
 .low4h2 a{
     display: block;
     float: right;
-    color:#424242;
+    color: #424242;
     font-size: 16px;
-    width:92px;
+    width: 92px;
     line-height: 58px; 
     transition: .5s;
 }
@@ -631,7 +631,7 @@ header{
     transition: .5s;
     display: inline;
     padding: 0 5px;
-    font:20px/20px "宋体"; 
+    font: 20px/20px "宋体"; 
     text-align: center;
     border-radius: 10px;
     background: #b0b0b0;
@@ -639,28 +639,32 @@ header{
     color: #fff;
 }
 .low4h2 a:hover{
-    color:#ff6700;
+    color: #ff6700;
 }
 .low4h2 a:hover span{
     background: #ff6700;
 }
 .low4list .low4-img{
-    width:234px;
+    width: 234px;
     float: left;
     transition: .3s;
 }
-.low4list .low4-img:hover{
+.main{
+    margin-top: 14px;
+    
+}
+.low4list .low4-img img:hover{
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
     transform: translate3d(0, -2px, 0);
 }
 .low4list ul{
     float: left;
-    width:992px;
+    width: 992px;
 }
 .low4list ul li{
-    width:234px;
-    height:260px;
-    padding:20px 0;
+    width: 234px;
+    height: 260px;
+    padding: 20px 0;
     float: left;
     background: #fff;
     margin-left: 14px;
@@ -674,13 +678,13 @@ header{
     transform: translate3d(0, -2px, 0);
 }
 .low4list ul li a{
-    width:160px;
+    width: 160px;
     display: block;
     padding: 0 37px;
 }
 .low4list ul li img{
-    width:160px;
-    height:160px;
+    width: 160px;
+    height: 160px;
 }
 .low4list ul li strong{
     display: block;
@@ -688,14 +692,14 @@ header{
     line-height: 21px;
     font-size: 14px;
     margin-top: 8px;
-    color:#333;
+    color: #333;
     font-weight: 400;
 }
 .low4list ul li p{
     text-align: center;
     font-size: 12px;
-    color:#b0b0b0;
-    height:18px;
+    color: #b0b0b0;
+    height: 18px;
     line-height: 18px;
     padding-bottom: 10px;
 }
@@ -704,20 +708,14 @@ header{
     line-height: 21px;
     padding-bottom: 14px;
     text-align: center;
-    color:#ff6709;
+    color: #ff6709;
 }
 .low4-two{
-    width:1226px;
-    margin:0 auto;
+    width: 1226px;
+    margin: 0 auto;
     margin-top: 14px;
 }
-.main{
-    width: 234px;
-}
-.main img{
-    padding-bottom:14px;
-    
-}
+
 .low4list ul li .more strong{
     display: block;
     
@@ -726,32 +724,36 @@ header{
     display: block;
 }
 .low4list ul li .more img{
-    display:block;
-    margin-left:70px;
+    display: block;
+    margin-left: 70px;
     height: 80px;
-    width:80px;
+    width: 80px;
 }
 .low4list ul li .moremin{
     margin-top: 14px;
-    background: url(img/more.png)no-repeat right;
-    margin-right: 40px;
 }
 .low4list ul li .moremin a{
-    width:90px;
-    display: block;
+    display: inline-block;
     font-size: 18px;
-    color:#000;
+    color: #000;
+    margin-left: -35px;
+    background: url(img/more.png)no-repeat right;
     line-height: 60px;
 }
+.low4list ul li .moremin strong{
+    font-size: 18px;
+    line-height: 30px;
+}
 .low4list ul li .moremin span{
-    width:160px;
+    font-size: 14px;
+    line-height: 20px;
     text-align: center;
-    margin-left: -10px;
-    color:#757575;
+    margin-left: -20px;
+    color: #757575;
 }
 .low4-top{
     
-    height:58px;
+    height: 58px;
 }
 .low4-top h2{
     float: left;
@@ -762,57 +764,57 @@ header{
 }
 .low4-top nav{
     padding-top: 16px;
-    width:328px;
     float: right;
 }
 .low4-top nav a{
     color: #424242;
-    margin-left:24px; 
-    padding:5px 0;    
+    margin-left: 24px; 
+    padding: 5px 0; 
+    text-align: right;   
     font-size: 16px;
     transition: .2s;
 }
-/*.low4-top nav .active{
-    color: #ff6700;
-    border-bottom: 2px solid #ff6700;
-}*/
-.low4-top nav a:hover{
+.low4-top .active{
     color: #ff6700;
     border-bottom: 2px solid #ff6700;
 }
+/*.low4-top nav a:hover{
+    color: #ff6700;
+    border-bottom: 2px solid #ff6700;
+}*/
 .uls .skill{
-    width:214px;
-    height:60px;
+    width: 214px;
+    height: 60px;
     position: absolute;
-    padding:10px;
-    bottom:-80px;
-    left:0;
+    padding: 10px;
+    bottom: -80px;
+    left: 0;
     opacity: 0;
-    filter:alpha(opacity=0);
+    filter: alpha(opacity=0);
     background: #ff6700;
     /*transition: .3s;*/
 }
 .uls .skill p{
     text-align: center; 
-    color:#fff;
+    color: #fff;
     line-height: 24px;
 }
 .uls .skill span{
     text-align: center;
     display: block;
-    color:#fff;
+    color: #fff;
 }
 .low5{
     padding-top: 14px;
     background: #f5f5f5;  
 }
 .low5 .low5-one{
-    width:1226px;
-    margin:0 auto;
+    width: 1226px;
+    margin: 0 auto;
     overflow: hidden;
 }
 .low5-one h2{
-    height:58px;
+    height: 58px;
     font-weight: 200;
     line-height: 58px;
     font-size: 22px;
@@ -821,9 +823,9 @@ header{
     margin-right: -14px;
 }
 .low5-one .low5list li{
-    width:296px;
+    width: 296px;
     float: left;
-    height:415px;
+    height: 415px;
     margin-right: 14px;
     background: #fff;
     transition: .3s;
@@ -835,11 +837,11 @@ header{
 }
 .low5-one .low5list li strong{
     display: block;
-    color:#333;
+    color: #333;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
-    padding:30px 28px;
+    padding: 30px 28px;
 }
 .low5-one .low5list li p{
     
@@ -852,29 +854,29 @@ header{
 .low5-one .low5list li h3{
     font-size: 14px;
     line-height: 21px;
-    margin-left:30px;
+    margin-left: 30px;
     font-weight: 400;
     display: inline-block;
     padding-right: 6px
 }
 .low5-one .low5list li h3 a{
-    color:#333;
+    color: #333;
 }
 .low5-one .low5list li span{
     display: inline-block;
     color: #ff6700;;
 }
 #bookbox1{
-    border-top:1px solid  #ffac13;
+    border-top: 1px solid  #ffac13;
 }
 #bookbox2{
-    border-top:1px solid  #83c44e;
+    border-top: 1px solid  #83c44e;
 }
 #bookbox3{
-    border-top:1px solid  #e53935;
+    border-top: 1px solid  #e53935;
 }
 #bookbox4{
-    border-top:1px solid  #2196f3;
+    border-top: 1px solid  #2196f3;
 }
 .bookbox .bookh3{
     margin: 0 10px 18px;
@@ -882,24 +884,36 @@ header{
     font-weight: 400;
     text-align: center;
     padding-top: 45px;
-    color:#ffac13;
+    color: #ffac13;
 }
-.bookbox .zt{color:#83c44e;}
-.bookbox .yx{color:#e53935;}
-.bookbox .yy{color:#2196f3;}
+.bookbox .zt{color: #83c44e;}
+.bookbox .yx{color: #e53935;}
+.bookbox .yy{color: #2196f3;}
 .bookbox{
     overflow: hidden;
 }
+#bookbox1{
+    overflow: hidden;
+}
+#bookbox2{
+    overflow: hidden;
+}
+#bookbox3{
+    overflow: hidden;
+}
+#bookbox4{
+    overflow: hidden;
+}
 .bookbox .book li{
-    height:340px;
+    height: 340px;
 }
 .bookbox .book .str{
     font-weight: 400;
     font-size: 20px;
-    height:25px;
+    height: 25px;
     text-align: center;
     line-height: 25px;
-    padding:0;
+    padding: 0;
     padding-bottom: 5px;
 }
 .bookbox .book .bookp{
@@ -913,40 +927,39 @@ header{
 .bookbox .book .bookspan{
     text-align: center;
     display: block;
-    color:#333;
+    color: #333;
     margin-bottom: 15px;
 }
 .bookbox .book .bookimg{
-    padding:0 40px;
-    width:216px;
-    height:154px;
+    padding: 0 40px;
+    width: 216px;
+    height: 154px;
 }
-#bookmin{
-    width:296px;
+.bookmin{
+    width: 296px;
     position: relative;
-    ove rflow: hidden;
 }
-#bookmin .book{
-    width:1184px;
+.bookmin .book{
+    width: 1184px;
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
 }
-#bookmin .book .bookli{
-    height:340px;
+.bookmin .book .bookli{
+    height: 340px;
     width: 296px;
     float: left;
-    margin-right:0;
+    margin-right: 0;
 }
-#bookmin nav{
-    width:50%;
-    height:20px;
+.bookmin nav{
+    width: 50%;
+    height: 20px;
     position: absolute;
-    left:80px;
+    left: 80px;
     text-align: center;
     top: 280px;
 }
-#bookmin  nav a{
+.bookmin  nav a{
     display: block;
     width: 6px;
     height: 6px;
@@ -957,10 +970,10 @@ header{
     float: left;
     margin-left: 10px;
 }
-#bookmin  nav a:hover{
+.bookmin  nav a:hover{
     background: #ff6700;
 }
-#bookmin nav .booktive{
+.bookmin nav .booktive{
     width: 6px;
     height: 6px;
     display: block;
@@ -971,13 +984,13 @@ header{
 }
 .bookbtn{
     position: absolute;
-    width:20px;
-    height:50px;
+    width: 20px;
+    height: 50px;
     background: #ccc;
-    top:100px;
+    top: 100px;
     z-in dex: 2;
     text-align: center;
-    color:#757575;;
+    color: #757575;;
     line-height: 50px;
     transition: 1s;
     opacity: 0;
@@ -999,19 +1012,19 @@ header{
 }*/
 .last{
     padding-top: 14px;
-    width:1226px;
-    margin:0 auto;
+    width: 1226px;
+    margin: 0 auto;
     background: #f5f5f5;
     padding-bottom: 60px;
 }
 .last-box ul{
     margin-right: -14px;
     background: #f5f5f5;
-    height:285px;
+    height: 285px;
 }
 .last-box ul li{
-    height:285px;
-    width:296px;
+    height: 285px;
+    width: 296px;
     float: left;
     background: #fff;
     margin-right: 14px;
@@ -1051,7 +1064,7 @@ header{
     color: #333;
 }
 .last-box ul strong a:hover{
-    color:#ff6700;
+    color: #ff6700;
 }
 .last-box ul span{
     height: 18px;
@@ -1065,11 +1078,11 @@ header{
     background: #fff; 
 }
 .service{
-    width:1226px;
-    margin:0 auto; 
+    width: 1226px;
+    margin: 0 auto; 
     height: 25px;
     line-height: 25px;
-    padding:27px 0;
+    padding: 27px 0;
     font-weight: 400;
     border-bottom: 1px solid #e0e0e0;
 }
@@ -1077,7 +1090,7 @@ header{
     color: #616161;
     font-size: 16px ;
     line-height: 25px;
-    height:25px;
+    height: 25px;
     display: inline-block;
     width: 212px;
     position: relative;
@@ -1085,27 +1098,23 @@ header{
     /*background: url(./img/jing.gif)no-repeat;*/
     padding: 0 15px;
     text-align: center;
-    border-right:1px solid  #e0e0e0;
+    border-right: 1px solid  #e0e0e0;
 }
 .service a:hover{
-    color:#ff6700;
+    color: #ff6700;
     /*background: url(./img/jinga.png)no-repeat 53px;*/
 }
 .service .zui{
-    border-right:none;
+    border-right: none;
 }
 .footertop{
-    width:1226px;
-    margin:0 auto; 
-    height:112px;
-    padding:40px 0;
-}
-.footerleft{
-    
-    width:;
+    width: 1226px;
+    margin: 0 auto; 
+    height: 112px;
+    padding: 40px 0;
 }
 .footerleft dl{
-    width:160px;
+    width: 160px;
     float: left;
     font-weight: 400;
 }
@@ -1113,49 +1122,49 @@ header{
     margin: -1px 0 26px;
     font-size: 14px;
     line-height: 18px;
-    color:#424242;
+    color: #424242;
 }
 .footerleft dl dd{
-    height:18px;
+    height: 18px;
     margin-top: 10px;
     font-size: 12px; 
 }
 .footerleft dl dd a{
-    color:#757575;
+    color: #757575;
 }
 .footerleft dl dd a:hover{
-    color:#ff6700;
+    color: #ff6700;
 }
 .footerright{
     margin-left: 14px;
-    border-left:1px solid  #e0e0e0; 
+    border-left: 1px solid  #e0e0e0; 
     display: inline-block;
-    height:112px;
-    width:251px;
+    height: 112px;
+    width: 251px;
     font-weight: 400;
 }
 .footerright .phone{  
     font-size: 22px;
     line-height: 22px;
     text-align: center;
-    margin-bottom:5px;
+    margin-bottom: 5px;
     color: #ff6700;
 }
 .footerright .ptext{
     text-align: center;
-    height:36px;
+    height: 36px;
     line-height: 18px;
     font-size: 12px;
     margin-bottom: 16px;
     color: #616161;
 }
 .footerright .ptext span{
-    height:18px;
+    height: 18px;
     display: block;
 }
 .footerright .pa{
-    width:120px;
-    height:30px;
+    width: 120px;
+    height: 30px;
     text-align: center;
     margin-left: 66px;
 }
@@ -1177,32 +1186,31 @@ header{
     border-color: #f25807;
 }
 .foot{
-    height:106px;
+    height: 106px;
     padding:30px 0;
     font-weight: 400;
 }
 .footcenter{
-    width:1226px;
-    height:106px;
-    margin:0 auto;
+    width: 1226px;
+    height: 106px;
+    margin: 0 auto;
 }
 .footcenter .footT{
-    width:750px;
+    width: 750px;
     display: inline-block;
 }
-.footcenter .footT
 .footcenter .footT nav{
-    height:18px;
+    height: 18px;
 }
 .footcenter .footT nav a{
     font-size: 12px;
     line-height: 18px;
-    padding:0 3px;
+    padding: 0 3px;
     font-weight: 200;
     color: #757575;
 }
 .footcenter .footT nav a:hover{
-    color:#ff6700;
+    color: #ff6700;
 }
 .footcenter .footT p{
     color: #b0b0b0;
@@ -1213,17 +1221,17 @@ header{
     color: #b0b0b0;
 }
 .footcenter .footT p a:hover{
-    color:#ff6700;
+    color: #ff6700;
 }
 .footcenter .footR{
-    width:375px;
+    width: 375px;
     vertical-align: top;
     display: inline-block;
-    margin-left:37px;
+    margin-left: 37px;
 }
 .footcenter .footR img{
-    width:85px;
-    height:28px;
+    width: 85px;
+    height: 28px;
 }
 .footcenter .footzui{
     display: block;  
