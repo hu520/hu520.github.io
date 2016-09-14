@@ -286,7 +286,6 @@ window.onload =  function(){
 
 	var data = aData.arr;
 	//  var hu = Math.round(Math.random(data)*20)
-	// console.log(hu);
 	var lists = $('#list');
 	var html = '';
 	for(var i=0; i<data.length;i++){
@@ -401,7 +400,7 @@ window.onload =  function(){
 			top = top - 100;
 			window.scrollTo(0,top);
 			if(top<=0){
-				window,scrollTo(0,0)
+				window.scrollTo(0,0)
 				clearInterval(timer);
 			}
 		},100)
