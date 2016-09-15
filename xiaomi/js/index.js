@@ -130,9 +130,6 @@ window.onload = function (){
 	var iwa = $('.ula').eq(0).width();
     var num = 0;
 	
-	// timer=setInterval(function(){
-
-	// },1000)
 	function auto(id){
 		$(id).find('#Right').click(function(){
 			$(this).removeClass('Bactive').siblings('a').addClass('Bactive');
@@ -150,9 +147,8 @@ window.onload = function (){
 	};
 	auto('#low3bg1');
 	auto('#low3bg2');
+
 		var h2s = document.getElementsByTagName('h2');
-		// var h2s = document.getElementsByClassName
-		console.log(h2s)
 		// 购物图片切换图效果
 		function drag(id){
 			$(id).find('.low4-top a').mouseover(function(){
@@ -191,9 +187,9 @@ window.onload = function (){
 		var iw = $(id).find('.bookli').eq(0).width();
 		var num = 0;
 		$(id).hover(function(){
-			$(this).find('.bookbtn').stop().animate({opacity:1});
+			$(this).find('.bookbtn').stop().animate({opacity:1},500);
 		},function(){
-			$(this).find('.bookbtn').stop().animate({opacity:0});
+			$(this).find('.bookbtn').stop().animate({opacity:0},500);
 		});
 		$(id).find('.bookright').click(function(){
 			num++;
