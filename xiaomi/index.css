@@ -127,7 +127,7 @@ header{
 .navbox{
     position: relative;
     height: 100px;
-    background: url(img/h1.png) no-repeat 0 22px;
+    background: url(./img/h1.png) no-repeat 0 22px;
     width: 1226px;
     margin: 0 auto;
 }
@@ -138,7 +138,7 @@ header{
     font-weight: 400; 
     line-height: 100px;
     padding-left: 236px;
-    background: url(img/haidaoquannew.gif) no-repeat 72px 17px;
+    background: url(./img/haidaoquannew.gif) no-repeat 72px 17px;
 }
 .low1 nav a{
     color:  #757575;
@@ -220,11 +220,11 @@ header{
     float: left;
     border: 1px solid #e0e0e0;
     margin-left: -1px; 
-    background: url(img/h2.png) no-repeat 16px 14px;
+    background: url(./img/h2.png) no-repeat 16px 14px;
     cursor: pointer;
 }
 .low1 .low1deng .btn:hover{
-    background: url(img/h2.png) no-repeat #ff6700 16px 14px;
+    background: url(./img/h2.png) no-repeat #ff6700 16px 14px;
     transition: 0.5s;
     border: 1px solid #ff6700;
 }
