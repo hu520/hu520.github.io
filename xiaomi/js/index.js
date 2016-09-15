@@ -20,8 +20,7 @@ window.onload = function (){
 		clearInterval(timer);
 	};
 	wrap.onmouseout = function() {
-		
-		timer = setInterval(next,2000);
+		timer = setInterval(next,3500);
 	};
 	for(var i = 0; i < navsA.length; i++){
 		navsA[i].index = i;
@@ -39,7 +38,7 @@ window.onload = function (){
 		tab(next);
 	};
 	nextBtn.onclick = next; 
-	timer = setInterval(next,2000);
+	timer = setInterval(next,3500);
 	function next() {
 		var next = now + 1;
 		if(next > navsA.length - 1)
