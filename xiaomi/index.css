@@ -45,7 +45,7 @@ img{border: none;
 .ione{
     padding-right: 5px;
     line-height: 30px;
-    padding-top: 10px;
+    font-size: 18px;
 }
 .head{
     width: 1226px;
@@ -82,17 +82,19 @@ header{
     font-size: 12px;
     line-height: 40px;
     color: #b0b0b0;
+    padding:0 8px;
 }
 #hright a:hover{
     color: #fff;
 }
 #hright #curr{
     position: relative;
+    padding-right: 0;
     z-index: 3;
 }
 #hright #curr span{
-    margin-left: 12px;   
-    padding: 0 18px;
+    margin-left: 6px;   
+    padding: 0 15px;
     line-height: 40px;
     display: inline-block;
     background: #424242 ;
@@ -135,7 +137,6 @@ header{
     font-size: 16px;
     font-weight: 400; 
     line-height: 100px;
-    /*font: 400 16px/100px "宋体";*/
     padding-left: 236px;
     background: url(img/haidaoquannew.gif) no-repeat 72px 17px;
 }
@@ -213,9 +214,6 @@ header{
     border: 1px solid #e0e0e0;
     cursor: pointer;
 }
-/*.low1 .low1deng .text:hover{
-    border: 1px solid #ff6700;
-}*/
 .low1 .low1deng .btn{
     width: 50px;
     height: 50px;
@@ -354,20 +352,23 @@ header{
     z-index: 3; 
     padding:20px 0;
 }
-.low2 #list1 li{
-    background: url(img/h4.png) no-repeat 202px 13px;
-}
 .low2 #list1 li a{
     height: 42px;
-    width: 180px;
+    width: 190px;
     line-height: 42px;
     color: #fff;
     padding-left: 29px;
     display: block;
-    padding-right: 24px;
+    padding-right: 14px;
+}
+.low2 #list1 .fontli{
+    float: right;
+    font-size: 14px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
 }
 .low2 #list1 li a:hover{
-    background: url(img/h4.png) no-repeat #ff6700 202px 13px ;
+    background: #ff6700;
 }
 .wrap {
     width: 1226px;
@@ -457,19 +458,32 @@ header{
     background: #5f5750;
 }
 .lowT .list3 li{
-    width: 70px;
+    width: 69px;
     height: 82px;
     float: left;
+    border-right: 1px solid #665e57;
+    border-bottom: 1px solid #665e57;
     padding: 0 3px;
 }
 .lowT .list3 li a{
     width: 70px;
     display: inline-block;
-    padding-top: 48px;
     font: 12px/18px "宋体";
     color: #ccc;
+    transition: color 0.3s;
     text-align: center;
-    background: url(img/small.png) no-repeat center;
+}
+.fontzi{
+    line-height: 48px;
+    display: block;
+    padding-right: 0;
+    font-size: 24px;
+}
+.lowT .list3 .zi1{
+    border-right:none;
+}
+.lowT .list3 .zi2{
+    border-bottom:none;
 }
 .lowT .list3 li a:hover{
     color: #fff;
@@ -740,7 +754,7 @@ header{
     font-size: 18px;
     color: #000;
     margin-left: -35px;
-    background: url(img/more.png)no-repeat right;
+    background: url(img/more.png) no-repeat right;
     line-height: 60px;
 }
 .low4list ul li .moremin strong{
@@ -781,10 +795,6 @@ header{
     color: #ff6700;
     border-bottom: 2px solid #ff6700;
 }
-/*.low4-top nav a:hover{
-    color: #ff6700;
-    border-bottom: 2px solid #ff6700;
-}*/
 .uls .skill{
     width: 214px;
     height: 60px;
@@ -991,7 +1001,6 @@ header{
     height: 50px;
     background: #ccc;
     top: 100px;
-    z-in dex: 2;
     text-align: center;
     color: #757575;;
     line-height: 50px;
@@ -1097,15 +1106,13 @@ header{
     display: inline-block;
     width: 212px;
     position: relative;
-    color: #616161;
-    /*background: url(./img/jing.gif)no-repeat;*/
+    color: #616161;  
     padding: 0 15px;
     text-align: center;
     border-right: 1px solid  #e0e0e0;
 }
 .service a:hover{
     color: #ff6700;
-    /*background: url(./img/jinga.png)no-repeat 53px;*/
 }
 .service .zui{
     border-right: none;
@@ -1170,6 +1177,9 @@ header{
     height: 30px;
     text-align: center;
     margin-left: 66px;
+}
+.kefu{
+    font-size: 16px;
 }
 .footerright a{
     width: 118px;

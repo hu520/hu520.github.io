@@ -98,17 +98,6 @@ window.onload = function (){
 	$("#lista").find('.ulul').mouseover(function(){
 		$('#lista').find('.ulul').eq($(this).index()).show();
 	});
-	// $("#list1").find('li').mouseover(function(){
-	// 	$(this).find('li').show().siblings().hide();								
-	// 	$('#lista').find('ul').eq($(this).index()).show().siblings().hide();				
-	// });
-	// $(".low2").mouseout(function(){
-	// 	$('#lista').find('ul').hide();
-	// });
-	// $("#lista").find('ul').mouseover(function(){
-	// 	$('#lista').find('ul').eq($(this).index()).show();
-	// });
-
 		// 导航竖直弹出效果
 
 		$(".navs").find('a').mouseover(function(){
