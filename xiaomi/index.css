@@ -65,7 +65,7 @@ header{
     color: #b0b0b0;
     padding-left: 9px;
     padding-right: 9px;
-    background: url(img/nav.png) no-repeat;
+    background: url(./img/nav.png) no-repeat;
 }
 #hleft nav a:hover{
     color: #fff;
@@ -750,7 +750,7 @@ header{
     font-size: 18px;
     color: #000;
     margin-left: -35px;
-    background: url(img/more.png) no-repeat right;
+    background: url(./img/more.png) no-repeat right;
     line-height: 60px;
 }
 .low4list ul li .moremin strong{
