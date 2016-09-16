@@ -224,4 +224,66 @@ window.onload = function (){
 	fn('#bookbox2');
 	fn('#bookbox3');
 	fn('#bookbox4');
+
+	var fangda = document.getElementById('fangda');
+ 		var fsma = fangda.children[0];
+ 		var sdiv = fsma.children[0];		
+        var fbig = document.getElementById('fbig');
+        var flist = document.getElementById('flist');
+        var flis = flist.getElementsByTagName('li');
+        var smaimg = fsma.getElementsByTagName('img');
+        var bigimg = fbig.getElementsByTagName('img');
+        var fmifu = document.getElementById('fmifu');
+        var fa = fmifu.getElementsByTagName('a');
+        for(var i = 0;i<flis.length;i++){
+            flis[i].index = i;
+            flis[i].onclick = function(){
+                 for(var i = 0;i<flis.length;i++){
+                    flis[i].className = '';
+                    smaimg[i].className = '';
+                    bigimg[i].className = '';
+                    fa[i].className = '';
+                 }
+                 this.className = 'active';
+                 smaimg[this.index].className = 'bactive';
+                 bigimg[this.index].className = 'hactive';
+                 fa[this.index].className = 'mactive';
+                 fang(this.index);
+            }
+        }
+ 		fsma.onmouseover = function(){
+ 			sdiv.style.display = 'block';
+ 			fbig.style.display = 'block';
+ 		}
+ 		fsma.onmouseout = function(){
+ 			sdiv.style.display = 'none';
+ 			fbig.style.display = 'none';
+ 		}
+        fang(0);
+        function fang(index){
+     		fsma.onmousemove = function(ev){
+     			var ev = ev || window.event;
+     			var disX = ev.pageX-fangda.offsetLeft-sdiv.offsetWidth/2;
+     			var disY = ev.pageY-fangda.offsetTop-sdiv.offsetHeight/2;
+
+     			if(disX <= 0){
+     				disX = 0;
+     			}else if(disX > fsma.offsetWidth - sdiv.offsetWidth){
+     				disX = fsma.offsetWidth - sdiv.offsetWidth;
+     			}
+     			if(disY <= 0){
+     				disY = 0;
+     			}else if(disY > fsma.offsetHeight - sdiv.offsetHeight){
+     				disY = fsma.offsetHeight - sdiv.offsetHeight;
+     			}
+     			var scaleX = disX / (fsma.offsetWidth - sdiv.offsetWidth);
+     			var scaleY = disY / (fsma.offsetHeight -sdiv.offsetHeight);
+     			// document.title = scaleX;
+                sdiv.style.left = disX +'px';
+                sdiv.style.top = disY +'px';
+     			bigimg[index].style.left = scaleX * -(bigimg[index].offsetWidth-fbig.offsetWidth) + 'px';
+     			bigimg[index].style.top = scaleY * -(bigimg[index].offsetHeight-fbig.offsetHeight) + 'px'; 
+                return false;  			
+     		}
+        }
 };
