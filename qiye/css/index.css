@@ -107,6 +107,7 @@ header{
 	padding: 0 8px;
 	position: relative;
 	float: left;
+	height:40px;
 	background: url(../img/head1.png) no-repeat 0 center;
 }
 .nav ul li a{
@@ -141,7 +142,7 @@ header{
 	width: 160px;
 	position: absolute;
 	left: 8px;
-	top:26px;
+	top: 26px;
 	z-index: 5;
 	display: none;
 	background: #Fff;

@@ -69,7 +69,6 @@ window.onload = function (){
     		opacity: 0},300)
 	});
 	 // 收索栏效果
-	 // var tx = $('input')[0];
 	 $('.text').focus(function(){
 	 	$(this).css({border:'1px solid #ff6700'});
 	 	$('.deng').eq($(this).index()).show();
@@ -153,7 +152,6 @@ window.onload = function (){
 			$(id).find('.low4-top a').mouseover(function(){
 				$(this).addClass('active').siblings('a').removeClass('active');
 				$(id).find('.low4list .uls').eq($(this).index()).show().siblings().hide();
-				// $('.low4list').find('.uls').css({margin-left:234})
 				$(id).find('.low4-img').show();
 			});
 		};
