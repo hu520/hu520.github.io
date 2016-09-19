@@ -5,7 +5,7 @@ body,div,h1,h2,h3,h4,ul,dl,dd,nav,p,form,input,section,form{margin:0;
 }
 body,html{
     overflow-x:hidden;
-    background-image: url(about:black);
+    background-image: url(about:blank);
     background-attachment:fixed;
 }
 li{list-style: none;

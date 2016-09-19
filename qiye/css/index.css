@@ -3,9 +3,11 @@ h1,h2,h3,h4,ul,li,dt,dd,p,body{
 	padding:0;
 	
 }
-body{
+body,html{
 	font-size:14px;
 	font-family: "lucida Grande",Verdana,"Microsoft YaHei",sans-serif;
+	background-image: url(about:blank);
+	background-attachment: fixed;
 }
 img{
 	vertical-align: top;
@@ -891,3 +893,53 @@ header{
 .text-box .more a:hover{
 	text-decoration: underline;
 }
+#messageBoardContainer{
+	position:absolute; 
+	overflow:hidden; 
+	z-index:99999999;
+}
+#messageBoard{ 
+	position:absolute;
+}
+#messageBoard .content{
+	width:321px;
+	height:96px;
+	display: block;
+	position: relative;
+	z-index: 999;
+	background:url(../img/qq_2.png) left bottom no-repeat;
+
+}
+#messageBoard .cose{
+	width:39px;
+	height:39px;
+	background:url(../img/bg.png) 0px -547px  no-repeat;
+	display:block;
+	float:right;
+}
+#messageBoard .qq{
+	width:300px;
+	height:86px;
+	display:block;
+	float:left;
+}
+#quirkyPopupShowBtn{
+	position: absolute;
+	z-index: 10;
+	top: 80px; 
+	left: 0px;
+	width: 62px;
+	height: 111px;
+	background: url(../img/bg.png) 0px -429px no-repeat; 
+}
+.quirkyPopupShowBtn{
+	position:fixed;
+	z-index: 5;
+	top:200px; 
+	left:0px;
+	width:48px;
+	height:100px;
+	background:url(../img/bg.png) 0px -434px  no-repeat; 
+}
+#foot_bm a,#foot_bm,p,p a{color:#666;}
+
