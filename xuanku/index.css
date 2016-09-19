@@ -271,14 +271,13 @@ img{border: none;
     z-index: 2;
 }
 .conleft-box{height:0;
-    width: 0;
+    width: 100%;
     position: absolute;
     left: 0;
     top: 0;
     opacity: 0;
     z-index: 2;
     transition: 0.4s;
-    /*transform: rotateZ(45deg);*/
     background: #10c28a;
 }
 .conleft .conle{height: 800px;
