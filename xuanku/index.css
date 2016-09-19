@@ -107,6 +107,7 @@ img{border: none;
     color: #fff;
     line-height: 50px;
     cursor: pointer;
+    display: none;
 }
 #hui:hover{
     background: url(img/100.png) no-repeat #10c28a 0 5px;

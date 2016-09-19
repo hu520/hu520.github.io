@@ -56,6 +56,7 @@ window.onload =  function(){
 		if (scrollT>=500) {
 			totxt.style.bottom = '200px';
 			totxt.style.opacity = 1;
+			box.style.display = 'block';
 		}
 		if (scrollT < 500) {
 			totxt.style.bottom = '80px';
@@ -64,6 +65,7 @@ window.onload =  function(){
 
 		var slide =  document.getElementsByClassName('slide')[0];
 		var ul = slide.getElementsByTagName('ul')[0];
+		
 		if (scrollT>=2300) {
 			ul.className = '';
 		}
@@ -399,9 +401,10 @@ window.onload =  function(){
 		timer = setInterval(function(){
 			top = top - 100;
 			window.scrollTo(0,top);
-			if(top<=0){
+			if(top<=500){
 				window.scrollTo(0,0)
 				clearInterval(timer);
+				box.style.display = 'none';
 			}
 		},100)
 	}	 
