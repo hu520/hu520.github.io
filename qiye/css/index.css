@@ -5,6 +5,7 @@ h1,h2,h3,h4,ul,li,dt,dd,p,body{
 }
 body,html{
 	font-size:14px;
+	overflow-x: hidden;
 	font-family: "lucida Grande",Verdana,"Microsoft YaHei",sans-serif;
 	background-image: url(about:blank);
 	background-attachment: fixed;
@@ -256,9 +257,9 @@ header{
 	width: 100%;
 	height:450px;
 }
-#list li:nth-of-type(1){
+/*#list li:nth-of-type(1){
 	z-index: 1;
-}
+}*/
 #navs{
 	position: absolute;
 	left:50%;
