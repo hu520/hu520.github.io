@@ -344,9 +344,11 @@ transform:rotate(-135deg);
     border-radius: 25px 0 0 25px;
     background: #fff;
     color:green;
+    cursor:pointer;
 }
 #dream-bar2{
     border-radius: 0 25px 25px 0;
+    cursor:pointer;
 }
 
 /*第五屏*/
