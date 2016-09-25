@@ -367,6 +367,7 @@ img{border: none;
 }
 #low2min ul{
 	width: 1130px;
+	height:300px;
 	margin: 0 auto;
 	margin-top: 50px;
 	overflow: hidden;
@@ -383,7 +384,7 @@ img{border: none;
 	width: 156px;
 	height: 156px;
 	position: absolute;
-	transition: 0.5s;
+	transition: 0.3s;
 	top: 0;
 	left: 22px;
 	background: url(../img/words.png) no-repeat;
@@ -391,16 +392,13 @@ img{border: none;
 #low2min ul li .u1{
 	background-position: 0 -364px;
 	clip: rect(0px,156px,156px,78px);
-	transition: 0.3s;
 }
 #low2min ul li:hover .u1{
 	clip: rect(156px,156px,156px,78px);
-
 }
 #low2min ul li .u2{
 	background-position: 0 -364px;
 	clip: rect(0px,78px,156px,0px);
-	transition: 0;
 }
 #low2min ul li:hover .u2{
 	clip: rect(0px,78px,0px,0px);
@@ -425,7 +423,6 @@ img{border: none;
 #low2min ul li .u3{
 	background-position: 0 -364px;
 	clip: rect(0px,156px,156px,78px);
-	transition: 0.3s;
 }
 #low2min ul li:hover .u3{
 	clip: rect(156px,156px,156px,78px);
@@ -434,7 +431,6 @@ img{border: none;
 #low2min ul li .u4{
 	background-position: 0 -364px;
 	clip: rect(0px,78px,156px,0px);
-	transition: 0.3s;
 }
 #low2min ul li:hover .u4{
 	clip: rect(0px,78px,0px,0px);
@@ -449,16 +445,13 @@ img{border: none;
 #low2min ul li .u5{
 	background-position: 0 -364px;
 	clip: rect(0px,156px,156px,78px);
-	transition: 0.3s;
 }
 #low2min ul li:hover .u5{
 	clip: rect(156px,156px,156px,78px);
-
 }
 #low2min ul li .u6{
 	background-position: 0 -364px;
 	clip: rect(0px,78px,156px,0px);
-	transition: 0.3s;
 }
 #low2min ul li:hover .u6{
 	clip: rect(0px,78px,0px,0px);
@@ -473,16 +466,13 @@ img{border: none;
 #low2min ul li .u7{
 	background-position: 0 -364px;
 	clip: rect(0px,156px,156px,78px);
-	transition: 0.3s;
 }
 #low2min ul li:hover .u7{
 	clip: rect(156px,156px,156px,78px);
-
 }
 #low2min ul li .u8{
 	background-position: 0 -364px;
 	clip: rect(0px,78px,156px,0px);
-	transition: 0.3s;
 }
 #low2min ul li:hover .u8{
 	clip: rect(0px,78px,0px,0px);
@@ -497,16 +487,13 @@ img{border: none;
 #low2min ul li .u9{
 	background-position: 0 -364px;
 	clip: rect(0px,156px,156px,78px);
-	transition: 0.3s;
 }
 #low2min ul li:hover .u9{
 	clip: rect(156px,156px,156px,78px);
-
 }
 #low2min ul li .u10{
 	background-position: 0 -364px;
 	clip: rect(0px,78px,156px,0px);
-	transition: 0.3s;
 }
 #low2min ul li:hover .u10{
 	clip: rect(0px,78px,0px,0px);

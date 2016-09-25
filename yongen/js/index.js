@@ -403,12 +403,21 @@ $(document).ready(function(){
 	low2li.hover(function(){
 		$(this).find('p').stop().animate({
 			top:0
-		},400);	
+		},500);	
 	},function(){
 		$(this).find('p').stop().animate({
 			top:300
 		},200);
 	});
+
+	// $(low2li).hover(function(){
+	// 	$(this).find('.u1').stop().animate({
+	// 		'clip': 'rect(156px)'		
+	// 	});
+	// 	$(this).find('.u2').stop().animate({
+	// 		'clip': 'rect(0px)'
+	// 	});
+	// });
 	// 滚屏三
 	var low3li = $('#low3min ul').find('li');
 	low3li.hover(function(){
