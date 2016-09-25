@@ -57,6 +57,7 @@ img{border: none;
 }
 #low1box .list{
 	width: 400%;
+	height: 100%;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -677,8 +678,9 @@ img{border: none;
 	width: 1160px;
 	height: 301px;
 	overflow: hidden;
-	margin:0 auto;
-	position: relative;
+	left:50%;
+	position: absolute;
+	margin-left: -580px;
 	top: 500px;
 }
 #low4min ul li{
