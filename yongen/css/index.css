@@ -624,10 +624,9 @@ img{border: none;
     cursor: pointer;
 }
 #low3min .more{
-	padding: 5px 0;
 	display: block;
 	width: 120px;
-	height: 36px;
+	height: 46px;
 	margin: 0 auto;
 	margin-top: 48px;
 	border: 1px dotted #c0ff00;
@@ -636,9 +635,15 @@ img{border: none;
 	display: inline-block;
 	font-size: 26px;
 	line-height: 36px;
-	padding-left: 20px;
+	width: 120px;
+	padding: 5px 0;
 	text-align: center;
 	color: #c0ff00;
+	transition: 0.3s;
+}
+#low3min .more a:hover{
+	background: #c0ff00;
+	color:#fff;
 }
 #low4{
 	position: relative;
