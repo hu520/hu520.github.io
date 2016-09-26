@@ -255,8 +255,8 @@ window.onload = window.onresize = function(){
 			);
 		}
 	}
-// };
-// $(document).ready(function(){
+};
+$(document).ready(function(){
 	var IH = $('.newul li').eq(0).height();
  	var nub = 0;
 	var timer = 1;
@@ -509,5 +509,4 @@ window.onload = window.onresize = function(){
 			duration:400
 		});
 	};
-// });
-};
+});
