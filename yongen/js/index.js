@@ -273,7 +273,7 @@ $(document).ready(function(){
 
 	// 滚屏一下的轮播图
 	var iw = $('.list li').eq(0).width();
-	var navs = $('nav').find('a');
+	var navs = $('.nav').find('a');
 	var num1 = 0;
 	var Timer = 0;
 
@@ -300,7 +300,7 @@ $(document).ready(function(){
 		num1--;
 		tab();
 	});
-	$('.nav').find('a').mouseover(function(){
+	navs.mouseover(function(){
 		num1 = $(this).index();
 		tab();
 		fn();
@@ -316,7 +316,8 @@ $(document).ready(function(){
 		if (num1 == $('.list li').size()) {
 			$('.list li').eq(0).css({
 				position:'relative',
-				left:$('.list li').size()*iw})
+				left:iw*$('.list li').size()
+			});
 		};
 		if (num1 > $('.list li').size()) {
 			$('.list li').eq(0).css({position:'static'});
@@ -326,7 +327,8 @@ $(document).ready(function(){
 		if (num1 == -1) {
 			$('.list li').last().css({
 				position:'relative',
-				left:-iw*$('.list li').size()})
+				left:-iw*$('.list li').size()
+			});
 		};
 		if (num1 < -1) {
 			$('.list li').last().css({position:'static'});
