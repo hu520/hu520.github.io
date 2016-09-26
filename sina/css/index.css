@@ -41,7 +41,7 @@ input{
 	line-height: 36px; 
 	font-family: "黑体";
 	height: 36px;
-	background: url(img/logo.png) no-repeat;
+	background: url(../img/logo.png) no-repeat;
 	padding-top: 5px;
 	color: #b58e4f;
 	padding-left: 55px;
@@ -391,7 +391,7 @@ input{
 	color: #c00;
 }
 .twoList .twoB li{
-	background: url(img/dian.png) no-repeat 0 12px;
+	background: url(../img/dian.png) no-repeat 0 12px;
 	padding-left: 6px;
 }
 .twoList .twoB li a{
@@ -667,7 +667,7 @@ input{
 	color: #b58d4f;
 }
 .fourLeft .fourLitop li{
-	background: url(img/dian.png) no-repeat 0 12px;
+	background: url(../img/dian.png) no-repeat 0 12px;
 	padding-left: 6px;
 }
 .fourLeft .fourLitop li a{
@@ -1039,7 +1039,7 @@ a:hover img{
 	.header .headlist{
 		float: left;
 		padding-left: 36px;
-		background: url(img/headlogo.png) no-repeat 0 12px;
+		background: url(../img/headlogo.png) no-repeat 0 12px;
 	}
 	.header .headlist li{
 		float: left;
@@ -1059,7 +1059,7 @@ a:hover img{
 	}
 	.header .headmore{
 		float: left;
-		background: url(img/headlogo2.png) no-repeat 4px 16px;
+		background: url(../img/headlogo2.png) no-repeat 4px 16px;
 		color: #b58e4f;
 		font-size: 12px;
 		line-height: 40px;
@@ -1274,7 +1274,7 @@ a:hover img{
 	.hezuo .heli li{
 		line-height: 26px;
 		padding-left: 10px;
-		background: url(img/dian.png) no-repeat 0 12px; 
+		background: url(../img/dian.png) no-repeat 0 12px; 
 	}
 	.hezuo .heli li a{
 		color: #2d2d2d;
@@ -1720,11 +1720,44 @@ a:hover img{
 		transition: .5s;
 	}
 	.Img1{
-		background: #333;
+		background: #333;	
+	}
+	.Img1 .img-box{
+		width: 1000px;
+		height:500px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.img-box ul{
+		width:600%;
+		height:500px;
+		position: absolute;
+	}
+	.img-box ul li{
+		float: left;
+		width:1000px;
+		height:500px;
+	}
+	.img-box .nav{
+		width:200px;
+		height:30px;
+		position: absolute;
+		left:50%;
+		bottom:30px;
+	}
+	.img-box .nav a{
+		height:20px;
+		width:20px;
+		display: inline-block;
+		margin:5px;
+		background: red;
+		border-radius: 10px;
+	}
+	.img-box .nav .active{
+		background: blue;
 	}
 	.Img1 img{
-		width: 1000px;
-		margin: 0 auto;
+		width:100%;
 	}
 	/*头部图片后*/
 	/*导航前*/
