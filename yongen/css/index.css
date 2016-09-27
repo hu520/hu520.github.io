@@ -72,18 +72,6 @@ img{border: none;
 #low1box .active{
 	background: #c0ff00;
 }
-#low1 .lowspan{
-	width: 100%;
-	height: 638px;
-	position: absolute;
-	left: 0;
-	top: 0;
-	display: inline-block;
-	background: #000;
-	opacity: 0.9;
-	filter:alpha(opacity=90);
-	z-index: -1;
-}
 .li1{
 	position: relative;
 }
