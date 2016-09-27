@@ -255,8 +255,8 @@ window.onload = window.onresize = function(){
 			);
 		}
 	}
-};
-$(document).ready(function(){
+// };
+// $(document).ready(function(){
 	var IH = $('.newul li').eq(0).height();
  	var nub = 0;
 	var timer = 1;
@@ -340,10 +340,9 @@ $(document).ready(function(){
 			left:-iw*num1
 		},500)
 	};
-	// 轮播图1图
+	
 	fn();
 	function fn(){
-		
 		if (num1==0||num1==4) {
 			$('.cobox .co1').stop().animate({left:0,opacity:1},1000);
 			$('.cobox .co2').stop().animate({left:120,opacity:1},1000);
@@ -521,4 +520,5 @@ $(document).ready(function(){
 			duration:400
 		});
 	};
-});
+// });
+}
