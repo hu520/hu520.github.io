@@ -286,7 +286,7 @@ $(document).ready(function(){
 		num1++;
 		fn();
 		tab();
-	},2000);
+	},3000);
 	$('#low1box').hover(function(){
 		clearInterval(Timer);
 	},function(){
@@ -294,7 +294,7 @@ $(document).ready(function(){
 			num1++;
 			fn();
 			tab();
-		},2000);
+		},3000);
 	});
 	$('.left').click(function(){
 		num1--;
@@ -341,26 +341,38 @@ $(document).ready(function(){
 		},500)
 	};
 	// 轮播图1图
+	fn();
+	function fn(){
 		
-			$('.cobox .co1').stop().animate({left:0,opacity:1});
-			$('.cobox .co2').stop().animate({left:120,opacity:1});
-		
-		function fn(){
-			if (num1==0) {
-				$('.cobox .co1').stop().animate({left:0,opacity:1},1000);
-				$('.cobox .co2').stop().animate({left:120,opacity:1},1000);
-			}else if(num1==1) {
-				$('.co3').stop().animate({left:0,opacity:0.75},800);
-				$('.co4').stop().animate({left:'50%',opacity:1},1000);
-			}else if(num1==2) {
-				$('.co5 h3').stop().animate({left:0,opacity:1},1000);
-				$('.li3 span').stop().animate({top:50,opacity:1},1000);
-			}else if (num1==3) {
-				$('.co6 strong').stop().animate({top:0,opacity:1},1000)
-				$('.co6 p').stop().animate({top:116,opacity:1},1000)
-			};
-	    };
-
+		if (num1==0||num1==4) {
+			$('.cobox .co1').stop().animate({left:0,opacity:1},1000);
+			$('.cobox .co2').stop().animate({left:120,opacity:1},1000);
+		}else{
+			$('.cobox .co1').stop().animate({left:-150,opacity:0},1000);
+			$('.cobox .co2').stop().animate({left:270,opacity:0},1000);
+		}; 
+		if(num1==1||num1==5) {
+			$('.co3').stop().animate({left:0,opacity:0.75},800);
+			$('.co4').stop().animate({left:'50%',opacity:1},1000);
+		}else{
+			$('.co3').stop().animate({left:'50%',opacity:0},800);
+			$('.co4').stop().animate({left:0,opacity:0},1000);
+		};
+		if(num1==2) {
+			$('.co5 h3').stop().animate({left:0,opacity:1},1000);
+			$('.li3 span').stop().animate({top:50,opacity:1},1000);
+		}else{
+			$('.co5 h3').stop().animate({left:-200,opacity:0},1000);
+			$('.li3 span').stop().animate({top:250,opacity:0},1000);
+		};
+		if (num1==3) {
+			$('.co6 strong').stop().animate({top:0,opacity:1},1000);
+			$('.co6 p').stop().animate({top:116,opacity:1},1000);
+		}else{
+			$('.co6 strong').stop().animate({top:-150,opacity:0},1000);
+			$('.co6 p').stop().animate({top:226,opacity:0},1000);
+		};
+    };
 	// 固定定位弹入弹出
 	
 	$('.shan').hover(function(){
