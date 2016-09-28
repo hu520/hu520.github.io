@@ -6,6 +6,7 @@ input{
     margin:0;
     padding: 0;
     border: none;
+    outline: none;
     vertical-align: middle;
 }
 body,html{
