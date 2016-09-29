@@ -1,61 +1,39 @@
 @charset "utf-8";
-body,
-p,
-h1,
-h2,
-h3,
-h4,
-input,
-ul,
-th,
-td,
-ol,
-form {
+body,p,h1,h2,h3,h4,input,ul,th,td,ol,form {
 	margin: 0;
 	padding: 0;
 	font-size: 12px;
 	font-family: Arial, "宋体";
 }
-
 a {
 	text-decoration: none;
 }
-
 li {
 	list-style-type: none;
 }
-
 img {
 	border: none;
 	vertical-align: top;
 }
-
 table {
 	border: none;
 }
-
 .clearfix {
 	zoom: 1;
 }
-
 .clearfix:after {
 	content: "";
 	display: block;
 	clear: both;
 }
-
-
 /* 头部 */
-
 .tophead {
 	background: #f1f1f1;
 }
-
 .head-box {
 	width: 1210px;
 	margin: auto;
 }
-
 .to {
 	float: left;
 	color: #666;
@@ -68,33 +46,28 @@ table {
 	position: relative;
 	z-index: 2;
 }
-
 .to span {
 	float: left;
 }
-
 .place span {
 	padding-right: 10px;
 	float: left;
 }
-
 .place em {
 	float: left;
 	height: 4px;
 	width: 9px;
 	overflow: hidden;
-	background: url(img/icon.gif) no-repeat;
+	background: url(../img/icon.gif) no-repeat;
 	margin-top: 12px;
 }
 .to a:hover em {
 	background-position: -11px 0;
 }
-
 .to:hover {
 	background: #fff;
 	border-color: #ddd;
 }
-
 .to:hover .place-list {
 	height: 224px;
 	border: 1px solid #ddd;
@@ -122,7 +95,6 @@ table {
 	float: left;
 	width: 60px;
 }
-
 .place-list a {
 	float: left;
 	color: #666;
@@ -130,22 +102,18 @@ table {
 	padding: 0 8px;
 	line-height: 24px;
 }
-
 .place-list a:hover {
 	color: #c81623;
 	background: #f4f4f4;
 }
-
 .place-list .active {
 	background: #c81623;
 	color: #fff;
 }
-
 .nav-box {
 	float: right;
 	overflow: hidden;
 }
-
 .nav {
 	float: left;
 	padding: 8px 0;
@@ -158,28 +126,24 @@ table {
 	border-right: 1px solid #ddd;
 	color: #666;
 }
-
 .nav li a {
 	color: #666;
 	float: left;
 	margin-right: 10px;
 }
-
 .nav li a:hover {
 	color: #c81623;
 }
-
 .nav li span {
 	float: left;
 }
-
 .nav li strong {
 	float: left;
 	width: 11px;
 	height: 16px;
 	margin-right: 5px;
 	overflow: hidden;
-	background: url(img/icon.gif) no-repeat 0 -6px;
+	background: url(../img/icon.gif) no-repeat 0 -6px;
 }
 .nav li:hover strong {
 	background-position: -13px -6px;
@@ -189,23 +153,17 @@ table {
 	height: 4px;
 	width: 8px;
 	overflow: hidden;
-	background: url(img/icon.gif) no-repeat;
+	background: url(../img/icon.gif) no-repeat;
 	margin-top: 3px;
 }
 .nav li:hover em {
 	background-position: -11px 0;
 }
-
 .nav .sign-in {
 	color: #c81623;
 }
-
-
 /* 头部 结束 */
-
-
 /* logo-box */
-
 .row1 {
 	width: 1210px;
 	margin: auto;
@@ -215,39 +173,32 @@ table {
 	height: 75px;
 	padding-top: 25px;
 }
-
 .logo-box h2 {
 	float: left;
 	margin-left: 21px;
 }
-
 .logo-box h2 img {
 	height: 49px;
 	width: 76px;
 }
-
 .logo-box h1 {
 	float: left;
 }
-
 .logo-box h1 img {
 	height: 50px;
 	width: 158px;
 }
-
 .form {
 	float: left;
 	display: inline;
 	margin-left: 106px;
 	width: 538px;
 }
-
 .form input {
 	float: left;
 	outline: none;
 	border: none;
 }
-
 .form .text {
 	width: 449px;
 	padding-left: 5px;
@@ -256,7 +207,6 @@ table {
 	line-height: 32px;
 	color: #666;
 }
-
 .form .submit {
 	width: 80px;
 	color: #fff;
@@ -300,7 +250,7 @@ table {
 .shop-car .car {
 	width: 16px;
 	height: 14px;
-	background: url(img/icon.gif) no-repeat -26px 0;
+	background: url(../img/icon.gif) no-repeat -26px 0;
 	overflow: hidden;
 	margin-right: 8px;
 	margin-top: 10px;
@@ -314,7 +264,7 @@ table {
 	width: 6px;
 	height: 10px;
 	overflow: hidden;
-	background: url(img/icon.gif) no-repeat -44px 0;
+	background: url(../img/icon.gif) no-repeat -44px 0;
 	margin-left: 20px;
 	margin-top: 13px;
 }
@@ -324,7 +274,7 @@ table {
 	height: 14px;
 	line-height: 14px;
 	overflow: hidden;
-	background: url(img/icon.gif) no-repeat -52px 0;
+	background: url(../img/icon.gif) no-repeat -52px 0;
 	color: #fff;
 	position: absolute;
 	left: 104px;
@@ -396,7 +346,7 @@ table {
 	position: absolute;
 	right: 13px;
 	top: 14px;
-	background: url(img/icon.gif) no-repeat -26px -16px;
+	background: url(../img/icon.gif) no-repeat -26px -16px;
 }
 
 .body .menu-center {
@@ -438,7 +388,7 @@ table {
 	top: 214px;
 }
 .menu-center a:hover .lastbg {
-	background: url(img/icon.gif) no-repeat -1px -106px;
+	background: url(../img/icon.gif) no-repeat -1px -106px;
 }
 .menu-center .nextbg {
 	width: 10px;
@@ -448,7 +398,7 @@ table {
 	top: 214px;
 }
 .menu-center a:hover .nextbg {
-	background: url(img/icon.gif) no-repeat -12px -106px;
+	background: url(../img/icon.gif) no-repeat -12px -106px;
 }
 .menu-center .next {
 	width: 28px;
@@ -521,7 +471,7 @@ table {
 	position: absolute;
 	right: 0;
 	top: 4px;
-	background: url(img/icon.gif) no-repeat -34px -15px;
+	background: url(../img/icon.gif) no-repeat -34px -15px;
 }
 
 .news-list {
@@ -558,7 +508,7 @@ table {
 .menu-right .td-bg {
 	width: 24px;
 	height: 24px;
-	background: url(img/icon.gif) no-repeat;
+	background: url(../img/icon.gif) no-repeat;
 	position: absolute;
 	left: 18px;
 	top: 14px;
@@ -603,7 +553,7 @@ table {
 	width: 12px;
 	height: 16px;
 	overflow: hidden;
-	background: url(img/icon.gif) no-repeat -71px 0;
+	background: url(../img/icon.gif) no-repeat -71px 0;
 	position: absolute;
 	right: 1px;
 	top: 0;
@@ -612,7 +562,7 @@ table {
 	width: 12px;
 	height: 16px;
 	overflow: hidden;
-	background: url(img/icon.gif) no-repeat -87px 0;
+	background: url(../img/icon.gif) no-repeat -87px 0;
 	position: absolute;
 	right: 1px;
 	top: 0;
@@ -689,7 +639,7 @@ table {
 	top: 75px;
 }
 .row3-right a:hover .lastbg {
-	background: url(img/icon.gif) no-repeat -1px -106px;
+	background: url(../img/icon.gif) no-repeat -1px -106px;
 }
 .row3-right .nextbg {
 	width: 10px;
@@ -699,7 +649,7 @@ table {
 	top: 75px;
 }
 .row3-right a:hover .nextbg {
-	background: url(img/icon.gif) no-repeat -12px -106px;
+	background: url(../img/icon.gif) no-repeat -12px -106px;
 }
 .row3-right .next {
 	width: 28px;
@@ -752,7 +702,7 @@ table {
 .like .more em {
 	width: 16px;
 	height: 18px;
-	background: url(img/icon.gif) no-repeat -28px -105px;
+	background: url(../img/icon.gif) no-repeat -28px -105px;
 	position: absolute;
 	right: 0;
 	top: 10px;
@@ -1008,7 +958,7 @@ h3 {
 .head .headbg {
 	width: 31px;
 	height: 26px;
-	background: url(img/icon.gif) no-repeat -121px -45px;
+	background: url(../img/icon.gif) no-repeat -121px -45px;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1049,7 +999,7 @@ h3 {
 	width: 32px;
 	height: 18px;
 	overflow: hidden;
-	background: url(img/icon.gif) no-repeat -110px 0;
+	background: url(../img/icon.gif) no-repeat -110px 0;
 	position: absolute;
 	top: 26px;
 	right: 15px;
@@ -1077,7 +1027,7 @@ h3 {
 .f1-left-top .abg {
 	width: 26px;
 	height: 26px;
-	background: url(img/icon.gif) no-repeat;
+	background: url(../img/icon.gif) no-repeat;
 	position: absolute;
 	left: 0;
 	top: 10px;
@@ -1197,7 +1147,7 @@ h3 {
 	bottom: 111px;
 }
 .f1-center-center a:hover .lastbg {
-	background: url(img/icon.gif) no-repeat -1px -106px;
+	background: url(../img/icon.gif) no-repeat -1px -106px;
 }
 .f1-center-center .nextbg {
 	width: 10px;
@@ -1207,7 +1157,7 @@ h3 {
 	bottom: 111px;
 }
 .f1-center-center a:hover .nextbg {
-	background: url(img/icon.gif) no-repeat -12px -106px;
+	background: url(../img/icon.gif) no-repeat -12px -106px;
 }
 .f1-center-center .next {
 	width: 28px;
@@ -1366,7 +1316,7 @@ h3 {
 .f2-left-top .abg {
 	width: 26px;
 	height: 26px;
-	background: url(img/icon.gif) no-repeat;
+	background: url(../img/icon.gif) no-repeat;
 	position: absolute;
 	left: 0;
 	top: 10px;
@@ -1443,7 +1393,7 @@ h3 {
 	bottom: 51px;
 }
 .f2-center-top a:hover .lastbg {
-	background: url(img/icon.gif) no-repeat -1px -106px;
+	background: url(../img/icon.gif) no-repeat -1px -106px;
 }
 .f2-center-top .nextbg {
 	width: 10px;
@@ -1453,7 +1403,7 @@ h3 {
 	bottom: 51px;
 }
 .f2-center-top a:hover .nextbg {
-	background: url(img/icon.gif) no-repeat -12px -106px;
+	background: url(../img/icon.gif) no-repeat -12px -106px;
 }
 .f2-center-top .next {
 	width: 28px;
@@ -1577,7 +1527,7 @@ h3 {
 .f3-left-top .abg {
 	width: 26px;
 	height: 26px;
-	background: url(img/icon.gif) no-repeat;
+	background: url(../img/icon.gif) no-repeat;
 	position: absolute;
 	left: 0;
 	top: 10px;
@@ -1676,7 +1626,7 @@ h3 {
 	bottom: 111px;
 }
 .f3-right1 a:hover .lastbg {
-	background: url(img/icon.gif) no-repeat -1px -106px;
+	background: url(../img/icon.gif) no-repeat -1px -106px;
 }
 .f3-right1 .nextbg {
 	width: 10px;
@@ -1686,7 +1636,7 @@ h3 {
 	bottom: 111px;
 }
 .f3-right1 a:hover .nextbg {
-	background: url(img/icon.gif) no-repeat -12px -106px;
+	background: url(../img/icon.gif) no-repeat -12px -106px;
 }
 .f3-right1 .next {
 	width: 28px;
@@ -1828,7 +1778,7 @@ h3 {
 .f6-left1-top .abg {
 	width: 26px;
 	height: 26px;
-	background: url(img/icon.gif) no-repeat;
+	background: url(../img/icon.gif) no-repeat;
 	position: absolute;
 	left: 0;
 	top: 10px;
@@ -1924,7 +1874,7 @@ h3 {
 	bottom: 225px;
 }
 .f6-center a:hover .lastbg {
-	background: url(img/icon.gif) no-repeat -1px -106px;
+	background: url(../img/icon.gif) no-repeat -1px -106px;
 }
 .f6-center .nextbg {
 	width: 10px;
@@ -1934,7 +1884,7 @@ h3 {
 	bottom: 225px;
 }
 .f6-center a:hover .nextbg {
-	background: url(img/icon.gif) no-repeat -12px -106px;
+	background: url(../img/icon.gif) no-repeat -12px -106px;
 }
 .f6-center .next {
 	width: 28px;
@@ -2082,7 +2032,7 @@ h3 {
 .f10-left1-top .abg {
 	width: 26px;
 	height: 26px;
-	background: url(img/icon.gif) no-repeat;
+	background: url(../img/icon.gif) no-repeat;
 	position: absolute;
 	left: 0;
 	top: 10px;
@@ -2185,7 +2135,7 @@ h3 {
 	bottom: 111px;
 }
 .f10-center a:hover .lastbg {
-	background: url(img/icon.gif) no-repeat -1px -106px;
+	background: url(../img/icon.gif) no-repeat -1px -106px;
 }
 .f10-center .nextbg {
 	width: 10px;
@@ -2195,7 +2145,7 @@ h3 {
 	bottom: 111px;
 }
 .f10-center a:hover .nextbg {
-	background: url(img/icon.gif) no-repeat -12px -106px;
+	background: url(../img/icon.gif) no-repeat -12px -106px;
 }
 .f10-center .next {
 	width: 28px;
@@ -2386,7 +2336,7 @@ h3 {
 .f11-left-top .abg {
 	width: 26px;
 	height: 26px;
-	background: url(img/icon.gif) no-repeat;
+	background: url(../img/icon.gif) no-repeat;
 	position: absolute;
 	left: 25px;
 	top: 10px;
@@ -2484,7 +2434,7 @@ h3 {
 	bottom: 111px;
 }
 .f11-right-top a:hover .lastbg {
-	background: url(img/icon.gif) no-repeat -1px -106px;
+	background: url(../img/icon.gif) no-repeat -1px -106px;
 }
 .f11-right-top .nextbg {
 	width: 10px;
@@ -2494,7 +2444,7 @@ h3 {
 	bottom: 111px;
 }
 .f11-right-top a:hover .nextbg {
-	background: url(img/icon.gif) no-repeat -12px -106px;
+	background: url(../img/icon.gif) no-repeat -12px -106px;
 }
 .f11-right-top .next {
 	width: 28px;
@@ -2678,7 +2628,7 @@ h3 {
 .low-price-right em {
 	width: 28px;
 	height: 28px;
-	background: url(img/icon.gif) no-repeat;
+	background: url(../img/icon.gif) no-repeat;
 	position: absolute;
 	left: 5px;
 	top: 26px;
@@ -2721,7 +2671,7 @@ h3 {
 .slogen em {
 	width: 40px;
 	height: 46px;
-	background: url(img/icon.gif) no-repeat;
+	background: url(../img/icon.gif) no-repeat;
 	position: absolute;
 	left: 12px;
 	top: 25px;
