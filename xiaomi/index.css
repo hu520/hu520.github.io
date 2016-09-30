@@ -167,10 +167,12 @@ header{
     /*box-shadow:0 1px 1px blue;*/
 }
 #navlist ul{
+    width:1266px;
+    margin:0 auto;
     height: 230px;
     transition: 2s;
     display: none;
-    padding-left: 100px;
+    
     
 }
 #navlist ul li{
@@ -1145,6 +1147,10 @@ header{
     height: 112px;
     padding: 40px 0;
 }
+.footerleft{
+    width:960px;
+    float: left;
+}
 .footerleft dl{
     width: 160px;
     float: left;
@@ -1168,9 +1174,9 @@ header{
     color: #ff6700;
 }
 .footerright{
-    margin-left: 14px;
+    margin-left: 13px;
     border-left: 1px solid  #e0e0e0; 
-    display: inline-block;
+    float: left;
     height: 112px;
     width: 251px;
     font-weight: 400;
@@ -1230,12 +1236,14 @@ header{
     height: 106px;
     margin: 0 auto;
 }
+.footimg{float: left;}
 .footcenter .footT{
     width: 750px;
-    display: inline-block;
+    float: left;
 }
 .footcenter .footT nav{
     height: 18px;
+    width:750px;
 }
 .footcenter .footT nav a{
     font-size: 12px;
@@ -1261,7 +1269,7 @@ header{
 .footcenter .footR{
     width: 375px;
     vertical-align: top;
-    display: inline-block;
+    float: left;
     margin-left: 37px;
 }
 .footcenter .footR img{
