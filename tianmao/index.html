@@ -7,12 +7,14 @@ var i=0;
 i=window.devicePixelRatio>1?1/window.devicePixelRatio:1;
 document.write('<meta name="viewport" content="width=device-width,initial-scale='+i+',minimum-scale='+i+',maximum-scale='+i+',user-scalable=no" />');
 </script>
-<title>天猫首页（移动端）</title>
+<title>天猫（移动版）</title>
 <script>
 var oHtml=document.getElementsByTagName("html")[0];
 var iWidth=oHtml.getBoundingClientRect().width;
 oHtml.style.fontSize=iWidth/27+"px";
 </script>
+<link rel="shortcut icon" href="index.ico" type="image/x-icon" />
+<link rel="icon" href="index.ico" type="image/x-icon" />
 <style type="text/css">
 	
 * {
@@ -43,13 +45,14 @@ input{
 }
 html {
 	height: 100%;
+	overflow-y: hidden;
 }
 body {
 	margin: 0; 
 	font-size: .6rem; 
 	font-family: Arial, "宋体"; 
 	height: 100%; 
-	overflow: auto;
+	overflow-y: hidden;
 	position: relative; 
 	background: #fff;
 }
@@ -70,10 +73,14 @@ img {padding: 0;
 .header{
 	background: url(img/headbg1.png) repeat-x;
 	background-size: 100% 3.1rem;
-	opacity: .8;
 	height: 3.1rem;
+	width:100%;
+	top:0;
+	left:0;
 	border-top: 3px solid #4d4f50;
-	position: relative;
+	position: fixed;
+	opacity: .8;
+	filter: alpha(opacity=80);
 	z-index: 3;
 }
 img{
@@ -864,13 +871,12 @@ section{
     overflow: hidden;  
 }
 #imgtop ul{
-	width: 135rem;
+	width: 800%;
     height: 12.975rem;
     position: absolute;
     padding: 0;
     left: 0;
-    top: 0;
-    
+    top: 0;   
 }
 #imgtop ul li{
 	width: 27rem;
@@ -878,12 +884,13 @@ section{
 }
 
 #imgtop #hihe{
-    width: 5rem;
+    width: 8rem;
     height: 1rem;
     line-height: 1rem;
     position: absolute;
     bottom: .5rem;
-    left: 11rem;
+    left: 50%;
+    margin-left: -4rem;
 }
 #imgtop #hihe .active{
     background:red;
@@ -899,8 +906,10 @@ section{
 </style>
 </head>
 <body>
+<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/startMove.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
-window.onload = function (){
+window.onload =window.onscroll= function (){
 	var imgtop = document.getElementById("imgtop");
 	var hihe = document.getElementById("hihe");
 	var spans = hihe.getElementsByTagName("span");
@@ -950,12 +959,11 @@ window.onload = function (){
 			startMove(list,"left",400,-(now)*liW,"easeOut");
 		}
 	}
+
 };
 </script>
-<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/startMove.js"></script>
 <header class="header">
-    <input type="text"  class="inputtext"value="收索商品/店铺" />
+    <input type="text"  class="inputtext" placeholder="收索商品/店铺" />
     <a href="#" class="text">登入</a>
     <a href="#" class="headci"></a>
     <a href="#" class="headco"></a>
@@ -964,23 +972,35 @@ window.onload = function (){
 	<div id="imgtop">
 	    <ul>
 	    	<li>
-	        	<a href="#"><img src="img/web5.png" /></a>
-	        </li>
-	        <li>
-	        	<a href="#"><img src="img/web2.png" /></a>
-	        </li>
-	        <li>
-	        	<a href="#"><img src="img/web3.png" /></a>
+	        	<a href="#"><img src="img/web9.png" /></a>
 	        </li>
 	        <li>
 	        	<a href="#"><img src="img/web4.png" /></a>
 	        </li>
 	        <li>
-	        	<a href="#"><img src="img/web5.png" /></a>
+	        	<a href="#"><img src="img/web6.png" /></a>
+	        </li>
+	        <li>
+	        	<a href="#"><img src="img/web7.png" /></a>
+	        </li>
+	        <li>
+	        	<a href="#"><img src="img/web8.png" /></a>
+	        </li>
+	        <li>
+	        	<a href="#"><img src="img/web10.png" /></a>
+	        </li>
+	        <li>
+	        	<a href="#"><img src="img/web12.png" /></a>
+	        </li>
+	        <li>
+	        	<a href="#"><img src="img/web9.png" /></a>
 	        </li>
 	    </ul>
 		<div id="hihe">
 			<span class="active"></span>
+			<span></span>
+			<span></span>
+			<span></span>
 			<span></span>
 			<span></span>
 			<span></span>
