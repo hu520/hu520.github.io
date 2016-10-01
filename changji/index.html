@@ -2,8 +2,14 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,user-scalable=no" />
-<title>无标题文档</title>
+<!-- <meta name="viewport" content="width=device-width,user-scalable=no" /> -->
+<script>
+var scale = 1;
+scale = scale/window.devicePixelRatio;
+document.write('<meta name="viewport" content="width=device-width,initial-scale='+scale+',minimum-scale='+scale+',maximum-scale = '+scale+'"/>');
+//alert(window.devicePixelRatio);
+</script>
+<title>场景制作</title>
 <script>
 var html = document.querySelector("html");
 var width = html.getBoundingClientRect().width;
