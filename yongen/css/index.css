@@ -360,6 +360,7 @@ img{border: none;
 	height: 156px;
 	position: absolute;
 	transition: 0.3s;
+	-ms-transition:0.3s;
 	top: 0;
 	left: 22px;
 	background: url(../img/words.png) no-repeat;
