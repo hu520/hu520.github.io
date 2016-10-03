@@ -12,14 +12,14 @@ $(document).ready(function(){
 		timer = setInterval(function(){
 			num++;
 			tab();
-		},3500);
+		},3000);
 		$(box).hover(function(){
 			clearInterval(timer);
 		},function(){
 			timer = setInterval(function(){
 				num++;
 				tab();
-			},3500);
+			},3000);
 		});
 		$(box).find('.left').click(function(){
 			num --;

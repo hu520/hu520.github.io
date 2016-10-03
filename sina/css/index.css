@@ -1,3 +1,4 @@
+@charset "utf-8";
 body,div,h1,h2,h3,ul,dl,dd,nav,p,em,form,input{
 	margin: 0;
 	padding: 0;
@@ -423,8 +424,8 @@ select,option{
 	text-align: center;
 }
 .row3 .row3lia li{
-	text-align: center;
 	width:300px;
+	margin:0 auto;
 }
 .row3 .row3lia li .first{color:red;}
 .row3 .row3lia li a{
@@ -536,6 +537,7 @@ select,option{
 	opacity: 0.5;
 	filter:alpha(opacity=0.5);
 	text-align: center;
+	display: none;
 }
 .twoA .img6 .dtext{
 	position: absolute;
@@ -547,6 +549,7 @@ select,option{
 	bottom:0;
 	color:#fff;
 	text-align: center;
+	display: none;
 }
 .twoA .img6 img{
 	width: 310px;
@@ -880,6 +883,7 @@ select,option{
 	line-height: 35px;
 	z-index: 2;
 	color:#fff;
+	display: none;
 }
 .fourTop .Topimg .tmask{
 	height:35px;
@@ -890,6 +894,7 @@ select,option{
 	background:#000;
 	opacity: 0.5;
 	filter:alpha(opacity=50);
+	display: none;
 }
 .fourTop .Topimg img{
 	width: 310px;
@@ -1511,6 +1516,18 @@ a:hover img{
 		display: block;
 	}
 	/*内容3后*/
+	.twoA .img6 .dmask{	
+		display: block;
+	}
+	.twoA .img6 .dtext{
+		display: block;
+	}
+	.fourTop .Topimg .ttext{
+		display: block;
+	}
+	.fourTop .Topimg .tmask{
+		display: block;
+	}
 	/*美容美体前*/
 	.fourLeft{
 		margin: 0 10px;
