@@ -2458,16 +2458,15 @@ a:hover img{
 	.lastFoot .lastimg{
 		float: left;
 		width: 490px;
+		height: 215px;
 		margin-top: -20px;
 	}
 	
 	.lastFoot .lastimg a{
 		display: none;	
-	
 	}
-	.lastFoot .lastimg a img{
-		width: 490px;
-		height: 215px;
+	.lastFoot .lastimg a:hover img{
+		transform: scale(1);
 	}
 	.lastA .lastimg .lasta{
 		display: none;
@@ -2567,7 +2566,7 @@ a:hover img{
 	}
 	.footcen  .footimgb .huan{
 		margin: -1px;
-		border: 1px solid #f0f0f0;
+		border:1px solid #f0f0f0;
 	}
 	/*化妆品后*/
 	/*内容4后*/
