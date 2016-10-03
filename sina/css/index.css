@@ -1686,6 +1686,10 @@ a:hover img{
 		line-height: 30px;
 		color:#999;
 	}
+	.enter .enright a:hover{
+		color:#333;
+		text-decoration: underline;
+	}
 	.enter .enright span.qq{
 		padding-left: 20px;
 		line-height: 30px;
