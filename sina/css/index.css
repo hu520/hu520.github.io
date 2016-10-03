@@ -2215,9 +2215,7 @@ a:hover img{
 		width: 1000px;
 		margin: 0 auto;
 		overflow: hidden;
-	}
-	.Img img{
-		
+		border-bottom: none;
 	}
 	a:hover img{
 		transform: scale(1.03);
@@ -2251,6 +2249,9 @@ a:hover img{
 	}
 	/*头部图片后*/
 	/*导航前*/
+	.lista-box{
+		border-top: 3px solid #000;
+	}
 	.lista{
 		width: 1000px;
 		margin: 0 auto;
@@ -2691,5 +2692,23 @@ a:hover img{
 	    margin-top: 2px;
 	    line-height: 24px;
 	    text-align: center;
+	}
+	.guang{
+		position: fixed;
+		z-index: 9;
+		width:120px;
+		height:288px;
+		top:49px;
+		background: #ccc;
+		display: none;
+	}
+	.guang .lebi{
+		margin-left: 70px;
+	}
+	.le{
+		left:0;
+	}
+	.ri{
+		right:0;
 	}
 }
