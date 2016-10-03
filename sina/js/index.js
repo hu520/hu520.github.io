@@ -95,4 +95,28 @@ $(document).ready(function(){
 	$('.cuo').click(function(){
 		$('.enter').hide();
 	});
+
+	$('.bi').click(function(){
+		$('#hui').hide();
+	})
 });
+window.onload = window.onscroll=function(){
+	var box = document.getElementById('hui');
+	var boxa = box.getElementsByTagName('a')[0];
+	var timer = 0;
+	var top = window.pageYOffset;
+	if (top>=500&&top<700){
+		box.style.display = 'block';
+	}
+	boxa.onclick = function(){
+		timer = setInterval(function(){
+			top = top - 300;
+			window.scrollTo(0,top);
+			if(top<=500){
+				window.scrollTo(0,0);
+				clearInterval(timer);
+				box.style.display = 'none';
+			}
+		},100)
+	}	 
+}
