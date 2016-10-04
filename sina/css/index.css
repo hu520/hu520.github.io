@@ -132,8 +132,8 @@ select,option{
 	overflow: hidden;
 }
 .Img1 .img-box{
-	width: 340px;
-	height: 170px;
+	width: 360px;
+	height: 180px;
 	margin: 0 auto;
 	position: relative;
 	z-index: 5;	
@@ -141,9 +141,9 @@ select,option{
 .Img1 .img-box .boxl{
 	position: absolute;
 	z-index: 5;
-	width: 340px;
-	height: 170px;
-	left: -340px;
+	width: 360px;
+	height: 180px;
+	left: -360px;
 	top: 0;
 	background: #000;
 	opacity: 0.9;
@@ -152,17 +152,17 @@ select,option{
 .Img1 .img-box .boxr{
 	position: absolute;
 	z-index: 5;
-	width: 340px;
-	height: 170px;
-	left: 340px;
+	width: 360px;
+	height: 180px;
+	left: 360px;
 	top: 0;
 	background: #000;
 	opacity: 0.9;
 	filter: alpha(opacity=90);
 }
 .Img1 .img-box img{
-	width: 340px;
-	height: 170px;
+	width: 360px;
+	height: 180px;
 }
 .img-box ul{
 	width: 600%;
