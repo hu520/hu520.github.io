@@ -1342,7 +1342,7 @@ a:hover img{
 	transition: .5s;
 }
 #hui{display: none;}
-.guang{display: none;}
+/*.guang{display: none;}*/
 @media all and (min-width: 499px){ 
 	/*头部前*/
 	.header {	
@@ -2714,7 +2714,7 @@ a:hover img{
 	    line-height: 24px;
 	    text-align: center;
 	}
-	.guang{
+	/*.guang{
 		position: fixed;
 		z-index: 9;
 		width:120px;
@@ -2731,5 +2731,5 @@ a:hover img{
 	}
 	.ri{
 		right:0;
-	}
+	}*/
 }

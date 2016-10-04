@@ -1,3 +1,31 @@
+window.onload = window.onscroll=function(){
+	var boxs = document.getElementById('hui');
+	var boxa = boxs.getElementsByTagName('a')[0];
+	// var guang1 = $('.guang')[0];
+	// var guang2 = $('.guang')[1];
+	var timer = 0;
+	var top = window.pageYOffset;
+
+	if (top>=500&&top<700){
+		boxs.style.display = 'block';
+	};
+	// if (top>=700&&top<750){		
+	// 	guang1.style.display = 'block';
+	// 	guang2.style.display ='block';
+	// };
+
+	boxa.onclick = function(){
+		timer = setInterval(function(){
+			top = top - 300;
+			window.scrollTo(0,top);
+			if(top<=500){
+				window.scrollTo(0,0);
+				clearInterval(timer);
+				boxs.style.display = 'none';
+			}
+		},100)
+	}	 
+}
 $(document).ready(function(){
 	function wrap(box){
 		var iw = $(box).find('li').eq(0).width();
@@ -100,35 +128,7 @@ $(document).ready(function(){
 		$('#hui').hide();
 	});
 
-	$('.ban').click(function(){
-		$('.guang').hide();
-	})
+	// $('.ban').click(function(){
+	// 	$('.guang').hide();
+	// });
 });
-window.onload = window.onscroll=function(){
-	var box = document.getElementById('hui');
-	var boxa = box.getElementsByTagName('a')[0];
-	var guang1 = $('.guang')[0];
-	var guang2 = $('.guang')[1];
-	var timer = 0;
-	var top = window.pageYOffset;
-
-	if (top>=500&&top<700){
-		box.style.display = 'block';
-	};
-	if (top>=700&&top<750){		
-		guang1.style.display = 'block';
-		guang2.style.display ='block';
-	};
-
-	boxa.onclick = function(){
-		timer = setInterval(function(){
-			top = top - 300;
-			window.scrollTo(0,top);
-			if(top<=500){
-				window.scrollTo(0,0);
-				clearInterval(timer);
-				box.style.display = 'none';
-			}
-		},100)
-	}	 
-}
