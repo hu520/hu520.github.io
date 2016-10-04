@@ -843,14 +843,14 @@ select,option{
 	padding-bottom: 6px;
 }
 .threeLeft .leftB dt a{
-	color: #6d6d6d;
+	color: #333;
 }
 .threeLeft .leftB dt a:hover{
 	color: #B58D4F;
 }
 .threeLeft .leftB dd{
 	line-height: 24px;
-	color: #000;
+	color: #6d6d6d;
 }
 .threeLeft .leftB dd a{
 	color: #b58d4f;
@@ -1351,7 +1351,7 @@ a:hover img{
 		border-bottom: none;
 		position: fixed;
 		z-index: 99;
-		height:44px;
+		height:41px;
 		width:100%;
 		left:0;
 		top:0;
@@ -1668,7 +1668,7 @@ a:hover img{
 		z-index: 6;
 		width:475px;
 		border:1px solid #d0d0d0;
-		top:44px;
+		top:41px;
 		left:-210px;
 		display: none;
 	}
