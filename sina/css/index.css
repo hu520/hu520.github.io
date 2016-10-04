@@ -132,8 +132,8 @@ select,option{
 	overflow: hidden;
 }
 .Img1 .img-box{
-	width: 500px;
-	height: 250px;
+	width: 400px;
+	height: 200px;
 	margin: 0 auto;
 	position: relative;
 	z-index: 5;	
@@ -141,9 +141,9 @@ select,option{
 .Img1 .img-box .boxl{
 	position: absolute;
 	z-index: 5;
-	width: 500px;
-	height: 250px;
-	left: -500px;
+	width: 400px;
+	height: 200px;
+	left: -400px;
 	top: 0;
 	background: #000;
 	opacity: 0.9;
@@ -152,13 +152,17 @@ select,option{
 .Img1 .img-box .boxr{
 	position: absolute;
 	z-index: 5;
-	width: 500px;
-	height: 250px;
-	left: 500px;
+	width: 400px;
+	height: 200px;
+	left: 400px;
 	top: 0;
 	background: #000;
 	opacity: 0.9;
 	filter: alpha(opacity=90);
+}
+.Img1 .img-box img{
+	width: 400px;
+	height: 200px;
 }
 .img-box ul{
 	width: 600%;
@@ -1337,7 +1341,8 @@ a:hover img{
 	transform: scale(1.05);
 	transition: .5s;
 }
-
+#hui{display: none;}
+.guang{display: none;}
 @media all and (min-width: 499px){ 
 	/*头部前*/
 	.header {	
@@ -1405,8 +1410,23 @@ a:hover img{
 	.Img1{
 		display: block;
 	}
-	.Img1 img{
-		width: 100%;
+	.Img1 .img-box{
+		width: 490px;
+		height: 245px;
+	}
+	.Img1 .img-box .boxl{
+		width: 490px;
+		height: 245px;
+		left: -490px;
+	}
+	.Img1 .img-box .boxr{
+		width: 490px;
+		height: 245px;
+		left: 490px;
+	}
+	.Img1 .img-box img{
+		width: 490px;
+		height: 245px;
 	}
 	/*头部图片后*/
 	/*导航前*/
@@ -1775,13 +1795,9 @@ a:hover img{
 		height: 290px;
 		left: 580px;
 	}
-	.img-box ul li img{
+	.Img1 .img-box img{
 		width: 580px;
 		height: 290px;
-	}
-	.Img1 img{
-		display: block;
-		padding: none;
 	}
 	/*头部图片后*/
 
@@ -2073,7 +2089,7 @@ a:hover img{
 		height: 380px;
 		left: 760px;
 	}
-	.img-box ul li img{
+	.Img1 .img-box img{
 		width: 760px;
 		height: 380px;
 	}
@@ -2183,6 +2199,10 @@ a:hover img{
 		height: 400px;
 		left: 800px;
 	}
+	.Img1 .img-box img{
+		width: 800px;
+		height: 400px;
+	}
 	/*我爱试用前*/
 	.row3 .row3lib li{
 		float: none;
@@ -2243,7 +2263,7 @@ a:hover img{
 		height: 500px;
 		left: 1000px;
 	}
-	.img-box ul li img{
+	.Img1 .img-box img{
 		width: 1000px;
 		height: 500px;
 	}

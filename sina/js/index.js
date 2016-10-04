@@ -117,7 +117,7 @@ window.onload = window.onscroll=function(){
 	};
 	if (top>=700&&top<750){		
 		guang1.style.display = 'block';
-		guang2.style.display = 'block';
+		guang2.style.display ='block';
 	};
 
 	boxa.onclick = function(){
