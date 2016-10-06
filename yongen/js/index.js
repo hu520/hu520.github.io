@@ -127,7 +127,27 @@ window.onload = window.onresize = function(){
 				startMove(low4minul, 'top', 2500, 142, 'elasticOut');
 			}else{
 				startMove(low4minul, 'top', 2500, 500, 'elasticOut');
+			};
+			var low4ul=document.getElementById('low4ul');
+			var float=document.getElementById('float');
+			var ls = low4ul.getElementsByTagName('li');
+			for( var i=0;i<ls.length-1;i++ ){
+				ls[i].style.left = ls[i].offsetLeft+'px';
+				ls[i].style.top = ls[i].offsetTop+'px';
 			}
+			for( var i=0;i<ls.length-1;i++ ){
+				ls[i].style.position = 'absolute';
+				ls[i].style.zIndex = 2;
+				ls[i].onmouseover = function(){
+					float.style.left = this.offsetLeft+'px';
+					float.style.top = this.offsetTop+'px';
+				};
+				// lis[i].onmouseout = function(){
+				// 	move.style.left = lis[0].offsetLeft+'px';
+				// 	move.style.width = lis[0].offsetWidth+'px';
+				
+			}
+
 		}
 		// 滚屏五
 		function gun5(){

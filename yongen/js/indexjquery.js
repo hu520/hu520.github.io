@@ -194,7 +194,7 @@ $(document).ready(function(){
 	// 滚屏四
 	var low4li = $('#low4min ul').find('li');
 	
-	low4li.hover(function(){
+	$(low4li).hover(function(){
 		$(this).stop().animate({
 			'backgroundPosition-x':'-230+$(this.index())px',
 			'backgroundPosition-y':'-150px'		

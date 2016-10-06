@@ -659,6 +659,7 @@ img{border: none;
 	height: 301px;
 	overflow: hidden;
 	left:50%;
+	background: #999;
 	position: absolute;
 	margin-left: -580px;
 	top: 500px;
@@ -667,16 +668,30 @@ img{border: none;
 	width: 231px;
 	height: 150px;
 	float: left;
-	background: url(../img/clients.png) #aaa no-repeat;
+	background: url(../img/clients.png) no-repeat;
 	border-right: 1px dotted #333;
 	border-bottom: 1px dotted #333;
+}
+
+#low4min #float{
+	height:150px;
+	width: 231px;
+	transition:.3s;
+	position:absolute;
+	top:0;
+	left:0;
+	border-right: none;
+	border-bottom: none;
+	background: #ddd;
+	opacity: 0.5;
+	z-index:1;
 }
 #low4min ul li.r{
 	border-right: none;
 }
-#low4min ul li:hover{
+/*#low4min ul li:hover{
 	background-color: #ccc;
-}
+}*/
 #low4min ul .low4li1{
 	background-position: 0 0;
 }
