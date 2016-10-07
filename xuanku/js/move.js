@@ -8,10 +8,7 @@
 *
 * http://www.cnblogs.com/bluedream2009/archive/2010/06/19/1760909.html
 * */
-
 //Tween.linear();
-
-
 var Tween = {
 	linear: function (t, b, c, d){  //匀速
 		return c*t/d + b;
@@ -160,11 +157,9 @@ function getStyle(obj,attr){
 				j[attr].b = parseInt(getStyle(obj,attr));
 			}
 			j[attr].c = json[attr] - j[attr].b;
-		}
-		
+		}		
 //		console.log(j)
-//		return;
-		
+//		return;		
 		//从起始位置到达目标点的距离。
 		var d = time;//一共要用多少毫秒到达目标点。
 		clearInterval(timer);

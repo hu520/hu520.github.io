@@ -83,7 +83,7 @@ var Tween = {
 		if (t < 1) {
 			return - 0.5*(a*Math.pow(2,10*(t-=1)) * 
 					Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
-		}
+		};
 		return a*Math.pow(2,-10*(t-=1)) * 
 				Math.sin( (t*d-s)*(2*Math.PI)/p )*0.5 + c + b;
 	},
@@ -127,7 +127,7 @@ var Tween = {
 		}
 		return Tween['bounceOut'](t*2-d, 0, c, d) * 0.5 + c*0.5 + b;
 	}
-};
+}
 //callBack 回调函数，动画结束之后，执行的函数
 function startMove(obj,attr,time,target,type,callBack,ConBack)
 {
@@ -156,7 +156,7 @@ function startMove(obj,attr,time,target,type,callBack,ConBack)
 			}
 		},
 		20
-	 );
+	 )
 }
 function css(obj,attr){
 	var nub = 0;

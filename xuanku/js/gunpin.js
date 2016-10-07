@@ -1,5 +1,3 @@
-
-	
 	// addWhell(document,function(down){
 	// 	if(down){ 
 	// 		alert('↑');
@@ -7,7 +5,6 @@
 	// 		alert('↓');
 	// 	}
 	// });
-
 	//function addWhell(obj,fnDown,fnUp){ 
 	function addWhell(obj,fn){
 		if(window.navigator.userAgent.toLowerCase().indexOf('firefox')!=-1){
@@ -15,8 +12,7 @@
 		}else{
 			//不是FF是别的浏览器
 			obj.addEventListener('mousewheel',fnEv);
-		}
-	
+		};
 		function fnEv(ev){
 			/*
 			 	处理2件事：
@@ -29,7 +25,7 @@
 				 down = ev.wheelDelta > 0 ? true : false;
 			}else{
 				 down = ev.detail < 0 ? true : false;
-			}
+			};
 			
 //			if(down){
 //				typeof fnDown === 'function' && fnDown();
@@ -37,6 +33,6 @@
 //				typeof fnUp === 'function' && fnUp();
 //			}
 			typeof fn == 'function' && fn(down);
-		}
-	}
+		};
+	};
 	
