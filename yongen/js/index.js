@@ -307,15 +307,15 @@ window.onload = window.onresize = function(){
 		fn();
 		tab();
 	},3000);
-	$('#low1box').hover(function(){
-		clearInterval(Timer);
-	},function(){
-		Timer = setInterval(function(){
-			num1++;
-			fn();
-			tab();
-		},3000);
-	});
+	// $('#low1box').hover(function(){
+	// 	clearInterval(Timer);
+	// },function(){
+	// 	Timer = setInterval(function(){
+	// 		num1++;
+	// 		fn();
+	// 		tab();
+	// 	},3000);
+	// });
 	$('.left').click(function(){
 		num1--;
 		tab();
@@ -358,7 +358,7 @@ window.onload = window.onresize = function(){
 		navs.eq(num1%navs.length).addClass('active').siblings('a').removeClass('active');
 		$('.list').stop().animate({
 			left:-iw*num1
-		},500)
+		},400);
 	};
 	
 	fn();

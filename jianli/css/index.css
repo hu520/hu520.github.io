@@ -360,10 +360,10 @@ transform:rotate(-135deg);
     padding-top: 80px;
 }
 .nav{
-    width:1000px;
+    width:800px;
     margin:0 auto;
     height:30%;
-    margin-top: 8%;
+    margin-top: 5%;
     left: 15%;
 }
 .nav a{

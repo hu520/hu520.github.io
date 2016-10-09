@@ -310,16 +310,16 @@ img{border: none;
 	color: #fff;
 }
 .newbox .nav{
-	width: 260px;
+	width: 230px;
 	float: right;
 }
 .newbox .nav a{
-	width: 40px;
-	height: 10px;
-	line-height: 10px;
-	margin-left: 10px;
+	width: 30px;
+	height: 6px;
+	line-height: 6px;
+	margin-left: 5px;
 	display: inline-block;
-	border-radius: 5px;
+	border-radius: 3px;
 	background: #fff;	
 }
 #low2{
