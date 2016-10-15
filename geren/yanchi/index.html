@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>延迟加载</title>
+<link rel="shortcut icon" href="index.ico" type="image/x-icon" />
+<link rel="icon" href="index.ico" type="image/x-icon" />
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	width:200px;
+	height:150px;
+	border: none;
+	vertical-align: top;
+}
+ul{
+	width:500px;
+	margin:0 auto;
+}
+li{
+	list-style: none;
+	float: left;
+	margin:5px;
+	border:1px solid #000;
+}
+
+
+</style>
+</head>
+<body>
+	<ul>
+		<li><img _src="img/1.jpg"/></li>
+		<li><img _src="img/2.jpg"/></li>
+		<li><img _src="img/3.jpg"/></li>
+		<li><img _src="img/4.jpg"/></li>
+		<li><img _src="img/1.jpg"/></li>
+		<li><img _src="img/2.jpg"/></li>
+		<li><img _src="img/3.jpg"/></li>
+		<li><img _src="img/4.jpg"/></li>
+		<li><img _src="img/1.jpg"/></li>
+		<li><img _src="img/2.jpg"/></li>
+		<li><img _src="img/3.jpg"/></li>
+		<li><img _src="img/4.jpg"/></li>
+		<li><img _src="img/1.jpg"/></li>
+		<li><img _src="img/2.jpg"/></li>
+		<li><img _src="img/3.jpg"/></li>
+		<li><img _src="img/4.jpg"/></li>
+		<li><img _src="img/1.jpg"/></li>
+		<li><img _src="img/2.jpg"/></li>
+		<li><img _src="img/3.jpg"/></li>
+		<li><img _src="img/4.jpg"/></li>
+		<li><img _src="img/1.jpg"/></li>
+		<li><img _src="img/2.jpg"/></li>
+		<li><img _src="img/3.jpg"/></li>
+		<li><img _src="img/4.jpg"/></li>
+		<li><img _src="img/1.jpg"/></li>
+		<li><img _src="img/2.jpg"/></li>
+		<li><img _src="img/3.jpg"/></li>
+		<li><img _src="img/4.jpg"/></li>
+		<li><img _src="img/1.jpg"/></li>
+		<li><img _src="img/2.jpg"/></li>
+		<li><img _src="img/3.jpg"/></li>
+		<li><img _src="img/4.jpg"/></li>
+		<li><img _src="img/1.jpg"/></li>
+		<li><img _src="img/2.jpg"/></li>
+		<li><img _src="img/3.jpg"/></li>
+		<li><img _src="img/4.jpg"/></li>
+		<li><img _src="img/1.jpg"/></li>
+		<li><img _src="img/2.jpg"/></li>
+		<li><img _src="img/3.jpg"/></li>
+		<li><img _src="img/4.jpg"/></li>
+	</ul>
+<script type="text/javascript">
+
+	window.onload = window.onscroll = function(){
+		var lis = document.getElementsByTagName('li');
+		for(var i=0;i<lis.length;i++){
+			if(lis[i].getBoundingClientRect().top <= window.innerHeight){
+				console.log(lis[i].getBoundingClientRect());
+				(function(index){
+					setTimeout(function(){
+						if(lis[index].children[0].getAttribute('_src')){
+							lis[index].children[0].src =  lis[index].children[0].getAttribute('_src');	
+							lis[index].children[0].removeAttribute('_src');
+						}
+					},500);
+				})(i)	
+			};
+		};	
+	}
+	
+	
+</script>
+</body>
+</html>

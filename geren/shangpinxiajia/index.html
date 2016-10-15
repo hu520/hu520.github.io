@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>商品下架</title>
+<link rel="shortcut icon" href="index.ico" type="image/x-icon" />
+<link rel="icon" href="index.ico" type="image/x-icon" />
+<style type="text/css">
+	body, ul, p, h2, h3{margin: 0;padding: 0;list-style: none;font: 16px/20px "宋体";}
+	a {text-decoration: none;}
+	h2{font-size: 30px;font-weight: 700;color: #f60;height: 30px;}
+	#box {width: 1002px;margin: 20px auto;}
+	.top {width: 1000px;overflow: hidden;border: 1px solid #000;padding: 10px;background: #f1f1f1;height: 351px;}
+	.top li{float: left;width: 250px;text-align: center;position: relative;left: 0;top: 0;}
+	.top img {width: 200px;position: relative;}
+	.top p {padding: 5px;}
+	.top strong {display: block;text-align: left;padding-left: 20px;}
+	h3{overflow: hidden;width: 100%;margin: 10px;}
+	h3 span{float: left;width: 333px;background: #ccc;padding: 5px 0;text-align: center;}
+	.bottom {margin: 10px;width: 100%;}
+	.bottom li {background: #ccc;overflow: hidden;margin: 5px 0;position: relative;}
+	.bottom div {float: left;width: 333px;padding: 5px 0;text-align: center;font-size: 20px;line-height: 50px;}
+	footer {font-size: 30px;font-weight: 700;}
+	.afetr {opacity: 1;font-size: 50px;line-height: 120px;color: red;font-weight: 700;}
+</style>
+</head>
+<body>
+<script type="text/javascript" src="../style/js/startMove.js"></script>
+<script type="text/javascript">
+	window.onload = function (){
+		var box = document.getElementById('box');
+		var imgArr = ['img/1.png', 'img/2.png', 'img/3.png', 'img/4.png'];
+		var nameArr = ['商品1', '商品1', '商品1', '商品1'];
+		var priceArr = [120, 180, 16, 89];
+		var uls = box.getElementsByTagName('ul');
+		var liTops = uls[0].getElementsByTagName('li');
+		var names = uls[0].getElementsByTagName('strong');
+		var names = uls[0].getElementsByTagName('strong');
+		var date = new Date(new Date().getTime() + 10000);
+		var num = 0;
+		var nowTime = new Date().getTime();
+		var totalPrice = document.getElementById('totalPrice');
+		var shakeTimer = 0;
+
+		for (var i = 0; i < liTops.length; i++) {
+			liTops.index = i;
+			fn(i);
+		}
+
+		function fn(index){
+			var input = liTops[index].getElementsByTagName('input');
+			input[0].value = date;
+			var p = liTops[index].getElementsByTagName('p')[0];
+			var img = liTops[index].getElementsByTagName('img')[0];
+			var pSpans = p.getElementsByTagName('span');
+
+			input[1].onclick = function (){
+				clearInterval(shakeTimer);
+				clearInterval(liTops[index].timer2);
+				liTops[index].timer = setInterval(
+					function (){
+						date = new Date();
+						nowTime = new Date().getTime();
+						var targetDate = new Date(input[0].value);
+						var targetTime = targetDate.getTime();
+						var disTime = parseInt((targetTime - nowTime) / 1000);
+						var disDate = toDb(parseInt(disTime / 86400));
+						var disHours = toDb(parseInt(disTime % 86400 / 3600));
+						var disMinutes = toDb(parseInt(disTime % 3600 / 60));
+						var disSeconds = toDb(parseInt(disTime % 60));
+						
+						pSpans[0].innerHTML = disDate;
+						pSpans[1].innerHTML = disHours;
+						pSpans[2].innerHTML = disMinutes;
+						pSpans[3].innerHTML = disSeconds;
+
+						if (disTime <= 0) {
+							shake();
+						}
+					},
+					1000
+				);
+
+				function shake(){
+					var numArr = [];
+					var nub = 0;
+					clearInterval(liTops[index].timer)
+					for (var i = 0; i < 20; i += 2) {
+						numArr[i] = 20 - i;
+						numArr[i + 1] = - (20 - i);
+					}
+					numArr[i] + 0;
+					shakeTimer = setInterval(
+						function (){
+							liTops[index].style.left = numArr[nub] + 'px';
+							
+							liTops[index].timer2 = setInterval(function (){
+								var nowTop = css(liTops[index],'top');
+								liTops[index].style.opacity = 1 - nowTop/200;
+							},100)
+
+							nub++;
+							if(nub == numArr.length){
+								clearInterval(shakeTimer);
+								clearInterval(liTops[index].timer2);
+								startMove(liTops[index],"top",500,200,"easeOut",
+									function(){
+										liTops[index].style.top = 0;
+										liTops[index].style.opacity = 1;
+										liTops[index].innerHTML = '商品已下架！';
+										liTops[index].style.opacity = '1';
+										liTops[index].style.fontSize = '70px';
+										liTops[index].style.lineHeight = '150px';
+										liTops[index].style.color = 'red';
+
+										uls[1].innerHTML += '<li><div>' + 
+												nameArr[index] + '</div><div>￥' + 
+												priceArr[index] + '元</div><div><img src="' + 
+												imgArr[index] + '"></div></li>';
+										num += priceArr[index];
+										totalPrice.innerHTML = num;
+									}
+								);
+							}
+						},
+						50
+					)
+				}
+			}
+			
+		}
+	};
+	function toDb (nub){
+		return nub < 10? '0' + nub : '' + nub;
+	}
+
+</script>
+<section id="box">
+	<header>
+		<h2>
+			限购商品
+		</h2>
+	</header>
+	<ul class="top">
+		<li>
+			<input type="text" value="">
+			<input type="button" value="确定">
+			<p>
+				还剩<span>00</span>天
+					<span>00</span>小时
+					<span>00</span>分
+					<span>00</span>秒
+			</p>
+			<a href="#">
+				<img src="img/1.png">
+				<strong>
+					商品1
+				</strong>
+				<strong>
+						抢购价:￥
+						<span>
+							120.00
+						</span>
+						元
+				</strong>
+			</a>
+		</li>
+		<li>
+			<input type="text" value="">
+			<input type="button" value="确定">
+			<p>
+				还剩<span>00</span>天
+					<span>00</span>小时
+					<span>00</span>分
+					<span>00</span>秒
+			</p>
+			<a href="#">
+				<img src="img/2.png">
+				<strong>
+					商品2
+				</strong>
+				<strong>
+						抢购价:￥
+						<span>
+							180.00
+						</span>
+						元
+				</strong>
+			</a>
+		</li>
+		<li>
+			<input type="text" value="">
+			<input type="button" value="确定">
+			<p>
+				还剩<span>00</span>天
+					<span>00</span>小时
+					<span>00</span>分
+					<span>00</span>秒
+			</p>
+			<a href="#">
+				<img src="img/3.png">
+				<strong>
+					商品3
+				</strong>
+				<strong>
+						抢购价:￥
+						<span>
+							16.00
+						</span>
+						元
+				</strong>
+			</a>
+		</li>
+		<li>
+			<input type="text" value="">
+			<input type="button" value="确定">
+			<p>
+				还剩<span>00</span>天
+					<span>00</span>小时
+					<span>00</span>分
+					<span>00</span>秒
+			</p>
+			<a href="#">
+				<img src="img/4.png">
+				<strong>
+					商品4
+				</strong>
+				<strong>
+						抢购价:￥
+						<span>
+							89.00
+						</span>
+						元
+				</strong>
+			</a>
+		</li>
+	</ul>
+	<h3>
+		<span>
+			商品名称
+		</span>
+		<span>
+			商品价格
+		</span>
+		<span>
+			商品图片
+		</span>
+	</h3>
+	<ul class="bottom"></ul>
+	<footer>
+		总价：<span id="totalPrice">00.00</span>元
+	</footer>
+</section>
+	
+</body>
+</html>

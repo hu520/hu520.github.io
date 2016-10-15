@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>日历</title>
+<link rel="shortcut icon" href="index.ico" type="image/x-icon" />
+<link rel="icon" href="index.ico" type="image/x-icon" />
+<!-- <link rel="stylesheet" type="text/css" href="1.css"/>在js里面引入 -->
+</head>
+<body>
+<script src="jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="CreateRili.1.4.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+
+	/*
+		timer2:['年','月','日'],
+		timer3:['年','月'],
+		direc:['↑','↓'],
+		week: ['日','一','二','三','四','五','六'] 
+	*/
+	$('body').rili({
+		direc:['UP','Down']
+	});
+</script>
+</body>
+</html>
