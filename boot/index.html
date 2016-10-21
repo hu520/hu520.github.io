@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bootstrap框架布局</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="shortcut icon" href="index.ico" type="image/x-icon" />
+<link rel="icon" href="index.ico" type="image/x-icon" />
+<script src="bootstrap/js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<style type="text/css">
+html{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 14px;color: #333;overflow-x: hidden;}
+body,section,div,h2,h3,h4,ul,li,header,p,form,span,img,input,textarea{padding: 0;margin: 0;}
+a{ text-decoration: none;}
+li{list-style: none;}
+img{ vertical-align: top; border:none;}
+.clear{zoom:1;}
+.clear:after{content:""; display: block; clear: both;}
+.head{width:100%; height:750px; background: url(img/headbg.jpg) no-repeat;}
+
+.row1{padding:30px 0 15px; line-height: 30px;}
+.logo{float:left; padding:9px 15px; height:50px;}
+.logo a{color:#fff; font-weight:bold; display:inline-block; font-size:16px; line-height:32px;}
+.logo img{height:35px; width:35px;}
+.button{padding:10px; margin:8px 15px 8px 0; float:right;}
+.button a{display:inline-block;}
+.nav{float: right;}
+.nav a{padding:10px 15px; margin-left:30px; display:inline-block; color:#fff;}
+
+.row2{text-align: center; margin:0 auto; margin-top:50px; padding-top: 100px;}
+.row2 .title{height:96px; padding-bottom:25px; border-bottom:2px solid rgba(255,255,255,.2);}
+@media all and (min-width:650px){.row2{width:600px;}}
+.row2 .title p{height:22px; margin-bottom:10px; line-height:22px; color:#fff;}
+.row2 .title strong{height:30px; line-height:30px; color:#fff; font-weight:bold; letter-spacing: 2px; font-size: 26px;}
+.row2 .smtitle{margin-bottom: 45px;}
+.row2 .smtitle h4{height:15px;font-size: 12px;color:#fff;margin:10px 0;}
+.row2 .smtitle .btn{padding:20px 60px;color:#fff;font-weight: bold;display: block;margin:0 auto;}
+.row2 .smtitle .sha{background: red;margin-bottom: 15px;}
+.row2 .smtitle .xia{background: rgba(255,255,255,0);border:1px solid #fff;margin-bottom: 15px;}
+
+@media all and (min-width:768px){
+    .row2{margin-top: 0;}
+    .row2 .title{height:125px;}
+    .row2 .title p{font-size: 26px;line-height: 36px;height:37px;}
+    .row2 .title strong{font-size: 40px;height:40px;line-height:40px;}
+    .row2 .smtitle .btn{display: inline-block; margin-left: 15px;}
+    .row2 .smtitle h4{height:20px; font-size: 20px;}
+}
+.home{height:56px; margin:100px 0 50px 0;}
+.home h3{text-align: center; height:26px; margin:20px 0 10px 0; color:#000; font-weight: bold; cursor:pointer;}
+.home p{text-align: center; height:20px; margin-bottom: 10px; color:#666; cursor:pointer;}
+
+.centent span{height:140px; width:140px; display:block; border-radius: 50%; font-weight: bold; text-align: center; margin:0 auto; margin-top:20px; line-height: 140px; color:#fff; font-size: 30px;}
+.centent .span1{background-color: #c4141b;}
+.centent .span2{background-color: #049fbb;}
+.centent ul{margin:30px 0 10px 0; height:70px; text-align: center;}
+.centent ul li{margin-top:5px;}
+.homebottom{text-align: center; height:47px; margin:80px 0 10px 0;}
+.homebottom h4{color:#c4141b; line-height: 20px;}
+.homebottom p{margin-top: 7px; line-height:20px;}
+.homebottom p em{font-size: 30px;}
+
+@media all and (min-width:768px){
+    .centent .span1{margin-right: -26px; opacity: 0.8;}
+    .centent .span2{margin-left: -26px; opacity: 0.8;}
+    .centent .row3left{height:188px; float:right; margin-top:50px; margin-right:50px;padding-right: 50px; border-right:1px solid #e8e8e8;}
+    .centent .row3left li{text-align: right; background: url(img/hong.png) no-repeat right top; margin-right: -55px; padding-right: 55px;}
+    .centent .row3right{height:188px; float:left; margin-top:50px; margin-left:50px;padding-left: 50px; border-left:1px solid #e8e8e8;}
+    .centent .row3right li{text-align: left;background: url(img/blue.png) no-repeat left top; margin-left: -55px; padding-left: 55px;}
+    .centent ul li{height:20px; margin-bottom: 50px;}
+}
+.work{margin-top: 100px; padding:50px 15px; height:400px; background:#049fbb;}
+.work h3{color:#fff; height:26px; margin:20px 0 10px 0; width:200px; font-weight: bold;}
+.work ul{margin-top:60px; margin-bottom: 10px;}
+.work ul li img{width:100%;}
+@media all and (min-width:600px){
+    .work ul li img{width:165px;height:165px;}
+}
+.yangshi{margin-top: 100px;}
+.yangshi span{width:100px;height:100px;padding:15px;border-radius:50%;display: block;background: #c4141b;margin:0 auto;}
+.yangshi span img{width:70px;height:70px;}
+.yangshi strong{text-align: center;display: block; margin-top:30px; margin-bottom: 10px;cursor:pointer;}
+.yangshi p{text-align: center; margin-bottom: 10px;color:#999;line-height:17px;font-size: 12px; cursor:pointer;}
+.yangshi span.inter{width:150px; height:177px; background:none; border-radius:0; padding:50px 0 0; border-top: 5px solid #049fbb; margin-top: 50px;}
+.yangshi span.inter img{width:150px; height:127px;}
+.more{text-align: center; margin: 50px 0;}
+.more a{color:#fff; display: inline-block; width:164px; padding:15px 50px; font-size:16px;background: #23201B; border-radius: 5px;}
+.default{background: #049fbb;}
+.default h3{color:#fff;}
+.default p{color:#fff;}
+.default .client{padding-bottom: 59px;}
+.default .client span{height:60px;width:60px;margin:0 auto;display:block;padding:9px;border-radius: 50%;background-color: #028AA2;}
+.default .client span img{height:42px;width:42px;}
+.default .client strong{text-align: center;color:#fff;display: block;height:20px;margin:10px 0;}
+.default .client p{text-align: center;margin:0;}
+.default .client .p{margin-top: 20px;padding:10px 5px;background-color: #028AA2;}
+.default .client .p p{line-height: 17px;font-size: 12px;}
+@media all and (min-width:768px){.default .client .p{padding:30px 20px;}}
+.contact{padding:30px;margin:0 auto; width:410px; margin-top: -50px;}
+.contact li{padding:0 5px; margin:0 15px 15px 0; line-height: 32px;}
+.contact li a{display: inline-block; padding-left: 10px; font-size: 14px;}
+.foottop{margin-bottom: 100px;}
+.foot{padding:0 45px; font-size: 16px;}
+.foot .footli{padding:6px 12px; height:40px; border:1px solid #d7d7d7; background-color: #f5f5f5;}
+.foot textarea{padding:6px 12px; height:234px; border:1px solid #d7d7d7; background-color: #f5f5f5;}
+.foot .groupbtn{padding:6px 12px;height:40px; border:1px solid #d7d7d7; background-color:#049fbb;color:#fff;}
+.footer{padding:50px 15px; background-color: #049fbb; color: #fff; text-align: center;}
+.footer .map h4{height:32px; margin:10px 20px 0 0; font-weight: bold; font-size: 18px;padding-bottom:10px; border-bottom:3px solid #028AA2; text-align: left;}
+.footer .map ul{margin:15px 0 10px;}
+.footer .map li{text-align: left; line-height: 30px; height:30px;}
+.footer .map img{height:100px; width:100px;}
+.footer .map .mapimg{text-align: left; margin:15px 0 10px;}
+.copyright{padding:10px 0; height:37px; background: #028AA2; text-align: center;}
+.copyright p{font-size: 12px; line-height: 16px; height:17px; color:#fff;}
+#fixed{padding:15px 0; width:100%;line-height: 30px;position: fixed;z-index: 9;background-color: #fff;display: none;}
+#fixed .logo{float:left; padding:9px 15px; height:50px;margin-left: -15px;}
+#fixed .logo a{color:#000;}
+#fixed .nav{float: right;margin-right: -15px;}
+#fixed .nav a{padding:10px 15px; margin-left:30px; display:inline-block; color:#000;}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+window.onload=function(){
+    var fixed = document.getElementById('fixed');
+    $(window).scroll(function(){
+        var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+        if(scrollTop>50){
+            fixed.style.display='block';
+        }else{
+            fixed.style.display='none';
+        };     
+    });
+}
+</script>
+<section>
+    <div id="fixed">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png">
+                <a href="">黑白点</a>
+            </div>
+            <nav class="nav">
+                <a href="">解决方案</a><a href="">金牌服务</a><a href="">帮助中心</a><a href="">关于我们</a>
+            </nav>
+        </div>
+    </div>
+    <header class="head">
+        <div class="container">
+            <div class="row row1">
+                <div class="logo">
+                    <img src="img/logo.png">
+                    <a href="">黑白点</a>
+                </div>
+                <div class="visible-xs button">
+                    <img src="img/click.png">
+                </div>
+                <nav class="hidden-xs nav">
+                    <a href="">解决方案</a><a href="">金牌服务</a><a href="">帮助中心</a><a href="">关于我们</a>
+                </nav>
+            </div>
+            <div class="row row2">
+                <div class="title">
+                    <p>UI Design And Web Development</p>
+                    <strong>专注企业级网站应用开发</strong>
+                </div><br/>
+                <div class="smtitle">
+                    <h4>帮助企业打造赚钱机器</h4><br/>
+                    <br/>
+                    <form action="http://www.huxinguang.com" name="#">
+                        <input type="button" class=" btn sha" name="#" value="登入" />
+                        <input type="button" class=" btn xia" name="#" value="注册" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="home">
+            <h3>如何保证项目质量</h3>
+            <p>每个人做自己喜欢擅长的事情，注重项目实施细节</p>
+        </div>
+        <div class="row row3 clear">
+            <div class="col-xs-12 col-sm-6 centent">
+                <span class="span1">UI</span>
+                <ul class="row3left">
+                    <li>与客户沟通，构思出草图</li>
+                    <li>PhotoShop制作效果图</li>
+                    <li>设计Html5+CSS3响应式页面</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 centent">
+                <span class="span2">WEB</span>
+                <ul class="row3right">
+                    <li>结合UI和需求设计模块</li>
+                    <li>根据客户性能要求，选择合适的框架编写程序</li>
+                    <li>与UI整合与测试、持续性交付</li>
+                </ul>
+            </div>
+        </div>
+        <div class="homebottom">
+            <h4>我们提供阿里云服务器</h4>
+            <p><em>98%&nbsp;</em>的客户选择托管项目，项目售后保障1年，免费维护及部署</p>
+        </div>
+    </div>
+    <div class="container-fluid work">
+        <div class="container">
+            <h3>优质托管项目</h3>
+            <ul class="row">
+                <li class="col-xs-4 col-md-3"><img src="img/work1.jpg"></li>
+                <li class="col-xs-4 col-md-3"><img src="img/work2.jpg"></li>
+                <li class="col-xs-4 col-md-3"><img src="img/work3.jpg"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="home">
+            <h3>行业解决方案</h3>
+            <p>我们追求稳定、优质的解决方案，项目长期迭代</p>
+        </div>
+        <div class="row yangshi">
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <span><img src="img/wx.png"></span>
+                <strong>微信公众号</strong>
+                <p>企业营销利器</p>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <span><img src="img/h5.png"></span>
+                <strong>H5应用</strong>
+                <p>堪比原生APP，价格更实惠</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <span><img src="img/web.png"></span>
+                <strong>企业B/S系统</strong>
+                <p>助力企业办公化，高效管理客户关系及业务流程</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <span><img src="img/www.png"></span>
+                <strong>响应式网站</strong>
+                <p>网站对手机，平板，电脑&nbsp;响应式布局</p>
+            </div>
+            <div class="col-xs-6 col-md-6">
+                <span class="inter"><img src="img/inter.png"></span>
+            </div>
+            <div class="col-xs-6 col-md-6">
+                <span class="inter"><img src="img/inter1.png"></span>
+            </div>
+        </div>
+        <div class="more">
+            <a href="">发现更多</a>
+        </div>
+    </div>
+    <div class="container-fluid default">
+        <div class="container">
+            <div class="home">
+                <h3>客户反馈</h3>
+                <p>以下数据来源于项目真实评价</p>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-md-3 client">
+                    <span><img src="img/default.png"></span>
+                    <strong>田先生</strong>
+                    <p>装修公司运营</p>
+                    <div class="p">
+                        <p>项目一直托管在他们那里。有次，项目出现了个问题，联系他们帮忙解决，当天就解决了，售后有保障，以后有机会肯定再次合作。</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3 client">
+                    <span><img src="img/default.png"></span>
+                    <strong>王总</strong>
+                    <p>广告公司副总</p>
+                    <div class="p">
+                        <p>以前有过几次合作，比较愉快。项目做得不错，最主要是比较有责任感，有几次要的比较急，他们加班加点为我们赶工。祝你们生意越来越好！</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3 client">
+                    <span><img src="img/default.png"></span>
+                    <strong>刘先生</strong>
+                    <p>饭店老板</p>
+                    <div class="p">
+                        <p>餐馆生意来源都是靠外卖，我就想做一个基于位置的微信订餐系统。经朋友介绍，觉得价格也还合适。现在系统上线，订单比以前多了2-3倍！</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3 client">
+                    <span><img src="img/default.png"></span>
+                    <strong>钟先生</strong>
+                    <p>网站站长</p>
+                    <div class="p">
+                        <p>我算是老客户了，经常找他们拿阿里云服务器，他们这边价格便宜、还帮忙部署，做301，开个子目录，重写URL等，响应速度快、性能优良，百度优化效果好</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="home">
+            <h3>在线咨询</h3>
+            <p>专业人员7*12小时在线，回答您的疑问</p>
+        </div>
+        <ul class="list-inline contact">
+            <li><img src="img/q1.png"><a href="">点点</a></li>
+            <li><img src="img/q2.png"><a href="">小易</a></li>
+            <li><img src="img/q3.png"><a href="">@黑白点网络</a></li>
+        </ul>
+    </div>
+    <div class="container foottop">
+        <form action="http://www.huxinguang.com" class="form-horizontal foot">
+            <div class="col-sm-6 form-group">
+                <input type="text" name="#" class="col-xs-12 col-md-8 col-md-offset-4 footli" placeholder="姓名" />
+            </div>
+            <div class="col-sm-6 form-group">
+                <input type="email" name="#" class="col-xs-12 col-sm-offset-1 col-md-8 col-md-offset-1 footli" placeholder="邮箱" />
+            </div>
+            <div class="col-xs-12 form-group">
+                <textarea type="textarea" name="#" class="col-xs-12 col-md-8 col-md-offset-2" placeholder="咨询信息"></textarea>
+            </div>
+            <div class="col-xs-12 form-group">
+                <input type="button" name="#" class="col-xs-12 col-md-8 col-md-offset-2 groupbtn" value="发送"/>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-3 map">
+                    <h4>金牌服务</h4>
+                    <ul>
+                        <li>项目评估</li>
+                        <li>阿里云</li>
+                        <li>Linux运维</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-3 map">
+                    <h4>解决方案</h4>
+                    <ul>
+                        <li>微信公众号</li>
+                        <li>H5应用</li>
+                        <li>企业B/S系统</li>
+                        <li>响应式网站</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-3 map">
+                    <h4>帮助中心</h4>
+                    <ul>
+                        <li>合同申请</li>
+                        <li>支付问题</li>
+                        <li>阿里云相关问题</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-3 map">
+                    <h4>官方微信</h4>
+                    <div class="mapimg">
+                        <img src="img/qrcode.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>版权所有&nbsp;©&nbsp;Copyright&nbsp;&nbsp;东莞市黑白点网络科技有限公司 粤ICP备16019377号-1</p>
+    </div>
+</section>
+</body>
+</html>

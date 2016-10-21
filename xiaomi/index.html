@@ -1,8 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>小米商城</title>
+<title>小米商城-小米手机</title>
 <script src="js/html5shiv.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/startMove.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/data.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 <link rel="stylesheet" href="index.css" type="text/css" />
 <link rel="shortcut icon" href="index.ico" type="image/x-icon" />
 <link rel="icon" href="index.ico" type="image/x-icon" />
@@ -13,11 +17,11 @@
 		<div class="head clear">
 			<div id="hleft">
 				<nav>
-					<a href="" id="cur">小米商城</a><a href="">MIUI</a><a href="">米聊</a><a href="">游戏</a><a href="">多看阅读</a><a href="">云服务</a><a href="">金融</a><a href="">小米网移动版</a><a href="">问题反馈</a><a href="">Select Region</a>
+					<a href="#" id="cur">小米商城</a><a href="#">MIUI</a><a href="#">米聊</a><a href="#">游戏</a><a href="#">多看阅读</a><a href="#">云服务</a><a href="#">金融</a><a href="#">小米网移动版</a><a href="#">问题反馈</a><a href="#">Select Region</a>
 				</nav>
 			</div>
 			<div id="hright">
-				<a href="">登入</a>|<a href="">注册</a>|<a href="">消息通知</a><a href="" id="curr">
+				<a href="#">登入</a>|<a href="#">注册</a>|<a href="#">消息通知</a><a href="#" id="curr">
 					<span><i class="iconfont ione">&#xe602;</i>购物车（0）</span>
 					<p>购物车没有商品，赶紧选购吧</p>
 				</a>
@@ -27,27 +31,27 @@
 	<section class="low1 headli">
 		<div class="navbox">
 		<nav class="navs">
-			<a href="" id="cur">小米手机</a><a href="">红米</a><a href="">平板 · 笔记本</a><a href="">电视</a><a href="">盒子 · 影音</a><a href="">路由器</a><a href="">智能硬件</a><a href="">服务</a><a href="">社区</a>
+			<a href="#" id="cur">小米手机</a><a href="#">红米</a><a href="#">平板 · 笔记本</a><a href="#">电视</a><a href="#">盒子 · 影音</a><a href="#">路由器</a><a href="#">智能硬件</a><a href="#">服务</a><a href="#">社区</a>
 		</nav>	
 		<form class="low1deng">
 			<input type="text" class="text" value="" name=""/>
 			<input type="button" class="btn" name=""/>
 			<div class="shouding">	
-				<a href="">红米Note4</a>
-				<a href="">小米笔记本Air</a>
+				<a href="#">红米Note4</a>
+				<a href="#">小米笔记本Air</a>
 			</div>
 			<div class="deng">
 				<ul>
-					<li><a href="">小米手机5<span>约有11件</span></a></li>
-					<li><a href="">空气净化器<span>约有1件</span></a></li>
-					<li><a href="">活塞式耳机<span>约有4件</span></a></li>
-					<li><a href="">小米路由器<span>约有8件</span></a></li>
-					<li><a href="">米移动电源<span>约有23件</span></a></li>
-					<li><a href="">运动式相机<span>约有3件</span></a></li>
-					<li><a href="">小蚁摄像机<span>约有2件</span></a></li>
-					<li><a href="">小米体重秤<span>约有13件</span></a></li>
-					<li><a href="">小米插线板<span>约有58件</span></a></li>
-					<li><a href="">配优惠套装<span>约有39件</span></a></li>
+					<li><a href="#">小米手机5<span>约有11件</span></a></li>
+					<li><a href="#">空气净化器<span>约有1件</span></a></li>
+					<li><a href="#">活塞式耳机<span>约有4件</span></a></li>
+					<li><a href="#">小米路由器<span>约有8件</span></a></li>
+					<li><a href="#">米移动电源<span>约有23件</span></a></li>
+					<li><a href="#">运动式相机<span>约有3件</span></a></li>
+					<li><a href="#">小蚁摄像机<span>约有2件</span></a></li>
+					<li><a href="#">小米体重秤<span>约有13件</span></a></li>
+					<li><a href="#">小米插线板<span>约有58件</span></a></li>
+					<li><a href="#">配优惠套装<span>约有39件</span></a></li>
 				</ul>
 			</div>
 		</form>	
@@ -55,21 +59,21 @@
 		<div id="navlist">
 			<ul>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/fig1.png">
 						<p>小米Max</p>
 					</a>
 					<span>1299元起</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/fig2.png">
 						<p>小米手机5</p>
 					</a>
 					<span>1999元起</span>
 				</li>
 				<li class="navcur">
-					<a href="">
+					<a href="#">
 						<img src="img/fig3.png">
 						<p>小米手机4c</p>
 					</a>
@@ -78,28 +82,28 @@
 			</ul>
 			<ul>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/fig4.png">
 						<p>红米Pro</p>
 					</a>
 					<span>1499元起</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/fig5.png">
 						<p>红米Note 3</p>
 					</a>
 					<span>899元起</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/fig6.png">
 						<p>红米手机3S</p>
 					</a>
 					<span>699元起</span>
 				</li>
 				<li class="navcur">
-					<a href="">
+					<a href="#">
 						<img src="img/fig7.png">
 						<p>红米手机3</p>
 					</a>
@@ -108,35 +112,35 @@
 			</ul>
 			<ul>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/fig8.png">
 						<p>小米平板2 16GB</p>
 					</a>
 					<span>999元起</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/fig9.png">
 						<p>小米平板2 64GB</p>
 					</a>
 					<span>1299元起</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/fig10.png">
 						<p>小米平板2 64GB Windows版</p>
 					</a>
 					<span>1299元</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/fig11.png">
 						<p>小米笔记本Air 12.5"</p>
 					</a>
 					<span>3499元</span>
 				</li>
 				<li class="navcur">
-					<a href="">
+					<a href="#">
 						<img src="img/fig12.png">
 						<p>小米笔记本Air 13.3"</p>
 					</a>
@@ -145,42 +149,42 @@
 			</ul>
 			<ul>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/dian1.png">
 						<p>小米电视3S 43英寸</p>
 					</a>
 					<span>1499元</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/dian2.png">
 						<p>小米电视3S 48英寸</p>
 					</a>
 					<span>1999元</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/dian3.png">
 						<p>小米电视3 55英寸</p>
 					</a>
 					<span>3299元</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/dian4.png">
 						<p>小米电视3 60英寸</p>
 					</a>
 					<span>4299元</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/dian5.png">
 						<p>小米电视3S 65英寸 曲面</p>
 					</a>
 					<span>8999元</span>
 				</li>
 				<li class="navcur">
-					<a href="">
+					<a href="#">
 						<img src="img/dian6.png">
 						<p>小米电视3 70英寸</p>
 					</a>
@@ -189,42 +193,42 @@
 			</ul>
 			<ul>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/yin1.png">
 						<p>小米盒子mini版</p>
 					</a>
 					<span>179元</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/yin2.png">
 						<p>小米盒子3</p>
 					</a>
 					<span>249元</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/yin3.png">
 						<p>小米盒子3 增强版</p>
 					</a>
 					<span>399元</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/yin4.png">
 						<p>小米电视主机</p>
 					</a>
 					<span>999元</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/yin2.png">
 						<p>小米家庭音响 金属版</p>
 					</a>
 					<span>899元</span>
 				</li>
 				<li class="navcur">
-					<a href="">
+					<a href="#">
 						<img src="img/yin1.png">
 						<p>小米家庭音响 标准版</p>
 					</a>
@@ -233,42 +237,42 @@
 			</ul>
 			<ul>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/lu1.png">
 						<p>全新小米路由器</p>
 					</a>
 					<span>699元</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/lu2.png">
 						<p>小米路由器 3</p>
 					</a>
 					<span>149元</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/lu3.png">
 						<p>小米路由器 min</p>
 					</a>
 					<span>129元</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/lu4.png">
 						<p>小米路由器 3C</p>
 					</a>
 					<span>99元</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/lu5.png">
 						<p>小米路由器 青春版</p>
 					</a>
 					<span>79元</span>
 				</li>
 				<li class="navcur">
-					<a href="">
+					<a href="#">
 						<img src="img/lu2.png">
 						<p>小米WiFi放大器</p>
 					</a>
@@ -277,42 +281,42 @@
 			</ul>
 			<ul>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/jiu1.png">
 						<p>九号平衡车</p>
 					</a>
 					<span>1999元</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/jiu2.png">
 						<p>小米净水器</p>
 					</a>
 					<span>1299元</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/jiu3.png">
 						<p>米家压力IH电饭煲</p>
 					</a>
 					<span>999元</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/jiu4.png">
 						<p>小米空气净化器 2</p>
 					</a>
 					<span>699元</span>
 				</li>
 				<li>
-					<a href="">
+					<a href="#">
 						<img src="img/jiu5.png">
 						<p>智能摄像机</p>
 					</a>
 					<span>149元</span>
 				</li>
 				<li class="navcur">
-					<a href="">
+					<a href="#">
 						<img src="img/jiu6.png">
 						<p>查看全部智能硬件</p>
 					</a>
@@ -327,14 +331,14 @@
 			<div class="ulul">
 				<ul>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>1小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>1小米Max</strong>
 						<span>选购</span>
@@ -342,14 +346,14 @@
 					</li>
 
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>1红米Note</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>1红米手机3s</strong>
 						<span>选购</span>
@@ -357,14 +361,14 @@
 					</li>
 
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>1红米Pro</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>1红米手机3</strong>
 						<span>选购</span>
@@ -373,28 +377,28 @@
 				</ul>				
 				<ul>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>1小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>1小米Max</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>1红米Note</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>1红米手机3s</strong>
 						<span>选购</span>
@@ -402,14 +406,14 @@
 					</li>
 
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>1红米Pro</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>1红米手机3</strong>
 						<span>选购</span>
@@ -420,42 +424,42 @@
 			<div class="ulul">
 				<ul>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>2小米电视 43英寸</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>2小米电视 48英寸</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>2小米电视 55英寸</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>2小米电视 60英寸</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>2小米电视 65英寸</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>2小米电视 70英寸</strong>
 						<span>选购</span>
@@ -466,21 +470,21 @@
 			<div class="ulul">
 				<ul>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>3小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>3小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>3小米手机5</strong>
 						<span>选购</span>
@@ -502,7 +506,7 @@
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>3小米手机5</strong>
 						<span>选购</span>
@@ -513,42 +517,42 @@
 			<div class="ulul">
 				<ul>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>4小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>4小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>4小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>4小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>4小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>4小米手机5</strong>
 						<span>选购</span>
@@ -559,42 +563,42 @@
 			<div class="ulul">	
 				<ul>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>5小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>5小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>5小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>5小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>5小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>5小米手机5</strong>
 						<span>选购</span>
@@ -605,28 +609,28 @@
 			<div class="ulul">
 				<ul>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>5小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>5小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>5小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>5小米手机5</strong>
 						<span>选购</span>
@@ -634,14 +638,14 @@
 					</li>
 
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>5小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>5小米手机5</strong>
 						<span>选购</span>
@@ -652,42 +656,42 @@
 			<div class="ulul">
 				<ul>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>6小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>6小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>6小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>6小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>6小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>6小米手机5</strong>
 						<span>选购</span>
@@ -698,28 +702,28 @@
 			<div class="ulul">
 				<ul>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>7贴膜</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>7自拍杆</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>7贴纸5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>7防尘塞5</strong>
 						<span>选购</span>
@@ -727,14 +731,14 @@
 					</li>
 
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>7手机支架5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>7随身wifi5</strong>
 						<span>选购</span>
@@ -745,14 +749,14 @@
 			<div class="ulul">
 				<ul>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>8小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>8小米手机5</strong>
 						<span>选购</span>
@@ -760,14 +764,14 @@
 					</li>
 
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>8小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>8小米手机5</strong>
 						<span>选购</span>
@@ -778,14 +782,14 @@
 			<div class="ulul">
 				<ul>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>9小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>9小米手机5</strong>
 						<span>选购</span>
@@ -793,14 +797,14 @@
 					</li>
 
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>9小米手机5</strong>
 						<span>选购</span>
 					</a>
 					</li>
 					<li>
-					<a href="" class="link">
+					<a href="#" class="link">
 						<img src="img/mi5bar80.jpg" height="40" width="40">
 						<strong>9小米手机5</strong>
 						<span>选购</span>
@@ -811,16 +815,15 @@
 		</div>
 			<div id="list1-box"></div>	
 			<ul id="list1">
-				<li><a href="">手机平板电话卡<i class="iconfont fontli">&#xe63f;</i></a></li>
-				<li><a href="">电视盒子<i class="iconfont fontli">&#xe63f;</i></a></li>
-				<li><a href="">路由器智能硬盘<i class="iconfont fontli">&#xe63f;</i></a></li>
-				<li><a href="">移动电源插线板<i class="iconfont fontli">&#xe63f;</i></a></li>
-				<li><a href="">耳机音箱<i class="iconfont fontli">&#xe63f;</i></a></li>
-				<li><a href="">电池存储卡<i class="iconfont fontli">&#xe63f;</i></a></li>
-				<li><a href="">保护套后盖<i class="iconfont fontli">&#xe63f;</i></a></li>
-				<li><a href="">贴膜其他配件<i class="iconfont fontli">&#xe63f;</i></a></li>
-				<li><a href="">米兔服装<i class="iconfont fontli">&#xe63f;</i></a></li>
-				<li><a href="">箱包其他周边<i class="iconfont fontli">&#xe63f;</i></a></li>
+				<li><a href="#">手机平板电话卡<i class="iconfont fontli">&#xe63f;</i></a></li>
+				<li><a href="#">路由器智能硬盘<i class="iconfont fontli">&#xe63f;</i></a></li>
+				<li><a href="#">移动电源插线板<i class="iconfont fontli">&#xe63f;</i></a></li>
+				<li><a href="#">耳机音箱<i class="iconfont fontli">&#xe63f;</i></a></li>
+				<li><a href="#">电池存储卡<i class="iconfont fontli">&#xe63f;</i></a></li>
+				<li><a href="#">保护套后盖<i class="iconfont fontli">&#xe63f;</i></a></li>
+				<li><a href="#">贴膜其他配件<i class="iconfont fontli">&#xe63f;</i></a></li>
+				<li><a href="#">米兔服装<i class="iconfont fontli">&#xe63f;</i></a></li>
+				<li><a href="#">箱包其他周边<i class="iconfont fontli">&#xe63f;</i></a></li>
 			</ul>
 		<!-- </div> -->
 		<div class="wrap" id="wrap">
@@ -847,21 +850,19 @@
 		</div>
 		<div class="lowT clear">
 			<ul class="list3">
-				<li><a href=""><i class="iconfont fontzi">&#xe601;</i>电信专场</a></li>
-				<li><a href=""><i class="iconfont fontzi">&#xe680;</i>企业网购</a></li>
-				<li class="zi1"><a href=""><i class="iconfont fontzi">&#xe6f2;</i>官方产品</a></li>
-				<li class="zi2"><a href=""><i class="iconfont fontzi">&#xf00e0;</i>小米移动</a></li>
-				<li class="zi2"><a href=""><i class="iconfont fontzi">&#xe636;</i>以旧换新</a></li>
-				<li class="zi1 zi2"><a href=""><i class="iconfont fontzi">&#xe66f;</i>话费充值</a></li>
+				<li><a href="#"><i class="iconfont fontzi">&#xe601;</i>电信专场</a></li>
+				<li><a href="#"><i class="iconfont fontzi">&#xe680;</i>企业网购</a></li>
+				<li class="zi1"><a href="#"><i class="iconfont fontzi">&#xe6f2;</i>官方产品</a></li>
+				<li class="zi2"><a href="#"><i class="iconfont fontzi">&#xf00e0;</i>小米移动</a></li>
+				<li class="zi2"><a href="#"><i class="iconfont fontzi">&#xe636;</i>以旧换新</a></li>
+				<li class="zi1 zi2"><a href="#"><i class="iconfont fontzi">&#xe66f;</i>话费充值</a></li>
 			</ul>
 			<ul class="list4">
-				<li><a href=""><img src="img/6.jpg"></a></li>
-				<li><a href=""><img src="img/7.jpg"></a></li>
-				<li><a href=""><img src="img/8.jpg"></a></li>
+				<li><a href="#"><img src="img/6.jpg"></a></li>
+				<li><a href="#"><img src="img/7.jpg"></a></li>
+				<li><a href="#"><img src="img/8.jpg"></a></li>
 			</ul>
-		</div>
-
-		
+		</div>		
 	</section>
 	<section class="LOW">
 		<div class="low5-one">
@@ -950,64 +951,64 @@
 			<div id="ul">
 				<ul class="ula" class="clear">
 					<li class="ulone">
-						<a href=""><img src="img/mi.png"></a>
-						<a href="">小米电视3s 43英寸</a>
+						<a href="#"><img src="img/mi.png"></a>
+						<a href="#">小米电视3s 43英寸</a>
 						<p>7.25 8.20直降300</p>
 						<span>1499元</span>
 					</li>
 					<li class="ultwo">
-						<a href=""><img src="img/mi1.png"></a>
-						<a href="">小米盒子3 增强版</a>
+						<a href="#"><img src="img/mi1.png"></a>
+						<a href="#">小米盒子3 增强版</a>
 						<p>高端4k 网络机顶盒</p>
 						<span>399元</span>
 					</li>
 					<li class="ulthree">
-						<a href=""><img src="img/mi2.png"></a>
-						<a href="">小米手环2</a>
+						<a href="#"><img src="img/mi2.png"></a>
+						<a href="#">小米手环2</a>
 						<p>每天早十点开售</p>
 						<span>149元</span>
 					</li>
 					<li class="ulfour">
-						<a href=""><img src="img/mi3.png"></a>
-						<a href="">小米智能摄像机 夜视版</a>
+						<a href="#"><img src="img/mi3.png"></a>
+						<a href="#">小米智能摄像机 夜视版</a>
 						<p>能看能听能说，手机远程控制</p>
 						<span>149元</span>
 					</li>
 					<li class="ulfive">
-						<a href=""><img src="img/mi4.png"></a>
-						<a href="">小米空气净化器2</a>
+						<a href="#"><img src="img/mi4.png"></a>
+						<a href="#">小米空气净化器2</a>
 						<p>10分钟，房间空气焕然一新</p>
 						<span>699元</span>
 					</li>
 				</ul>
 				<ul class="ula" class="clear">
 					<li class="ulone">
-						<a href=""><img src="img/mi5.png"></a>
-						<a href="">小米手机5 至尊版</a>
+						<a href="#"><img src="img/mi5.png"></a>
+						<a href="#">小米手机5 至尊版</a>
 						<p>16GB内存+128GB闪存，陶瓷版</p>
 						<span>2699元</span>
 					</li>
 					<li class="ultwo">
-						<a href=""><img src="img/mi6.png"></a>
-						<a href="">小米MAX 高配版</a>
+						<a href="#"><img src="img/mi6.png"></a>
+						<a href="#">小米MAX 高配版</a>
 						<p>6.44英寸大屏，3GB内存+164GB流量</p>
 						<span>1699元</span>
 					</li>
 					<li class="ulthree">
-						<a href=""><img src="img/mi7.png"></a>
-						<a href="">红米手机3s</a>
+						<a href="#"><img src="img/mi7.png"></a>
+						<a href="#">红米手机3s</a>
 						<p>金属机身，指纹识别，超长待机</p>
 						<span>699元</span>
 					</li>
 					<li class="ulfour">
-						<a href=""><img src="img/mi8.png"></a>
-						<a href="">红米Note3</a>
+						<a href="#"><img src="img/mi8.png"></a>
+						<a href="#">红米Note3</a>
 						<p>4000mA轻薄大电池，金属机身</p>
 						<span>899元</span>
 					</li>
 					<li class="ulfive">
-						<a href=""><img src="img/mi9.png"></a>
-						<a href="">小米平板2 16GB现货</a>
+						<a href="#"><img src="img/mi9.png"></a>
+						<a href="#">小米平板2 16GB现货</a>
 						<p>轻薄全金属，海量内存</p>
 						<span>999元</span>
 					</li>
@@ -1022,7 +1023,7 @@
 		<div class="low4-one">
 			<div class="low4h2 clear">
 				<h2>智能硬件</h2>
-				<a href="">查看全部<span>></span></a>
+				<a href="#">查看全部<span>></span></a>
 			</div>
 			<div class="low4list clear">
 				<div class="low4-img"><img src="img/cc1.png"></div>
@@ -1098,10 +1099,10 @@
 			<div class="low4-top">
 				<h2>搭配</h2>
 				<nav>
-					<a href="" class="active">热门</a>
-					<a href="">耳机音响</a>
-					<a href="">电源</a>
-					<a href="">电池存储卡</a>
+					<a href="#" class="active">热门</a>
+					<a href="#">耳机音响</a>
+					<a href="#">电源</a>
+					<a href="#">电池存储卡</a>
 				</nav>
 			</div>
 			<div class="low4list clear">
@@ -1111,8 +1112,8 @@
 				</div>
 				<ul class="uls" style="display: block;">
 					<li>
-						<a href=""><img src="img/fa.png"></a>
-						<a href=""><strong>小米移动电源10000mAh
+						<a href="#"><img src="img/fa.png"></a>
+						<a href="#"><strong>小米移动电源10000mAh
           				</strong></a>
 						<p>18.9万人评价</p>
 						<span>79元</span>
@@ -1123,7 +1124,7 @@
 						<div class="cor te">享6折</div>
 					</li>			
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fb.png">
 							<strong>小米圈铁耳机</strong>
 						</a>
@@ -1136,7 +1137,7 @@
 						<div class="cor te">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fc.png">
 							<strong>小米移动电源10000mAh 高配版
 							</strong>
@@ -1150,7 +1151,7 @@
 						<div class="cor">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/ga.png">
 							<strong>小米插线板</strong>
 						</a>
@@ -1163,7 +1164,7 @@
 						<div class="cor te">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/gb.png">
 							<strong>小米活塞耳机 基础版</strong>
 						</a>
@@ -1176,7 +1177,7 @@
 						<div class="cor">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/gc.png">
 							<strong>小米蓝牙耳机</strong>
 						</a>
@@ -1189,7 +1190,7 @@
 						<div class="cor te">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/ha.png">
 							<strong>小米小钢炮蓝牙音箱</strong>
 						</a>
@@ -1204,11 +1205,11 @@
 					<li>
 						<div class="more clear">
 							<img src="img/e1.png"></a>
-							<a href=""><strong>小米小刚泡蓝</strong>
+							<a href="#"><strong>小米小刚泡蓝</strong>
 							<span>79元</span>						
 						</div >
 						<div class="moremin">
-						<a href="">
+						<a href="#">
 							<strong>浏览更多</strong>
 							<span>耳机音响</span>
 						</a>
@@ -1218,8 +1219,8 @@
 				</ul>
 				<ul class="uls" style="display: none;">
 					<li>
-						<a href=""><img src="img/fa1.png"></a>
-						<a href=""><strong>小米活塞耳机 基础版</strong></a>
+						<a href="#"><img src="img/fa1.png"></a>
+						<a href="#"><strong>小米活塞耳机 基础版</strong></a>
 						<p>宝贝的贴心护士</p>
 						<span>299元</span>
 						<div class="skill">
@@ -1242,7 +1243,7 @@
 						<div class="cor">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa3.png">
 							<strong>小米胶囊耳机</strong>
 						</a>
@@ -1255,7 +1256,7 @@
 						<div class="cor te">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa4.png">
 							<strong>小米蓝牙耳机</strong>
 						</a>
@@ -1268,7 +1269,7 @@
 						<div class="cor">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa5.png">
 							<strong>小米小钢炮蓝牙音箱2</strong>
 						</a>
@@ -1281,7 +1282,7 @@
 						<div class="cor te">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa6.png">
 							<strong>小米随身蓝牙音箱</strong>
 						</a>
@@ -1294,7 +1295,7 @@
 						<div class="cor">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa7.png">
 							<strong>小米蓝牙音箱</strong>
 						</a>
@@ -1309,12 +1310,12 @@
 					<li>
 						<div class="more clear">
 							<img src="img/e1.png"></a>
-							<a href=""><strong>小米小刚泡蓝</strong>
+							<a href="#"><strong>小米小刚泡蓝</strong>
 							<span>79元</span>
 							
 						</div >
 						<div class="moremin">
-						<a href="">
+						<a href="#">
 							<strong>浏览更多</strong>
 							<span>耳机音响</span>
 						</a>
@@ -1324,8 +1325,8 @@
 				</ul>
 				<ul class="uls" style="display: none;">
 					<li>
-						<a href=""><img src="img/fa8.png"></a>
-						<a href=""><strong>移动电源5000mAh</strong></a>
+						<a href="#"><img src="img/fa8.png"></a>
+						<a href="#"><strong>移动电源5000mAh</strong></a>
 						<p>宝贝的贴心护士</p>
 						<span>299元</span>
 						<div class="skill">
@@ -1335,7 +1336,7 @@
 						<div class="cor">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa9.png">
 							<strong>移动电源10000mAh</strong>
 						</a>
@@ -1348,7 +1349,7 @@
 						<div class="cor">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa10.png">
 							<strong>移动电源10000mAh 高配版</strong>
 						</a>
@@ -1361,7 +1362,7 @@
 						<div class="cor te">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa11.png">
 							<strong>移动电源20000mAh</strong>
 						</a>
@@ -1374,7 +1375,7 @@
 						<div class="cor te">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa12.png">
 							<strong>10000mAh小米移动电源保护套</strong>
 						</a>
@@ -1387,7 +1388,7 @@
 						<div class="cor te">享5折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/hc.png">
 							<strong>小米插线板（3孔位+USB）</strong>
 						</a>
@@ -1400,7 +1401,7 @@
 						<div class="cor te">享5折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/ha.png">
 							<strong>小米USB充电器（4口）</strong>
 						</a>
@@ -1415,11 +1416,11 @@
 					<li>
 						<div class="more clear">
 							<img src="img/e1.png"></a>
-							<a href=""><strong>小米小刚泡蓝</strong>
+							<a href="#"><strong>小米小刚泡蓝</strong>
 							<span>79元</span>					
 						</div >
 						<div class="moremin">
-						<a href="">
+						<a href="#">
 							<strong>浏览更多</strong>
 							<span>耳机音响</span>
 						</a>
@@ -1429,8 +1430,8 @@
 				</ul>
 				<ul class="uls" style="display: none;">
 					<li>
-						<a href=""><img src="img/ia.png"></a>
-						<a href=""><strong>SanDisk 16GB存储卡（Class4）</strong></a>
+						<a href="#"><img src="img/ia.png"></a>
+						<a href="#"><strong>SanDisk 16GB存储卡（Class4）</strong></a>
 						<p>宝贝的贴心护士</p>
 						<span>299元</span>
 						<div class="skill">
@@ -1440,7 +1441,7 @@
 						<div class="cor te">享9折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa5.png">
 							<strong>原装快充套装</strong>
 						</a>
@@ -1453,7 +1454,7 @@
 						<div class="cor">享9折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/ib.png">
 							<strong>彩虹5号电池（10粒装）</strong>
 						</a>
@@ -1466,7 +1467,7 @@
 						<div class="cor te">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa6.png">
 							<strong>彩虹7号电池（10粒装）</strong>
 						</a>
@@ -1479,7 +1480,7 @@
 						<div class="cor">享4折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/ic.png">
 							<strong>CR2032纽扣电池</strong>
 						</a>
@@ -1492,7 +1493,7 @@
 						<div class="cor te">享8折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa8.png">
 							<strong>紫5镍氢充电电池</strong>
 						</a>
@@ -1505,7 +1506,7 @@
 						<div class="cor">享4折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/ia.png">
 							<strong>小米车载充电器</strong>
 						</a>
@@ -1520,11 +1521,11 @@
 					<li>
 						<div class="more clear">
 							<img src="img/e1.png"></a>
-							<a href=""><strong>红米2/红米2A...</strong>
+							<a href="#"><strong>红米2/红米2A...</strong>
 							<span>79元</span>	
 						</div >
 						<div class="moremin">
-						<a href="">
+						<a href="#">
 							<strong>浏览更多</strong>
 							<span>耳机音响</span>
 						</a>
@@ -1538,10 +1539,10 @@
 			<div class="low4-top">
 				<h2>配件</h2>
 				<nav>
-					<a href="" class="active">热门</a>
-					<a href="">保护套</a>
-					<a href="">贴膜</a>
-					<a href="">其他配件</a>
+					<a href="#" class="active">热门</a>
+					<a href="#">保护套</a>
+					<a href="#">贴膜</a>
+					<a href="#">其他配件</a>
 				</nav>
 			</div>
 			<div class="low4list clear">
@@ -1551,8 +1552,8 @@
 				</div>
 				<ul class="uls" style="display: block;">
 					<li>
-						<a href=""><img src="img/fa.png"></a>
-						<a href=""><strong>小米移动电源10000mAh
+						<a href="#"><img src="img/fa.png"></a>
+						<a href="#"><strong>小米移动电源10000mAh
           				</strong></a>
 						<p>18.9万人评价</p>
 						<span>79元</span>
@@ -1563,7 +1564,7 @@
 						<div class="cor te">享6折</div>
 					</li>			
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fb.png">
 							<strong>小米圈铁耳机</strong>
 						</a>
@@ -1576,7 +1577,7 @@
 						<div class="cor">享5折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fc.png">
 							<strong>小米移动电源10000mAh 高配版
 							</strong>
@@ -1590,7 +1591,7 @@
 						<div class="cor te">享5折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/ga.png">
 							<strong>小米插线板</strong>
 						</a>
@@ -1603,7 +1604,7 @@
 						<div class="cor">享8折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/gb.png">
 							<strong>小米活塞耳机 基础版</strong>
 						</a>
@@ -1616,7 +1617,7 @@
 						<div class="cor te">享9折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/gc.png">
 							<strong>小米蓝牙耳机</strong>
 						</a>
@@ -1629,7 +1630,7 @@
 						<div class="cor te">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/ha.png">
 							<strong>小米小钢炮蓝牙音箱</strong>
 						</a>
@@ -1644,11 +1645,11 @@
 					<li>
 						<div class="more clear">
 							<img src="img/e1.png"></a>
-							<a href=""><strong>小米小刚泡蓝</strong>
+							<a href="#"><strong>小米小刚泡蓝</strong>
 							<span>79元</span>						
 						</div >
 						<div class="moremin">
-						<a href="">
+						<a href="#">
 							<strong>浏览更多</strong>
 							<span>耳机音响</span>
 						</a>
@@ -1658,8 +1659,8 @@
 				</ul>
 				<ul class="uls" style="display: none;">
 					<li>
-						<a href=""><img src="img/fa1.png"></a>
-						<a href=""><strong>小米活塞耳机 基础版</strong></a>
+						<a href="#"><img src="img/fa1.png"></a>
+						<a href="#"><strong>小米活塞耳机 基础版</strong></a>
 						<p>宝贝的贴心护士</p>
 						<span>299元</span>
 						<div class="skill">
@@ -1669,7 +1670,7 @@
 						<div class="cor te">享8折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa2.png">
 							<strong>小米圈铁耳机</strong>
 						</a>
@@ -1682,7 +1683,7 @@
 						<div class="cor">享9折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa3.png">
 							<strong>小米胶囊耳机</strong>
 						</a>
@@ -1695,7 +1696,7 @@
 						<div class="cor te">享5折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa4.png">
 							<strong>小米蓝牙耳机</strong>
 						</a>
@@ -1708,7 +1709,7 @@
 						<div class="cor te">享5折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa5.png">
 							<strong>小米小钢炮蓝牙音箱2</strong>
 						</a>
@@ -1721,7 +1722,7 @@
 						<div class="cor">享7折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa6.png">
 							<strong>小米随身蓝牙音箱</strong>
 						</a>
@@ -1734,7 +1735,7 @@
 						<div class="cor te">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa7.png">
 							<strong>小米蓝牙音箱</strong>
 						</a>
@@ -1749,7 +1750,7 @@
 					<li>
 						<div class="more clear">
 							<img src="img/e1.png"></a>
-							<a href=""><strong>小米小刚泡蓝</strong>
+							<a href="#"><strong>小米小刚泡蓝</strong>
 							<span>79元</span>							
 						</div >
 						<div class="moremin">
@@ -1763,8 +1764,8 @@
 				</ul>
 				<ul class="uls" style="display: none;">
 					<li>
-						<a href=""><img src="img/fa8.png"></a>
-						<a href=""><strong>移动电源5000mAh</strong></a>
+						<a href="#"><img src="img/fa8.png"></a>
+						<a href="#"><strong>移动电源5000mAh</strong></a>
 						<p>宝贝的贴心护士</p>
 						<span>299元</span>
 						<div class="skill">
@@ -1774,7 +1775,7 @@
 						<div class="cor te">享7折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa9.png">
 							<strong>移动电源10000mAh</strong>
 						</a>
@@ -1787,7 +1788,7 @@
 						<div class="cor">享4折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa10.png">
 							<strong>移动电源10000mAh 高配版</strong>
 						</a>
@@ -1800,7 +1801,7 @@
 						<div class="cor">享8折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa11.png">
 							<strong>移动电源20000mAh</strong>
 						</a>
@@ -1813,7 +1814,7 @@
 						<div class="cor te">享7折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa12.png">
 							<strong>10000mAh小米移动电源保护套</strong>
 						</a>
@@ -1826,7 +1827,7 @@
 						<div class="cor">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/hc.png">
 							<strong>小米插线板（3孔位+USB）</strong>
 						</a>
@@ -1839,7 +1840,7 @@
 						<div class="cor te">享7折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/ha.png">
 							<strong>小米USB充电器（4口）</strong>
 						</a>
@@ -1854,11 +1855,11 @@
 					<li>
 						<div class="more clear">
 							<img src="img/e1.png"></a>
-							<a href=""><strong>小米小刚泡蓝</strong>
+							<a href="#"><strong>小米小刚泡蓝</strong>
 							<span>79元</span>					
 						</div >
 						<div class="moremin">
-						<a href="">
+						<a href="#">
 							<strong>浏览更多</strong>
 							<span>耳机音响</span>
 						</a>
@@ -1868,8 +1869,8 @@
 				</ul>
 				<ul class="uls" style="display: none;">
 					<li>
-						<a href=""><img src="img/ia.png"></a>
-						<a href=""><strong>SanDisk 16GB存储卡（Class4）</strong></a>
+						<a href="#"><img src="img/ia.png"></a>
+						<a href="#"><strong>SanDisk 16GB存储卡（Class4）</strong></a>
 						<p>宝贝的贴心护士</p>
 						<span>299元</span>
 						<div class="skill">
@@ -1879,7 +1880,7 @@
 						<div class="cor te">享4折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa5.png">
 							<strong>原装快充套装</strong>
 						</a>
@@ -1892,7 +1893,7 @@
 						<div class="cor te">享4折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/ib.png">
 							<strong>彩虹5号电池（10粒装）</strong>
 						</a>
@@ -1905,7 +1906,7 @@
 						<div class="cor">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa6.png">
 							<strong>彩虹7号电池（10粒装）</strong>
 						</a>
@@ -1918,7 +1919,7 @@
 						<div class="cor">享8折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/ic.png">
 							<strong>CR2032纽扣电池</strong>
 						</a>
@@ -1931,7 +1932,7 @@
 						<div class="cor te">享4折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa8.png">
 							<strong>紫5镍氢充电电池</strong>
 						</a>
@@ -1944,7 +1945,7 @@
 						<div class="cor">享4折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/ia.png">
 							<strong>小米车载充电器</strong>
 						</a>
@@ -1959,11 +1960,11 @@
 					<li>
 						<div class="more clear">
 							<img src="img/e1.png"></a>
-							<a href=""><strong>红米2/红米2A...</strong>
+							<a href="#"><strong>红米2/红米2A...</strong>
 							<span>79元</span>	
 						</div >
 						<div class="moremin">
-						<a href="">
+						<a href="#">
 							<strong>浏览更多</strong>
 							<span>耳机音响</span>
 						</a>
@@ -1977,11 +1978,11 @@
 			<div class="low4-top">
 				<h2>周边</h2>
 				<nav>
-					<a href="" class="active">热门</a>
-					<a href="">服装</a>
-					<a href="">米兔</a>
-					<a href="">生活周边</a>
-					<a href="">箱包</a>
+					<a href="#" class="active">热门</a>
+					<a href="#">服装</a>
+					<a href="#">米兔</a>
+					<a href="#">生活周边</a>
+					<a href="#">箱包</a>
 				</nav>
 			</div>
 			<div class="low4list clear">
@@ -1991,8 +1992,8 @@
 				</div>
 				<ul class="uls" style="display: block;">
 					<li>
-						<a href=""><img src="img/fa.png"></a>
-						<a href=""><strong>小米移动电源10000mAh
+						<a href="#"><img src="img/fa.png"></a>
+						<a href="#"><strong>小米移动电源10000mAh
           				</strong></a>
 						<p>18.9万人评价</p>
 						<span>79元</span>
@@ -2003,7 +2004,7 @@
 						<div class="cor">享4折</div>
 					</li>			
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fb.png">
 							<strong>小米圈铁耳机</strong>
 						</a>
@@ -2016,7 +2017,7 @@
 						<div class="cor te">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fc.png">
 							<strong>小米移动电源10000mAh 高配版
 							</strong>
@@ -2030,7 +2031,7 @@
 						<div class="cor">享5折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/ga.png">
 							<strong>小米插线板</strong>
 						</a>
@@ -2043,7 +2044,7 @@
 						<div class="cor">享4折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/gb.png">
 							<strong>小米活塞耳机 基础版</strong>
 						</a>
@@ -2056,7 +2057,7 @@
 						<div class="cor te">享7折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/gc.png">
 							<strong>小米蓝牙耳机</strong>
 						</a>
@@ -2069,7 +2070,7 @@
 						<div class="cor">享3折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/ha.png">
 							<strong>小米小钢炮蓝牙音箱</strong>
 						</a>
@@ -2084,11 +2085,11 @@
 					<li>
 						<div class="more clear">
 							<img src="img/e1.png"></a>
-							<a href=""><strong>小米小刚泡蓝</strong>
+							<a href="#"><strong>小米小刚泡蓝</strong>
 							<span>79元</span>						
 						</div >
 						<div class="moremin">
-						<a href="">
+						<a href="#">
 							<strong>浏览更多</strong>
 							<span>耳机音响</span>
 						</a>
@@ -2097,8 +2098,8 @@
 				</ul>
 				<ul class="uls" style="display: none;">
 					<li>
-						<a href=""><img src="img/fa1.png"></a>
-						<a href=""><strong>小米活塞耳机 基础版</strong></a>
+						<a href="#"><img src="img/fa1.png"></a>
+						<a href="#"><strong>小米活塞耳机 基础版</strong></a>
 						<p>宝贝的贴心护士</p>
 						<span>299元</span>
 						<div class="skill">
@@ -2108,7 +2109,7 @@
 						<div class="cor te">享8折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa2.png">
 							<strong>小米圈铁耳机</strong>
 						</a>
@@ -2121,7 +2122,7 @@
 						<div class="cor">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa3.png">
 							<strong>小米胶囊耳机</strong>
 						</a>
@@ -2134,7 +2135,7 @@
 						<div class="cor te">享8折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa4.png">
 							<strong>小米蓝牙耳机</strong>
 						</a>
@@ -2147,7 +2148,7 @@
 						<div class="cor">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa5.png">
 							<strong>小米小钢炮蓝牙音箱2</strong>
 						</a>
@@ -2160,7 +2161,7 @@
 						<div class="cor te">享7折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa6.png">
 							<strong>小米随身蓝牙音箱</strong>
 						</a>
@@ -2173,7 +2174,7 @@
 						<div class="cor">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa7.png">
 							<strong>小米蓝牙音箱</strong>
 						</a>
@@ -2188,12 +2189,12 @@
 					<li>
 						<div class="more clear">
 							<img src="img/e1.png"></a>
-							<a href=""><strong>小米小刚泡蓝</strong>
+							<a href="#"><strong>小米小刚泡蓝</strong>
 							<span>79元</span>
 							
 						</div >
 						<div class="moremin">
-						<a href="">
+						<a href="#">
 							<strong>浏览更多</strong>
 							<span>耳机音响</span>
 						</a>
@@ -2203,8 +2204,8 @@
 				</ul>
 				<ul class="uls" style="display: none;">
 					<li>
-						<a href=""><img src="img/fa8.png"></a>
-						<a href=""><strong>移动电源5000mAh</strong></a>
+						<a href="#"><img src="img/fa8.png"></a>
+						<a href="#"><strong>移动电源5000mAh</strong></a>
 						<p>宝贝的贴心护士</p>
 						<span>299元</span>
 						<div class="skill">
@@ -2214,7 +2215,7 @@
 						<div class="cor">享4折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa9.png">
 							<strong>移动电源10000mAh</strong>
 						</a>
@@ -2227,7 +2228,7 @@
 						<div class="cor te">享5折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa10.png">
 							<strong>移动电源10000mAh 高配版</strong>
 						</a>
@@ -2266,7 +2267,7 @@
 						<div class="cor te">享5折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/hc.png">
 							<strong>小米插线板（3孔位+USB）</strong>
 						</a>
@@ -2279,7 +2280,7 @@
 						<div class="cor">享7折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/ha.png">
 							<strong>小米USB充电器（4口）</strong>
 						</a>
@@ -2294,11 +2295,11 @@
 					<li>
 						<div class="more clear">
 							<img src="img/e1.png"></a>
-							<a href=""><strong>小米小刚泡蓝</strong>
+							<a href="#"><strong>小米小刚泡蓝</strong>
 							<span>79元</span>					
 						</div >
 						<div class="moremin">
-						<a href="">
+						<a href="#">
 							<strong>浏览更多</strong>
 							<span>耳机音响</span>
 						</a>
@@ -2308,8 +2309,8 @@
 				</ul>
 				<ul class="uls" style="display: none;">
 					<li>
-						<a href=""><img src="img/ia.png"></a>
-						<a href=""><strong>SanDisk 16GB存储卡（Class4）</strong></a>
+						<a href="#"><img src="img/ia.png"></a>
+						<a href="#"><strong>SanDisk 16GB存储卡（Class4）</strong></a>
 						<p>宝贝的贴心护士</p>
 						<span>299元</span>
 						<div class="skill">
@@ -2319,7 +2320,7 @@
 						<div class="cor">享7折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa5.png">
 							<strong>原装快充套装</strong>
 						</a>
@@ -2332,7 +2333,7 @@
 						<div class="cor">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/ib.png">
 							<strong>彩虹5号电池（10粒装）</strong>
 						</a>
@@ -2345,7 +2346,7 @@
 						<div class="cor te">享4折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa6.png">
 							<strong>彩虹7号电池（10粒装）</strong>
 						</a>
@@ -2358,7 +2359,7 @@
 						<div class="cor te">享5折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/ic.png">
 							<strong>CR2032纽扣电池</strong>
 						</a>
@@ -2371,7 +2372,7 @@
 						<div class="cor">享8折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/fa8.png">
 							<strong>紫5镍氢充电电池</strong>
 						</a>
@@ -2384,7 +2385,7 @@
 						<div class="cor te">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/ia.png">
 							<strong>小米车载充电器</strong>
 						</a>
@@ -2399,11 +2400,11 @@
 					<li>
 						<div class="more clear">
 							<img src="img/e1.png"></a>
-							<a href=""><strong>红米2/红米2A...</strong>
+							<a href="#"><strong>红米2/红米2A...</strong>
 							<span>79元</span>	
 						</div >
 						<div class="moremin">
-						<a href="">
+						<a href="#">
 							<strong>浏览更多</strong>
 							<span>耳机音响</span>
 						</a>
@@ -2413,8 +2414,8 @@
 				</ul>
 				<ul class="uls" style="display: none;">
 					<li>
-						<a href=""><img src="img/s1.png"></a>
-						<a href=""><strong>90分旅行箱 20寸</strong></a>
+						<a href="#"><img src="img/s1.png"></a>
+						<a href="#"><strong>90分旅行箱 20寸</strong></a>
 						<p>宝贝的贴心护士</p>
 						<span>299元</span>
 						<div class="skill">
@@ -2424,7 +2425,7 @@
 						<div class="cor te">享4折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/s2.png">
 							<strong>90分旅行箱 24寸</strong>
 						</a>
@@ -2437,7 +2438,7 @@
 						<div class="cor te">享4折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/s3.png">
 							<strong>小米轻动系百搭多用背包</strong>
 						</a>
@@ -2450,7 +2451,7 @@
 						<div class="cor">享6折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/s4.png">
 							<strong>90分便携收纳袋</strong>
 						</a>
@@ -2463,7 +2464,7 @@
 						<div class="cor te">享4折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/s5.png">
 							<strong>小米经典商务双肩包</strong>
 						</a>
@@ -2476,7 +2477,7 @@
 						<div class="cor">享5折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/s6.png">
 							<strong>小米极简都市双肩包</strong>
 						</a>
@@ -2489,7 +2490,7 @@
 						<div class="cor te">享4折</div>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/s7.png">
 							<strong>小米多功能都市休闲胸包</strong>
 						</a>
@@ -2504,11 +2505,11 @@
 					<li>
 						<div class="more clear">
 							<img src="img/s8.png"></a>
-							<a href=""><strong>小米商务真皮</strong>
+							<a href="#"><strong>小米商务真皮</strong>
 							<span>79元</span>	
 						</div >
 						<div class="moremin">
-						<a href="">
+						<a href="#">
 							<strong>浏览更多</strong>
 							<span>箱包</span>
 						</a>
@@ -2524,64 +2525,64 @@
 			<div id="ul">
 				<ul class="ula" class="clear">
 					<li class="ulone">
-						<a href=""><img src="img/ff1.png"></a>
-						<a href="">小米电视3s 43英寸</a>
+						<a href="#"><img src="img/ff1.png"></a>
+						<a href="#">小米电视3s 43英寸</a>
 						<p>7.25 8.20直降300</p>
 						<span>1499元</span>
 					</li>
 					<li class="ultwo">
-						<a href=""><img src="img/ff2.png"></a>
-						<a href="">小米盒子3 增强版</a>
+						<a href="#"><img src="img/ff2.png"></a>
+						<a href="#">小米盒子3 增强版</a>
 						<p>高端4k 网络机顶盒</p>
 						<span>399元</span>
 					</li>
 					<li class="ulthree">
-						<a href=""><img src="img/ff3.png"></a>
-						<a href="">小米手环2</a>
+						<a href="#"><img src="img/ff3.png"></a>
+						<a href="#">小米手环2</a>
 						<p>每天早十点开售</p>
 						<span>149元</span>
 					</li>
 					<li class="ulfour">
-						<a href=""><img src="img/ff4.png"></a>
-						<a href="">小米智能摄像机 夜视版</a>
+						<a href="#"><img src="img/ff4.png"></a>
+						<a href="#">小米智能摄像机 夜视版</a>
 						<p>能看能听能说，手机远程控制</p>
 						<span>149元</span>
 					</li>
 					<li class="ulfive">
-						<a href=""><img src="img/ff5.png"></a>
-						<a href="">小米空气净化器2</a>
+						<a href="#"><img src="img/ff5.png"></a>
+						<a href="#">小米空气净化器2</a>
 						<p>10分钟，房间空气焕然一新</p>
 						<span>699元</span>
 					</li>
 				</ul>
 				<ul class="ula" class="clear">
 					<li class="ulone">
-						<a href=""><img src="img/ff6.png"></a>
-						<a href="">小米手机5 至尊版</a>
+						<a href="#"><img src="img/ff6.png"></a>
+						<a href="#">小米手机5 至尊版</a>
 						<p>16GB内存+128GB闪存，陶瓷版</p>
 						<span>2699元</span>
 					</li>
 					<li class="ultwo">
-						<a href=""><img src="img/ff7.png"></a>
-						<a href="">小米MAX 高配版</a>
+						<a href="#"><img src="img/ff7.png"></a>
+						<a href="#">小米MAX 高配版</a>
 						<p>6.44英寸大屏，3GB内存+164GB流量</p>
 						<span>1699元</span>
 					</li>
 					<li class="ulthree">
-						<a href=""><img src="img/ff8.png"></a>
-						<a href="">红米手机3s</a>
+						<a href="#"><img src="img/ff8.png"></a>
+						<a href="#">红米手机3s</a>
 						<p>金属机身，指纹识别，超长待机</p>
 						<span>699元</span>
 					</li>
 					<li class="ulfour">
-						<a href=""><img src="img/ff9.png"></a>
-						<a href="">红米Note3</a>
+						<a href="#"><img src="img/ff9.png"></a>
+						<a href="#">红米Note3</a>
 						<p>4000mA轻薄大电池，金属机身</p>
 						<span>899元</span>
 					</li>
 					<li class="ulfive">
-						<a href=""><img src="img/ff10.png"></a>
-						<a href="">小米平板2 16GB现货</a>
+						<a href="#"><img src="img/ff10.png"></a>
+						<a href="#">小米平板2 16GB现货</a>
 						<p>轻薄全金属，海量内存</p>
 						<span>999元</span>
 					</li>
@@ -2601,7 +2602,7 @@
 					<div class="bookmin">
 					<ul class="book clear">
 						<li class="bookli">
-							<a href="">
+							<a href="#">
 								<strong class="str">哈利波特与魔法石</strong>
 								<p class="bookp">哈利波特来了</p>
 								<span class="bookspan">免费</span>
@@ -2609,7 +2610,7 @@
 							</a>						
 						</li>
 						<li class="bookli">
-							<a href="">
+							<a href="#">
 								<strong class="str">特价专区</strong>
 								<p class="bookp">精选畅销好书，特价促销，天天更新，天天特价！</p>
 								<span class="bookspan">限时优惠</span>
@@ -2617,7 +2618,7 @@
 							</a>
 						</li>
 						<li class="bookli">
-							<a href="">
+							<a href="#">
 								<strong class="str">杂志专区</strong>
 								<p class="bookp">纸媒杂志＋互联网杂志，你想看的这都有！</p>
 								<span class="bookspan">同步新刊上线</span>
@@ -2625,7 +2626,7 @@
 							</a>
 						</li>
 						<li class="bookli">
-							<a href="">
+							<a href="#">
 								<strong class="str">哈利波特与魔法石</strong>
 								<p class="bookp">哈利波特来了</p>
 								<span class="bookspan">免费</span>
@@ -2648,7 +2649,7 @@
 					<div class="bookmin">
 					<ul class="book">
 						<li class="bookli">
-							<a href="">
+							<a href="#">
 								<strong class="str">花容</strong>
 								<p class="bookp">这花容宛盛放又似含苞，一种无法语言表达的美</p>
 								<span class="bookspan">免费</span>
@@ -2656,7 +2657,7 @@
 							</a>							
 						</li>
 						<li class="bookli">
-							<a href="">
+							<a href="#">
 								<strong class="str">Z.wh</strong>
 								<p class="bookp">帅到爆炸的表盘 引领酷炫科技感</p>
 								<span class="bookspan">免费</span>
@@ -2664,7 +2665,7 @@
 							</a>
 						</li>
 						<li class="bookli">
-							<a href="">
+							<a href="#">
 								<strong class="str">致青春</strong>
 								<p class="bookp">此主题致我们终将褪色的青春，怀念我们青春的时光</p>
 								<span class="bookspan">3米币</span>
@@ -2672,7 +2673,7 @@
 							</a>
 						</li>
 						<li class="bookli">
-							<a href="">
+							<a href="#">
 								<strong class="str">哈利波特与魔法石</strong>
 								<p class="bookp">众多个性主题、百变锁屏与自由桌面让你的手机与众不同！</p>
 								<span class="bookspan">免费</span>
@@ -2695,7 +2696,7 @@
 					<div class="bookmin">
 					<ul class="book">
 						<li class="bookli">
-							<a href="">
+							<a href="#">
 								<strong class="str">老九门</strong>
 								<p class="bookp">九门恩怨，盗墓笔记前传上线</p>
 								<span class="bookspan">免费</span>
@@ -2703,7 +2704,7 @@
 							</a>						
 						</li>
 						<li class="bookli">
-							<a href="">
+							<a href="#">
 								<strong class="str">米柚手游模拟器</strong>
 								<p class="bookp">在电脑上玩遍小米所有手游</p>
 								<span class="bookspan">免费</span>
@@ -2711,7 +2712,7 @@
 							</a>
 						</li>
 						<li class="bookli">
-							<a href="">
+							<a href="#">
 								<strong class="str">剑侠情缘</strong>
 								<p class="bookp">玩剑侠情缘手游，领666壕礼！！</p>
 								<span class="bookspan">免费</span>
@@ -2719,7 +2720,7 @@
 							</a>
 						</li>
 						<li class="bookli">
-							<a href="">
+							<a href="#">
 								<strong class="str">哈利波特与魔法石</strong>
 								<p class="bookp">免费下载海量的手机游戏天天都有现金福利赠送</p>
 								<span class="bookspan">免费</span>
@@ -2742,7 +2743,7 @@
 					<div class="bookmin">
 					<ul class="book">
 						<li class="bookli">
-							<a href="">
+							<a href="#">
 								<strong class="str">2015年度应用</strong>
 								<p class="bookp">2015年度应用</p>
 								<span class="bookspan">免费</span>
@@ -2758,7 +2759,7 @@
 							</a>
 						</li>
 						<li class="bookli">
-							<a href="">
+							<a href="#">
 								<strong class="str">小米应用/strong>
 								<p class="bookp">小米出品 必属精品</p>
 								<span class="bookspan">免费</span>
@@ -2766,7 +2767,7 @@
 							</a>
 						</li>
 						<li class="bookli">
-							<a href="">
+							<a href="#">
 								<strong class="str">哈利波特与魔法石</strong>
 								<p class="bookp">帮助小米手机和其他安卓手机用户发现好用的安卓应用</p>
 								<span class="bookspan">免费</span>
@@ -2789,40 +2790,40 @@
 		<div class="last">
 			<div class="low4h2 clear">
 				<h2>视频</h2>
-				<a href="">查看全部<span>></span></a>
+				<a href="#">查看全部<span>></span></a>
 			</div>
 			<div class="last-box">
 				<ul>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/la1.png">
 							<span class="play"></span>
 						</a>
-					<strong><a href="">红米年度品牌视频</a></strong>
+					<strong><a href="#">红米年度品牌视频</a></strong>
 						<span>一亿人喜爱你，是一种责任。</span>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/la.png">
 							<span class="play"></span>
 						</a>
-					<strong><a href="">小米笔记本最全介绍视频</a></strong>
+					<strong><a href="#">小米笔记本最全介绍视频</a></strong>
 						<span>带独立显卡的笔记本</span>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/la2.png">
 							<span class="play"></span>
 						</a>
-					<strong><a href="">小米笔记本Air可靠性测试视频</a></strong>
+					<strong><a href="#">小米笔记本Air可靠性测试视频</a></strong>
 						<span>小米笔记本Air是如何炼成的？</span>
 					</li>
 					<li>
-						<a href="">
+						<a href="#">
 							<img src="img/la3.png">
 							<span class="play"></span>
 						</a>
-					<strong><a href="">小米Max 绝美外观视频</a></strong>
+					<strong><a href="#">小米Max 绝美外观视频</a></strong>
 						<span>6.44" 大屏黄金尺寸，看什么都震撼</span>
 					</li>
 				</ul>
@@ -2830,51 +2831,51 @@
 		</div>
 		<div class="footer">
 			<nav class="service">
-				<a href=""><i class="iconfont">&#xe603;</i>1小时快修服务</a><a href=""><i class="iconfont">&#xe612;</i>7天无理由退货</a><a href=""><i class="iconfont">&#xe605;</i>15天免费换贷</a><a href=""><i class="iconfont">&#xe607;</i>满150元包邮</a><a href="" class="zui"><i class="iconfont">&#xe606;</i>520余家售后网点</a>
+				<a href="#"><i class="iconfont">&#xe603;</i>1小时快修服务</a><a href="#"><i class="iconfont">&#xe612;</i>7天无理由退货</a><a href="#"><i class="iconfont">&#xe605;</i>15天免费换贷</a><a href="#"><i class="iconfont">&#xe607;</i>满150元包邮</a><a href="#" class="zui"><i class="iconfont">&#xe606;</i>520余家售后网点</a>
 			</nav>
 			<div class="footertop">
 				<div class="footerleft">
 					<dl>
 						<dt>帮助中心</dt>
-						<dd><a href="">账户管理</a></dd>
-						<dd><a href="">购物指南</a></dd>
-						<dd><a href="">订单操作</a></dd>
+						<dd><a href="#">账户管理</a></dd>
+						<dd><a href="#">购物指南</a></dd>
+						<dd><a href="#">订单操作</a></dd>
 					</dl>
 					<dl>
 						<dt>服务支持</dt>
-						<dd><a href="">售后政策</a></dd>
-						<dd><a href="">自助服务</a></dd>
-						<dd><a href="">相关下载</a></dd>
+						<dd><a href="#">售后政策</a></dd>
+						<dd><a href="#">自助服务</a></dd>
+						<dd><a href="#">相关下载</a></dd>
 					</dl>
 					<dl>
 						<dt>线下门店</dt>
-						<dd><a href="">小米之家</a></dd>
-						<dd><a href="">服务网点</a></dd>
-						<dd><a href="">零售网点</a></dd>
+						<dd><a href="#">小米之家</a></dd>
+						<dd><a href="#">服务网点</a></dd>
+						<dd><a href="#">零售网点</a></dd>
 					</dl>
 					<dl>
 						<dt>关于小米</dt>
-						<dd><a href="">了解小米</a></dd>
-						<dd><a href="">加入小米</a></dd>
-						<dd><a href="">联系我们</a></dd>
+						<dd><a href="#">了解小米</a></dd>
+						<dd><a href="#">加入小米</a></dd>
+						<dd><a href="#">联系我们</a></dd>
 					</dl>
 					<dl>
 						<dt>关注我们</dt>
-						<dd><a href="">新浪微博</a></dd>
-						<dd><a href="">小米部落</a></dd>
-						<dd><a href="">官方微信</a></dd>
+						<dd><a href="#">新浪微博</a></dd>
+						<dd><a href="#">小米部落</a></dd>
+						<dd><a href="#">官方微信</a></dd>
 					</dl>
 					<dl>
 						<dt>特色服务</dt>
-						<dd><a href="">F 码通道</a></dd>
-						<dd><a href="">小米移动</a></dd>
-						<dd><a href="">防伪查询</a></dd>
+						<dd><a href="#">F 码通道</a></dd>
+						<dd><a href="#">小米移动</a></dd>
+						<dd><a href="#">防伪查询</a></dd>
 					</dl>
 				</div>
 				<div class="footerright">
 					<p class="phone">400-100-5678</p>
 					<p class="ptext">周一至周日 8:00-18:00<span>（仅收市话费）</span></p>
-					<div class="pa"><a href=""><i class="iconfont kefu">&#xe625;</i>24小时在线客服</a></div>
+					<div class="pa"><a href="#"><i class="iconfont kefu">&#xe625;</i>24小时在线客服</a></div>
 				</div>
 			</div>	
 		</div>
@@ -2884,9 +2885,9 @@
 				<img class="footimg" src="img/log.png">
 				<div class="footT">
 					<nav>
-						<a href="">小米商城</a>|<a href="">MIUI</a>|<a href="">米聊</a>|<a href="">多看书城</a>|<a href="">小米路由器</a>|<a href="">视频电话</a>|<a href="">小米后院</a>|<a href="">小米天猫店</a>|<a href="">小米淘宝直营店</a>|<a href="">小米网盟</a>|<a href="">问题反馈</a>|<a href="">Select Region</a>	
+						<a href="#">小米商城</a>|<a href="#">MIUI</a>|<a href="#">米聊</a>|<a href="#">多看书城</a>|<a href="#">小米路由器</a>|<a href="#">视频电话</a>|<a href="#">小米后院</a>|<a href="#">小米天猫店</a>|<a href="#">小米淘宝直营店</a>|<a href="#">小米网盟</a>|<a href="#">问题反馈</a>|<a href="#">Select Region</a>	
 					</nav>
-					<p>©<a href="">mi.com</a> 京ICP证110507号 京ICP备10046444号 <a href="">京公网安备11010802020134号</a> <a href="">京网文[2014]0059-0009号</a> 违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p>
+					<p>©<a href="#">mi.com</a> 京ICP证110507号 京ICP备10046444号 <a href="#">京公网安备11010802020134号</a> <a href="#">京网文[2014]0059-0009号</a> 违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p>
 				</div>
 				<div class="footR">
 					<img src="img/op1.png">
@@ -2900,9 +2901,5 @@
 		</div>
 	</section>
 </section>
-<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/startMove.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/data.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

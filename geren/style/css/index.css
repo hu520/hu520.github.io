@@ -30,8 +30,8 @@ img{ vertical-align: top; border:none;}
 #link a:hover{background: #fcd832;}
 #link a.facebook{ margin-right:6px;}
 #link img{ width:30px; height:30px;}
-.audio{position: fixed;z-index: 100; width:32px;height:32px;border-radius: 16px;
-	right:180px;top:26px;overflow: hidden; cursor:pointer;}
+.audio{position: absolute;z-index: 100; width:32px;height:32px;border-radius: 16px;
+	right:0px;top:21px;overflow: hidden; cursor:pointer;}
 #hui{width: 55px;height: 55px;position: fixed;z-index: 99; right: 10px;
 	bottom: 20px;color: #fff; display: none;}
 #hui .li1{width:55px;height:55px;display: block;
@@ -55,7 +55,7 @@ img{ vertical-align: top; border:none;}
 .box .infoShow li{cursor:pointer;}
 .box .infoShow img{ width:100px; height:100px;}
 
-.box .txt1{ width:400px; position:absolute; left:55%; top:-35px; overflow:hidden; z-index:20}
+.box .txt1{ width:400px; position:absolute; left:55%; top:-35px; overflow:hidden; z-index:20;}
 .box .txt1 img{ width:569px; height:260px}
 .box .txt1 .txtCon{ width:320px;padding-left:15px;margin-left: 32px;border-left: solid 1px #fff; margin-top:32px; position:relative; left:0; top:0;}
 .box .txt1 .txtCon p{ color:#fff; font-weight:bold; line-height:30px; text-indent:2em;}
@@ -71,7 +71,7 @@ img{ vertical-align: top; border:none;}
 #box1 .bj2{ background:url(img/triangles.png) no-repeat -60px 0;}
 
 #box1 .rightbox{ background:#cdcdcd;}
-#box1 .infoShow ul{ padding:10px;}
+#box1 .infoShow ul{ padding:10px; margin-top: -28px;}
 #box1 .infoShow li{ width:460px;  height:40px; margin-top: 10px; position:relative;}
 #box1 .infoShow div{ height:40px; background:#abbc00; width:0px}
 #box1 .infoShow li a{ position: absolute; left:0; top:0; height:40px; line-height:40px; color:#fff; font-weight:bold;}
