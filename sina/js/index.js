@@ -131,4 +131,18 @@ $(document).ready(function(){
 	// $('.ban').click(function(){
 	// 	$('.guang').hide();
 	// });
+
+	fn1();
+	$(window).scroll(fn1);
+	function fn1(){
+		var scrollT = $(window).scrollTop();
+		var iH = $(window).innerHeight();
+		$('img').each(function(i,elem){
+			if(scrollT+iH>$(elem).offset().top){
+				$(elem).animate({opacity:1},600);
+				$(elem).attr('src',$(elem).attr('_src'));
+				
+			};
+		});
+	}
 });

@@ -14,6 +14,8 @@ a{
 img{
 	border: none; 
 	vertical-align: top;
+	opacity: 0;
+	opacity: filter(opacity=0);
 }
 .clear{
 	zoom: 1;

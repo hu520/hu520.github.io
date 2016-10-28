@@ -117,6 +117,7 @@ header{
     border-top: none;
     border-bottom: none;
     box-shadow: 0 1px 1px #07f;
+    behavior:url(PIE.htc);
 }
 #hright #curr span:hover{
     color: #ff6700;
@@ -164,6 +165,7 @@ header{
     border-top: 0px solid #e0e0e0;
     -webkit-box-shadow: 0 3px 4px rgba(0,0,0,0.18);
     box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+    behavior:url(PIE.htc);
     /*box-shadow:0 1px 1px blue;*/
 }
 #navlist ul{
@@ -171,9 +173,7 @@ header{
     margin:0 auto;
     height: 230px;
     transition: 2s;
-    display: none;
-    
-    
+    display: none;     
 }
 #navlist ul li{
     margin-top: 30px;
@@ -292,6 +292,7 @@ header{
     border: 1px solid #e0e0e0;
     -webkit-box-shadow: 0 8px 16px rgba(0,0,0,0.18);
     box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+    behavior:url(PIE.htc);
 }
 #lista .ulul{
     height: 449px;
@@ -416,6 +417,7 @@ header{
     border-radius: 50%; 
     background: #DDD;
     margin: 0 3px;
+    behavior:url(PIE.htc);
 }
 #navs a.active{
     background: #f60;
@@ -496,6 +498,7 @@ header{
 }
 .lowT .list4 li{
     float: left;
+    display: inline;
     margin-left: 14px;
 }
 .lowT .list4 li img{
@@ -505,6 +508,7 @@ header{
 }
 .lowT .list4 li img:hover{
     box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    behavior:url(PIE.htc);
     /*transform: translate3d(0, -2px, 0);*/
 }
 .low3bg{
@@ -656,6 +660,7 @@ header{
     background: #b0b0b0;
     margin-left: 8px;
     color: #fff;
+    behavior:url(PIE.htc);
 }
 .low4h2 a:hover{
     color: #ff6700;
@@ -674,6 +679,7 @@ header{
 .low4list .low4-img img:hover{
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
     transform: translate3d(0, -2px, 0);
+    behavior:url(PIE.htc);
 }
 .low4list ul{
     float: left;
@@ -686,6 +692,7 @@ header{
     float: left;
     background: #fff;
     margin-left: 14px;
+    display: inline;
     margin-bottom: 14px;
     position: relative;
     overflow: hidden;
@@ -694,6 +701,7 @@ header{
 .low4list ul li:hover{
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
     transform: translate3d(0, -2px, 0);
+    behavior:url(PIE.htc);
 }
 .low4list ul li a{
     width: 160px;
@@ -875,6 +883,7 @@ header{
 .low5-one .low5list li:hover{
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
     transform: translate3d(0, -2px, 0);
+    behavior:url(PIE.htc);
 }
 .low5-one .low5list li strong{
     display: block;
@@ -1010,6 +1019,7 @@ header{
     background:  #b0b0b0;
     float: left;
     margin-left: 10px;
+    behavior:url(PIE.htc);
 }
 .bookmin  nav a:hover{
     background: #ff6700;
@@ -1022,6 +1032,7 @@ header{
     border-radius: 6px
     margin-top:-2px;
     background: #fff;
+    behavior:url(PIE.htc);
 }
 .bookbtn{
     position: absolute;
@@ -1078,7 +1089,8 @@ header{
     transition: .3s;
     border-radius: 12px;
     background: url(./img/bo.png) no-repeat center 4px;
-    background-color: rgba(0,0,0,0.6)
+    background-color: rgba(0,0,0,0.6);
+    behavior:url(PIE.htc);
 }
 .last-box ul li a:hover .play{
     border-color: #ff6700;
@@ -1087,6 +1099,7 @@ header{
 .last-box ul li:hover{
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
     transform: translate3d(0, -2px, 0);
+    behavior:url(PIE.htc);
 }
 .last-box ul strong{
     display: block;
@@ -1353,6 +1366,7 @@ header{
     border-radius:3px;
     text-decoration:none;
     margin:0px 5px; 
+    behavior:url(PIE.htc);
 }
 .wrapper2 .active-transition {
     background:#222;
