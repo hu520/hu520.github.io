@@ -42,6 +42,133 @@ img {
 	display: block;
 	clear: both;
 }
+
+#loader {
+    width: 27rem;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: url(../img/background.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 9999;
+    transition: .6s;
+    opacity: 1;
+}
+#loader .box {
+	width: 8rem;
+	height: 8rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -4rem 0 0 -2rem;
+}
+#loader .animate {
+	position: relative;
+	transform: rotate(45deg);
+	/*border: 1px solid #fff;*/
+}
+#loader .animate div {
+	width: 1rem;
+	height: 1rem;
+	background: #fff;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+}
+@keyframes move1{
+	50% {
+		transform: translate3d(-3rem,-3rem,0);
+	}
+}
+@keyframes move2{
+	50% {
+		transform: translate3d(0,-3rem,0);
+	}
+}
+@keyframes move3{
+	50% {
+		transform: translate3d(3rem,-3rem,0);
+	}
+}
+@keyframes move4{
+	50% {
+		transform: translate3d(3rem,0,0);
+	}
+}
+@keyframes move5{
+	50% {
+		transform: translate3d(3rem,3rem,0);
+	}
+}
+@keyframes move6{
+	50% {
+		transform: translate3d(0,3rem,0);
+	}
+}
+@keyframes move7{
+	50% {
+		transform: translate3d(-3rem,0,0);
+	}
+}
+@keyframes move8{
+	50% {
+		transform: translate3d(-3rem,3rem,0);
+	}
+}
+@keyframes move9{
+	50% {
+		transform: scale(1.3);
+	}
+}
+#loader .move1 {
+	animation: move1 infinite 2s;
+	animation-delay: 0.2s;
+}
+#loader .move2 {
+	animation: move2 infinite 2s;
+	animation-delay: 0.3s;
+}
+#loader .move3 {
+	animation: move3 infinite 2s;
+	animation-delay: 0.4s;
+	/*animation-play-state: paused;*/
+}
+#loader .move4 {
+	animation: move4 infinite 2s;
+	animation-delay: 0.5s;
+}
+#loader .move5 {
+	animation: move5 infinite 2s;
+	animation-delay: 0.6s;
+}
+#loader .move6 {
+	animation: move6 infinite 2s;
+	animation-delay: 0.7s;
+}
+#loader .move7 {
+	animation: move7 infinite 2s;
+	animation-delay: 0.8s;
+}
+#loader .move8 {
+	animation: move8 infinite 2s;
+	animation-delay: 0.9s;
+}
+#loader .move9 {
+	animation: move9 infinite 2s;
+	animation-delay: 0.2s;
+}
+#loader strong{
+	position: absolute;
+	left: 0;
+	bottom: -50%;
+	width: 100%;
+	line-height: 50px;
+	font-size: 50px;
+	color: #fff;
+}
+
 .header{
 	background: url(../img/headbg1.png) repeat-x;
 	background-size: 100% 3.1rem;

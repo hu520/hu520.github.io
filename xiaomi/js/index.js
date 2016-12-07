@@ -1,4 +1,44 @@
+$(function (){
+	var str = '';
+	for (var i = 0;i<8;i++) {
+		str += '<div class="move'+(i+1)+'"></div>'
+	}
+	$('#loader').find('.animate').html(str);
+	var divs = $('#loader').find('.animate').find('div');	
+	console.log($('#loader').find('.animate').find('div').length);
+	
+	$("#slider").chopSlider({
+        /* slide element */
+        slide : ".slide",
+        /* controlers */
+        nextTrigger : "a#slide-next",
+        prevTrigger : "a#slide-prev",
+        hideTriggers : true,
+        sliderPagination : ".slider-pagination",
+        /* captions */
+        useCaptions : true,
+        everyCaptionIn : ".sl-descr",
+        showCaptionIn : ".caption",
+        captionTransform : "scale(0) translate(-600px,0px) rotate(45deg)",
+        /* autoplay */
+        autoplay : true,
+        autoplayDelay : 5000,
+        /* for Browsers that support 3D transforms */
+        t3D : csTransitions['3DFlips']['random'], /* all will be picked up randomly */
+        t2D : [ csTransitions['multi']['random'], csTransitions['vertical']['random'] ],
+        noCSS3 : csTransitions['noCSS3']['random'],
+        mobile : csTransitions['mobile']['random'],
+        onStart: function(){},
+        onEnd: function(){}
+    })
+})
 window.onload = function (){
+	$('#box').css({transform: 'translate3d(0,0,0)'});
+		$('#loader').css({opacity: 0});
+		setTimeout(function(){
+			$('#loader').css({display:'none'});
+			$('#loader').find('.animate').html('');
+		},2000)
 	// 大图幻灯效果
 	var wrap = document.getElementById("wrap");
 	var prevBtn = document.getElementById("prev");
@@ -287,28 +327,5 @@ window.onload = function (){
         }
 };
 jQuery(function(){
-    $("#slider").chopSlider({
-        /* slide element */
-        slide : ".slide",
-        /* controlers */
-        nextTrigger : "a#slide-next",
-        prevTrigger : "a#slide-prev",
-        hideTriggers : true,
-        sliderPagination : ".slider-pagination",
-        /* captions */
-        useCaptions : true,
-        everyCaptionIn : ".sl-descr",
-        showCaptionIn : ".caption",
-        captionTransform : "scale(0) translate(-600px,0px) rotate(45deg)",
-        /* autoplay */
-        autoplay : true,
-        autoplayDelay : 5000,
-        /* for Browsers that support 3D transforms */
-        t3D : csTransitions['3DFlips']['random'], /* all will be picked up randomly */
-        t2D : [ csTransitions['multi']['random'], csTransitions['vertical']['random'] ],
-        noCSS3 : csTransitions['noCSS3']['random'],
-        mobile : csTransitions['mobile']['random'],
-        onStart: function(){},
-        onEnd: function(){}
-    })
+    
 })

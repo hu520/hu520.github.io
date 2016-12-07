@@ -1,4 +1,20 @@
+$(function (){
+	var str = '';
+	for (var i = 0;i<9;i++) {
+		str += '<div class="move'+(i+1)+'"></div>'
+	}
+	$('#loader').find('.animate').html(str);
+	var divs = $('#loader').find('.animate').find('div');
+	console.log($('#loader').find('.animate').find('div').length);
+		
+})
 window.onload = function (){
+	$('#loader').css({opacity: 0});
+	setTimeout(function(){
+		$('#loader').css({display:'none'});
+		$('#loader').find('.animate').html('');
+	},2000)
+
 	var imgtop = document.getElementById("imgtop");
 	var hihe = document.getElementById("hihe");
 	var spans = hihe.getElementsByTagName("span");

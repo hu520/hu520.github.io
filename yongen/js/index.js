@@ -46,13 +46,27 @@ window.onload = window.onresize = function(){
 
 	// 固定定位弹入弹出
 	
-	$('.shan').hover(function(){
-		$(this).css({transform:'rotate(45deg)'});
-		$('#fixed').css({right:-50});
-	},function(){
-		$(this).css({transform:'rotate(0deg)'});
-		$('#fixed').css({right:0})
-	});
+	// $('.shan').hover(function(){
+	// 	$(this).css({transform:'rotate(45deg)'});
+	// 	$('#fixed').css({right:-50});
+	// },function(){
+	// 	$(this).css({transform:'rotate(0deg)'});
+	// 	$('#fixed').css({right:0})
+	// });
+	var h2 = $('.shan');
+	var uls = $('#fixed');		
+	h2[0].onOff = false; //假设一开始是开着的
+		h2[0].onclick = function(){
+			if (this.onOff) {
+				$(this).css({transform:'rotate(0deg)'});
+				$('#fixed').css({right:0});
+			}else{
+				$(this).css({transform:'rotate(45deg)'})
+				$('#fixed').css({right:-50})
+			}
+			// uls[0].style.display = this.onOff?'block':'none';		
+			this.onOff = !this.onOff;
+		}
 	var fixed = $('#fixed').find('ul')[0];
 	var fixed1 = $('#fixed').find('ul')[1];
 
